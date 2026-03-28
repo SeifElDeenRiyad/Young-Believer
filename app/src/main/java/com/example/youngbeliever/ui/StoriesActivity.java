@@ -1,6 +1,5 @@
 package com.example.youngbeliever.ui;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
@@ -13,6 +12,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.example.youngbeliever.R;
+import com.example.youngbeliever.utils.ActivityManager;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -21,6 +21,7 @@ public class StoriesActivity extends AppCompatActivity implements NavigationView
     MaterialToolbar storiesToolbar;
     DrawerLayout storiesDrawer;
     NavigationView storiesNavigation;
+    ActivityManager activityManager;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -31,6 +32,7 @@ public class StoriesActivity extends AppCompatActivity implements NavigationView
         storiesToolbar = findViewById(R.id.app_toolbar);
         storiesDrawer = findViewById(R.id.stories_drawer_layout);
         storiesNavigation = findViewById(R.id.stories_navigation_view);
+        activityManager = (ActivityManager) getApplication();
 
         setSupportActionBar(storiesToolbar);
 
@@ -70,47 +72,33 @@ public class StoriesActivity extends AppCompatActivity implements NavigationView
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem)
     {
         int id = menuItem.getItemId();
-        Intent intent;
-
         if(id == R.id.home_page)
         {
-            intent = new Intent(this, HomeActivity.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
+            activityManager.openActivityRemovingDuplicate(HomeActivity.class);
         }
         else if(id == R.id.holy_quran)
         {
-            intent = new Intent(this, QuranActivity.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
+            activityManager.openActivityRemovingDuplicate(QuranActivity.class);
         }
         else if(id == R.id.arkan_eslam)
         {
-            intent = new Intent(this, ArkanActivity.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
+            activityManager.openActivityRemovingDuplicate(ArkanActivity.class);
         }
         else if(id == R.id.al_azkar)
         {
-            intent = new Intent(this, AzkarActivity.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
+            activityManager.openActivityRemovingDuplicate(AzkarActivity.class);
         }
         else if(id == R.id.al_duas)
         {
-            intent = new Intent(this, DuasActivity.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
+            activityManager.openActivityRemovingDuplicate(DuasActivity.class);
         }
         else if(id == R.id.stories)
         {
-            storiesDrawer.closeDrawers();
+            activityManager.openActivityRemovingDuplicate(StoriesActivity.class);
         }
         else if (id == R.id.asmaa_allah)
         {
-            intent = new Intent(this, AsmaaAllahHosnaActivity.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
+            storiesDrawer.closeDrawers();
         } else { return true;}
 
         new Handler().postDelayed(() -> storiesDrawer.closeDrawers(),200);
