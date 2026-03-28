@@ -13,7 +13,7 @@
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:id="@+id/homw_navigation_view"
+        android:id="@+id/home_navigation_view"
         app:menu="@menu/main_navigation_menu"
         app:headerLayout="@layout/main_navigation_header"
         android:layout_gravity="start"/>

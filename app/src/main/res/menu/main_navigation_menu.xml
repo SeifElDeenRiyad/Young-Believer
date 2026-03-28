@@ -24,7 +24,7 @@
             android:icon="@drawable/outline_menu_white_36"
             android:title="@string/duas"/>
         <item
-            android:id="@+id/qess_rosl"
+            android:id="@+id/stories"
             android:icon="@drawable/outline_menu_white_36"
             android:title="@string/prophets_stories"/>
         <item

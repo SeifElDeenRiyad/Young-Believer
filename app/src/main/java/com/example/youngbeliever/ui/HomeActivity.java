@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
-import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -31,7 +30,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
         homeToolbar = findViewById(R.id.app_toolbar);
         homeDrawer = findViewById(R.id.home_drawer_layout);
-        homeNavigation = findViewById(R.id.homw_navigation_view);
+        homeNavigation = findViewById(R.id.home_navigation_view);
 
         setSupportActionBar(homeToolbar);
 
@@ -44,9 +43,9 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 R.string.openNavigationDrawer,
                 R.string.closeNavigationDrawer
         );
+
         homeDrawer.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
-
         homeNavigation.setNavigationItemSelectedListener(this);
     }
 
@@ -61,7 +60,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             super.onBackPressed();
         }
     }
-
     @Override
     public void onResume()
     {
@@ -81,31 +79,37 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         else if(id == R.id.holy_quran)
         {
             intent = new Intent(this, QuranActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }
         else if(id == R.id.arkan_eslam)
         {
             intent = new Intent(this, ArkanActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }
         else if(id == R.id.al_azkar)
         {
             intent = new Intent(this, AzkarActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }
         else if(id == R.id.al_duas)
         {
             intent = new Intent(this, DuasActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }
-        else if(id == R.id.qess_rosl)
+        else if(id == R.id.stories)
         {
             intent = new Intent(this, StoriesActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }
         else if (id == R.id.asmaa_allah)
         {
             intent = new Intent(this, AsmaaAllahHosnaActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         } else { return true;}
 

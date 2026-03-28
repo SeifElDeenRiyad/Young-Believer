@@ -17,18 +17,30 @@
             android:name=".ui.HomeActivity"
             android:exported="true"
             android:theme="@style/Theme.YoungBeliever">
-        </activity>
-        <activity
-            android:name=".ui.AsmaaAllahHosnaActivity"
-            android:exported="true"
-            android:theme="@style/Theme.YoungBeliever">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.QuranActivity"
+            android:theme="@style/Theme.YoungBeliever"/>
+        <activity
+            android:name=".ui.DuasActivity"
+            android:theme="@style/Theme.YoungBeliever"/>
+        <activity
+            android:name=".ui.AzkarActivity"
+            android:theme="@style/Theme.YoungBeliever"/>
+        <activity
+            android:name=".ui.ArkanActivity"
+            android:theme="@style/Theme.YoungBeliever"/>
+        <activity
+            android:name=".ui.StoriesActivity"
+            android:theme="@style/Theme.YoungBeliever"/>
+        <activity
+            android:name=".ui.AsmaaAllahHosnaActivity"
+            android:theme="@style/Theme.YoungBeliever"/>
     </application>
 
 </manifest>

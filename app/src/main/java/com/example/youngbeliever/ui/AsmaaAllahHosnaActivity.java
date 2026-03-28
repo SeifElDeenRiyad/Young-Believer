@@ -147,7 +147,7 @@ public class AsmaaAllahHosnaActivity extends AppCompatActivity implements Naviga
             intent = new Intent(this, DuasActivity.class);
             startActivity(intent);
         }
-        else if(id == R.id.qess_rosl)
+        else if(id == R.id.stories)
         {
             intent = new Intent(this, StoriesActivity.class);
             startActivity(intent);
