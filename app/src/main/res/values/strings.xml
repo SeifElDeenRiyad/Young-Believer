@@ -1,0 +1,220 @@
+<resources>
+    <string name="app_name">Young Believer</string>
+    <string name="profile_background">Profile Background</string>
+    <string name="believer_name">Believer Name</string>
+    <string name="believer_mail">believer.mail.example.com</string>
+    <string name="home_page">Home</string>
+
+    <string name="prophets_stories">Prophet\'s Stories</string>
+    <string name="duas">Duas</string>
+    <string name="al_azkar">Al-Azkar</string>
+    <string name="islam_pillars" translatable="false">Islam\'s Pillars</string>
+    <string name="holy_quran">Holy Quran</string>
+
+
+    <string name="god_names">God\'s Names</string>
+    <string name="asm1" translatable="false">الرحمن</string>
+    <string name="asm2" translatable="false">الرحيم</string>
+    <string name="asm3" translatable="false">الملك</string>
+    <string name="asm4" translatable="false">القدوس</string>
+    <string name="asm5" translatable="false">السلام</string>
+    <string name="asm6" translatable="false">المؤمن</string>
+    <string name="asm7" translatable="false">المهيمن</string>
+    <string name="asm8" translatable="false">العزيز</string>
+    <string name="asm9" translatable="false">الجبار</string>
+    <string name="asm10" translatable="false">المتكبر</string>
+    <string name="asm11" translatable="false">الخالق</string>
+    <string name="asm12" translatable="false">البارئ</string>
+    <string name="asm13" translatable="false">المصور</string>
+    <string name="asm14" translatable="false">الغفار</string>
+    <string name="asm15" translatable="false">القهار</string>
+    <string name="asm16" translatable="false">الوهاب</string>
+    <string name="asm17" translatable="false">الرزاق</string>
+    <string name="asm18" translatable="false">الفتاح</string>
+    <string name="asm19" translatable="false">العليم</string>
+    <string name="asm20" translatable="false">القابض</string>
+    <string name="asm21" translatable="false">الباسط</string>
+    <string name="asm22" translatable="false">الخافض</string>
+    <string name="asm23" translatable="false">الرافع</string>
+    <string name="asm24" translatable="false">المعز</string>
+    <string name="asm25" translatable="false">المذل</string>
+    <string name="asm26" translatable="false">السميع</string>
+    <string name="asm27" translatable="false">البصير</string>
+    <string name="asm28" translatable="false">الحكم</string>
+    <string name="asm29" translatable="false">العدل</string>
+    <string name="asm30" translatable="false">اللطيف</string>
+    <string name="asm31" translatable="false">الخبير</string>
+    <string name="asm32" translatable="false">الحليم</string>
+    <string name="asm33" translatable="false">العظيم</string>
+    <string name="asm34" translatable="false">الغفور</string>
+    <string name="asm35" translatable="false">الشكور</string>
+    <string name="asm36" translatable="false">العلي</string>
+    <string name="asm37" translatable="false">الكبير</string>
+    <string name="asm38" translatable="false">الحفيظ</string>
+    <string name="asm39" translatable="false">المقيت</string>
+    <string name="asm40" translatable="false">الحسيب</string>
+    <string name="asm41" translatable="false">الجليل</string>
+    <string name="asm42" translatable="false">الكريم</string>
+    <string name="asm43" translatable="false">الرقيب</string>
+    <string name="asm44" translatable="false">المجيب</string>
+    <string name="asm45" translatable="false">الواسع</string>
+    <string name="asm46" translatable="false">الحكيم</string>
+    <string name="asm47" translatable="false">الودود</string>
+    <string name="asm48" translatable="false">المجيد</string>
+    <string name="asm49" translatable="false">الباعث</string>
+    <string name="asm50" translatable="false">الشهيد</string>
+    <string name="asm51" translatable="false">الحق</string>
+    <string name="asm52" translatable="false">الوكيل</string>
+    <string name="asm53" translatable="false">القوي</string>
+    <string name="asm54" translatable="false">المتين</string>
+    <string name="asm55" translatable="false">الولي</string>
+    <string name="asm56" translatable="false">الحميد</string>
+    <string name="asm57" translatable="false">المحصي</string>
+    <string name="asm58" translatable="false">المبدئ</string>
+    <string name="asm59" translatable="false">المعيد</string>
+    <string name="asm60" translatable="false">المحيي</string>
+    <string name="asm61" translatable="false">المميت</string>
+    <string name="asm62" translatable="false">الحي</string>
+    <string name="asm63" translatable="false">القيوم</string>
+    <string name="asm64" translatable="false">الواجد</string>
+    <string name="asm65" translatable="false">الماجد</string>
+    <string name="asm66" translatable="false">الأحد</string>
+    <string name="asm67" translatable="false">الواحد</string>
+    <string name="asm68" translatable="false">الصمد</string>
+    <string name="asm69" translatable="false">القادر</string>
+    <string name="asm70" translatable="false">المقتدر</string>
+    <string name="asm71" translatable="false">المقدم</string>
+    <string name="asm72" translatable="false">المؤخر</string>
+    <string name="asm73" translatable="false">الأول</string>
+    <string name="asm74" translatable="false">الآخر</string>
+    <string name="asm75" translatable="false">الظاهر</string>
+    <string name="asm76" translatable="false">الباطن</string>
+    <string name="asm77" translatable="false">الوال</string>
+    <string name="asm78" translatable="false">المتعال</string>
+    <string name="asm79" translatable="false">البر</string>
+    <string name="asm80" translatable="false">التواب</string>
+    <string name="asm81" translatable="false">المنتقم</string>
+    <string name="asm82" translatable="false">العفو</string>
+    <string name="asm83" translatable="false">الرءوف</string>
+    <string name="asm84" translatable="false">مالك الملك</string>
+    <string name="asm85" translatable="false">ذو الجلال والإكرام</string>
+    <string name="asm86" translatable="false">المقسط</string>
+    <string name="asm87" translatable="false">الجامع</string>
+    <string name="asm88" translatable="false">الغني</string>
+    <string name="asm89" translatable="false">المغني</string>
+    <string name="asm90" translatable="false">المانع</string>
+    <string name="asm91" translatable="false">الضار</string>
+    <string name="asm92" translatable="false">النافع</string>
+    <string name="asm93" translatable="false">النور</string>
+    <string name="asm94" translatable="false">الهادي</string>
+    <string name="asm95" translatable="false">البديع</string>
+    <string name="asm96" translatable="false">الباقي</string>
+    <string name="asm97" translatable="false">الوارث</string>
+    <string name="asm98" translatable="false">الرشيد</string>
+    <string name="asm99" translatable="false">الصبور</string>
+
+    <string name="asm_meaning1" translatable="false">كثير الرحمة وهو اسم مقصور على الله عز وجل ولا يجوز أن يقال رحمن لغير الله، وذلك لأن رحمته وسعت كل شيء وهو أرحم الراحمين.</string>
+    <string name="asm_meaning2" translatable="false">هو المنعم أبدا، المتفضل دوما، فرحمته لا تنتهي.</string>
+    <string name="asm_meaning3" translatable="false">هو الله، ملك الملوك، له الملك، وهو مالك يوم الدين، ومليك الخلق فهو المالك المطلق.</string>
+    <string name="asm_meaning4" translatable="false">هو الطاهر المنزه عن العيوب والنقائص وعن كل ما تحيط به العقول.</string>
+    <string name="asm_meaning5" translatable="false">هو ناشر السلام بين الأنام وهو الذي سلمت ذاته من النقص والعيب والفناء.</string>
+    <string name="asm_meaning6" translatable="false">هو الذي سلم أوليائه من عذابه، والذي يصدق عباده ما وعدهم.</string>
+    <string name="asm_meaning7" translatable="false">هو الرقيب الحافظ لكل شيء، القائم على خلقه بأعمالهم، وأرزاقهم وآجالهم، المسؤول عنهم بالرعاية والوقاية والصيانة.</string>
+    <string name="asm_meaning8" translatable="false">هو المنفرد بالعزة، الظاهر الذي لا يقهر، القوي الممتنع فلا يغلبه شيء وهو غالب كل شيء.</string>
+    <string name="asm_meaning9" translatable="false">هو الذي تنفذ مشيئته، ولا يخرج أحد عن تقديره، وهو القاهر لخلقه على ما أراد.</string>
+    <string name="asm_meaning10" translatable="false">هو المتعالى عن صفات الخلق المنفرد بالعظمة والكبرياء.</string>
+    <string name="asm_meaning11" translatable="false">هو الفاطر المبدع لكل شيء، والمقدر له والموجد للأشياء من العدم، فهو خالق كل صانع وصنعته.</string>
+    <string name="asm_meaning12" translatable="false">هو الذي خلق الخلق بقدرته لا عن مثال سابق، القادر على إبراز ما قدره إلى الوجود.</string>
+    <string name="asm_meaning13" translatable="false">هو الذي صور جميع الموجودات، ورتبها فأعطى كل شيء منها صورة خاصة، وهيئة منفردة، يتميز بها على اختلافها وكثرتها.</string>
+    <string name="asm_meaning14" translatable="false">هو وحده الذي يغفر الذنوب ويستر العيوب في الدنيا والآخرة.</string>
+    <string name="asm_meaning15" translatable="false">هو الغالب الذي قهر خلقه بسلطانه وقدرته، وصرفهم على ما أراد طوعا وكرها، وخضع لجلاله كل شيء.</string>
+    <string name="asm_meaning16" translatable="false">هو المنعم على العباد، الذي يهب بغير عوض ويعطي الحاجة بغير سؤال، كثير النعم، دائم العطاء.</string>
+    <string name="asm_meaning17" translatable="false">هو الذي خلق الأرزاق وأعطى كل الخلائق أرزاقها، ويمد كل كائن لما يحتاجه، ويحفظ عليه حياته ويصلحه.</string>
+    <string name="asm_meaning18" translatable="false">هو الذي يفتح مغلق الأمور، ويسهل العسير، وبيده مفاتيح السماوات والأرض.</string>
+    <string name="asm_meaning19" translatable="false">هو الذي يعلم تفاصيل الأمور، ودقائق الأشياء وخفايا الضمائر، والنفوس، لا يغرب عن ملكه مثقال ذرة، فعلمه يحيط بجميع الأشياء.</string>
+    <string name="asm_meaning20" translatable="false">قابض الأرواح والأرزاق والقابض على السماوات والأرض والكون</string>
+    <string name="asm_meaning21" translatable="false">موسع الرزق والعلم وموسع ما شاء من كونه ومخلوقاته ورحمته</string>
+    <string name="asm_meaning22" translatable="false">يخفض من يستحق الخفض</string>
+    <string name="asm_meaning23" translatable="false">يرفع من يستحق من عباده وما شاء من كونه</string>
+    <string name="asm_meaning24" translatable="false">يُعِزّ من استمسك بدينه</string>
+    <string name="asm_meaning25" translatable="false">يُذِلّ أعداءه وعُصاته</string>
+    <string name="asm_meaning26" translatable="false">هو الذي لا يخفى عليه شيء في الأرض ولا في السماء وهو السميع البصير.</string>
+    <string name="asm_meaning27" translatable="false">هو الذي يرى الأشياء كلها ظاهرها وباطنها وهو المحيط بكل المبصرات.</string>
+    <string name="asm_meaning28" translatable="false">هو الذي يفصل بين مخلوقاته بما شاء ويفصل بين الحق والباطل لا راد لقضائه ولا معقب لحكمه.</string>
+    <string name="asm_meaning29" translatable="false"> هو الذي حرم الظلم على نفسه، وجعله على عباده محرما، فهو المنزه عن الظلم والجور في أحكامه وأفعاله الذي يعطي كل ذي حق حقه.</string>
+    <string name="asm_meaning30" translatable="false">هو البر الرفيق بعباده، يرزق وييسر ويحسن إليهم، ويرفق بهم ويتفضل عليهم.</string>
+    <string name="asm_meaning31" translatable="false">هو العليم بدقائق الأمور، لا تخفى عليه خافية، ولا يغيب عن علمه شيء فهو العالم بما كان ويكون.</string>
+    <string name="asm_meaning32" translatable="false">هو الصبور الذي يمهل ولا يهمل، ويستر الذنوب، ويؤخر العقوبة، فيرزق العاصي كما يرزق المطيع.</string>
+    <string name="asm_meaning33" translatable="false"> هو الذي ليس لعظمته بداية ولا لجلاله نهاية، وليس كمثله شيء.</string>
+    <string name="asm_meaning34" translatable="false">هو الساتر لذنوب عباده المتجاوز عن خطاياهم وذنوبهم.</string>
+    <string name="asm_meaning35" translatable="false">هو الذي يزكو عنده القليل من أعمال العباد، فيضاعف لهم الجزاء، وشكره لعباده مغفرته لهم.</string>
+    <string name="asm_meaning36" translatable="false">هو الرفيع القدر فلا يحيط به وصف الواصفين المتعالي عن الأنداد والأضداد، فكل معاني العلو ثابتة له ذاتا وقهرا وشأنا.</string>
+    <string name="asm_meaning37" translatable="false">هو العظيم الجليل ذو الكبرياء في صفاته وأفعاله فلا يحتاج إلى شيء ولا يعجزه شيء (ليس كمثله شيء).</string>
+    <string name="asm_meaning38" translatable="false">هو الذي لا يغرب عن حفظه شيء ولو كمثقال الذر فحفظه لا يتبدل ولا يزول ولا يعتريه التبديل.</string>
+    <string name="asm_meaning39" translatable="false">هو المتكفل بإيصال أقوات الخلق إليهم وهو الحفيظ والمقتدر والقدير والمقدر والممدد.</string>
+    <string name="asm_meaning40" translatable="false">هو الكافي الذي منه كفاية العباد وهو الذي عليه الإعتماد يكفي العباد بفضله.</string>
+    <string name="asm_meaning41" translatable="false">هو العظيم المطلق المتصف بجميع صفات الكمال والمنعوت بكمالها المنزه عن كل نقص.</string>
+    <string name="asm_meaning42" translatable="false">هو الكثير الخير الجواد المعطي الذي لا ينفذ عطاؤه وهو الكريم المطلق الجامع لأنواع الخير والشرف والفضائل المحمود بفعاله.</string>
+    <string name="asm_meaning43" translatable="false">هو الرقيب الذي يراقب أحوال العباد ويعلم أقوالهم ويحصي أعمالهم وهو الحافظ الذي لا يغيب عنه شيء.</string>
+    <string name="asm_meaning44" translatable="false">هو الذي يقابل الدعاء والسؤال بالعطاء والقبول ولا يسأل سواه.</string>
+    <string name="asm_meaning45" translatable="false">هو الذي وسع رزقه جميع خلقه وسعت رحمته كل شيء المحيط بكل شيء.</string>
+    <string name="asm_meaning46" translatable="false">هو المحق في تدبيره اللطيف في تقديره الخبير بحقائق الأمور العليم بحكمه المقدور فجميع خلقه وقضاه خير وحكمة وعدل.</string>
+    <string name="asm_meaning47" translatable="false">هو المحب لعباده، والمحبوب في قلوب أوليائه.</string>
+    <string name="asm_meaning48" translatable="false">هو البالغ النهاية في المجد، الكثير الإحسان الجزيل العطاء العظيم البر.</string>
+    <string name="asm_meaning49" translatable="false">هو باعث الخلق يوم القيامة، وباعث رسله إلى العباد، وباعث المعونة إلى العبد.</string>
+    <string name="asm_meaning50" translatable="false">هو الحاضر الذي لا يغيب عنه شيء، فهو المطلع على كل شيء مشاهد له عليم بتفاصيله.</string>
+    <string name="asm_meaning51" translatable="false">هو الذي يحق الحق بكلماته ويؤيد أولياءه فهو المستحق للعبادة.</string>
+    <string name="asm_meaning52" translatable="false">هو الكفيل بالخلق القائم بأمورهم فمن توكل عليه تولاه وكفاه، ومن استغنى به أغناه وأرضاه.</string>
+    <string name="asm_meaning53" translatable="false">هو صاحب القدرة التامة البالغة الكمال غالب لا يغلب فقوته فوق كل قوة.</string>
+    <string name="asm_meaning54" translatable="false">هو الشديد الذي لا يحتاج في إمضاء حكمه إلى جند أو مدد ولا إلى معين.</string>
+    <string name="asm_meaning55" translatable="false">هو المحب الناصر لمن أطاعه، ينصر أولياءه، ويقهر أعداءه، والمتولي الأمور الخلائق ويحفظهم.</string>
+    <string name="asm_meaning56" translatable="false">هو المستحق للحمد والثناء، الذي لا يحمد على مكروه سواه.</string>
+    <string name="asm_meaning57" translatable="false">هو الذي أحصى كل شيء بعلمه، فلا يفوته منها دقيق ولا جليل.</string>
+    <string name="asm_meaning58" translatable="false">هو الذي أنشأ الأشياء واخترعها ابتداء من غير سابق مثال.</string>
+    <string name="asm_meaning59" translatable="false">هو الذي يعيد الخلق بعد الحياة إلى الممات في الدنيا، وبعد الممات إلى الحياة يوم القيامة.</string>
+    <string name="asm_meaning60" translatable="false">هو خالق الحياة ومعطيها لمن شاء، يحيي الخلق من العدم ثم يحييهم بعد الموت.</string>
+    <string name="asm_meaning61" translatable="false">هو مقدر الموت على كل من أماته ولا مميت سواه، قهر عباده بالموت متى شاء وكيف شاء.</string>
+    <string name="asm_meaning62" translatable="false">هو المتصف بالحياة الأبدية التي لا بداية لها ولا نهاية فهو الباقي أزلا وأبدا وهو الحي الذي لا يموت.</string>
+    <string name="asm_meaning63" translatable="false">هو القائم بنفسه، الغني عن غيره، وهو القائم بتدبير أمر خلقه في إنشائهم ورزقهم.</string>
+    <string name="asm_meaning64" translatable="false">هو الذي لا يعوزه شيء ولا يعجزه شيء يجد كل ما يطلبه، ويدرك كل ما يريده.</string>
+    <string name="asm_meaning65" translatable="false">هو الذي له الكمال المتناهي والعز الباهي، له العز في الأوصاف والأفعال الذي يعامل العباد بالجود والرحمة.</string>
+    <string name="asm_meaning66" translatable="false">المنفرد ليس معه غيره</string>
+    <string name="asm_meaning67" translatable="false">هو الفرد المتفرد في ذاته وصفائه وأفعاله، واحد في ملكه لا ينازعه أحد، لا شريك له سبحانه.</string>
+    <string name="asm_meaning68" translatable="false">هو المطاع الذي لا يقضى دونه أمر، الذي يقصد إليه في الحوائج فهو مقصد عباده في مهمات دينهم ودنياهم.</string>
+    <string name="asm_meaning69" translatable="false">هو الذي يقدر على إيجاد المعدوم وإعدام الموجود على قدر ما تقتضي الحكمة، لا زائدا عليه ولا ناقصا عنه.</string>
+    <string name="asm_meaning70" translatable="false">هو الذي يقدر على إصلاح الخلائق على وجه لا يقدر عليه غيره.</string>
+    <string name="asm_meaning71" translatable="false">هو الذي يقدم الأشياء ويضعها في مواضعها، فمن استحق التقديم قدمه.</string>
+    <string name="asm_meaning72" translatable="false">هو الذي يؤخر الأشياء فيضعها في مواضعها المؤخر لمن شاء من الفجار والكفار وكل من يستحق التأخير.</string>
+    <string name="asm_meaning73" translatable="false">هو الذي لم يسبقه في الوجود شيء فهو أول قبل الوجود.</string>
+    <string name="asm_meaning74" translatable="false">هو الباقي بعد فناء خلقه، البقاء الأبدي يفنى الكل وله البقاء وحده، فليس بعده شيء.</string>
+    <string name="asm_meaning75" translatable="false">هو الذي ظهر فوق كل شيء وعلا عليه، الظاهر وجوده لكثرة دلائله.</string>
+    <string name="asm_meaning76" translatable="false">هو العالم ببواطن الأمور وخفاياها، وهو أقرب إلينا من حبل الوريد.</string>
+    <string name="asm_meaning77" translatable="false">هو المالك للأشياء المتصرف فيها بمشيئته وحكمته، ينفذ فيها أمره، ويجري عليها حكمه.</string>
+    <string name="asm_meaning78" translatable="false">هو الذي جل عن إفك المفترين، وتنزه عن وساوس المتحيرين.</string>
+    <string name="asm_meaning79" translatable="false">هو العطوف على عباده ببره ولطفه، ومن على السائلين بحسن عطائه، وهو الصدق فيما وعد.</string>
+    <string name="asm_meaning80" translatable="false">هو الذي يوفق عباده للتوبة حتى يتوب عليهم ويقبل توبتهم فيقابل الدعاء بالعطاء، والتوبة بغفران الذنوب.</string>
+    <string name="asm_meaning81" translatable="false">هو الذي يقسم ظهور الطغاة، ويشدد العقوبة على العصاة، وذلك بعد الإعذار والإنذار.</string>
+    <string name="asm_meaning82" translatable="false">هو الذي يترك المؤاخدة على الذنوب ولا يذكرك بالعيوب فهو يمحو السيئات ويتجاوز عن المعاصي.</string>
+    <string name="asm_meaning83" translatable="false">هو المتعطف على المذنبين بالتوبة، الذي جاد بلطفه ومن بتعطفه، يستر العيوب ثم يعفو عنها.</string>
+    <string name="asm_meaning84" translatable="false">هو المتصرف في ملكه كيف يشاء لا راد لحكمه، ولا معقب لأمره.</string>
+    <string name="asm_meaning85" translatable="false">هو المنفرد بصفات الجلال والكمال والعظمة، المختص بالإكرام والكرامة وهو أهل لأن يجل.</string>
+    <string name="asm_meaning86" translatable="false">هو العادل في حكمه، الذي ينتصف للمظلوم من الظالم، ثم يكمل عدله فيرضي الظالم بعد إرضاء المظلوم.</string>
+    <string name="asm_meaning87" translatable="false">هو الذي جمع الكمالات كلها، ذاتا ووصفا وفعلا، الذي يجمع بين الخلائق المتماثلة والمتباينة، والذي يجمع الأولين والآخرين.</string>
+    <string name="asm_meaning88" translatable="false">هو الذي لا يحتاج إلى شيء، وهو المستغني عن كل ما سواه، المفتقر إليه كل من عاداه.</string>
+    <string name="asm_meaning89" translatable="false">هو معطي الغنى لعباده، يغني من يشاء غناه، وهو الكافي لمن شاء من عباده.</string>
+    <string name="asm_meaning90" translatable="false">هو الذي أعطى كل شيء، ويمنع العطاء عن من يشاء ابتلاء أو حماية.</string>
+    <string name="asm_meaning91" translatable="false">هو المقدر للضر على من أراد كيف أراد</string>
+    <string name="asm_meaning92" translatable="false">هو المقدر النفع والخير لمن أراد كيف أراد كل ذلك على مقتضى حكمته سبحانه.</string>
+    <string name="asm_meaning93" translatable="false">هو الهادي الرشيد الذي يرشد بهدايته من يشاء فيبين له الحق، ويلهمه اتباعه، الظاهر في ذاته، المظهر لغيره.</string>
+    <string name="asm_meaning94" translatable="false">هو المبين للخلق طريق الحق بكلامه يهدي القلوب إلى معرفته، والنفوس إلى طاعته.</string>
+    <string name="asm_meaning95" translatable="false">هو الذي لا يماثله أحد في صفاته ولا في حكم من أحكامه، أو أمر من أموره، فهو المحدث الموجد على غير مثال.</string>
+    <string name="asm_meaning96" translatable="false">هو وحده له البقاء، الدائم الوجود الموصوف بالبقاء الأزلي، غير قابل للفناء فهو الباقي بلا انتهاء.</string>
+    <string name="asm_meaning97" translatable="false">هو الأبقى الدائم الذي يرث الخلائق بعد فناء الخلق، وهو يرث الأرض ومن عليها.</string>
+    <string name="asm_meaning98" translatable="false">هو الذي أسعد من شاء بإرشاده، وأشقى من شاء بإبعاده، عظيم الحكمة بالغ الرشاد.</string>
+    <string name="asm_meaning99" translatable="false">هو الحليم الذي لا يعاجل العصاة بالنقمة، بل يعفوا ويؤخر، ولا يسرع بالفعل قبل أوانه.</string>
+
+    <string name="openNavigationDrawer" translatable="false">Open Navigation Drawer</string>
+    <string name="closeNavigationDrawer" translatable="false">Close Navigation Drawer</string>
+
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/navigation_menu">
+        <item
+            android:id="@+id/home_page"
+            android:icon="@drawable/outline_menu_white_36"
+            android:title="@string/home_page"/>
+        <item
+            android:id="@+id/holy_quran"
+            android:icon="@drawable/outline_menu_white_36"
+            android:title="@string/holy_quran"/>
+        <item
+            android:id="@+id/arkan_eslam"
+            android:icon="@drawable/outline_menu_white_36"
+            android:title="@string/islam_pillars"/>
+        <item
+            android:id="@+id/al_azkar"
+            android:icon="@drawable/outline_menu_white_36"
+            android:title="@string/al_azkar"/>
+        <item
+            android:id="@+id/al_duas"
+            android:icon="@drawable/outline_menu_white_36"
+            android:title="@string/duas"/>
+        <item
+            android:id="@+id/qess_rosl"
+            android:icon="@drawable/outline_menu_white_36"
+            android:title="@string/prophets_stories"/>
+        <item
+            android:id="@+id/asmaa_allah"
+            android:icon="@drawable/outline_menu_white_36"
+            android:title="@string/god_names"/>
+    </group>
+</menu>
