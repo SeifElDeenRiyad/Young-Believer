@@ -2,18 +2,22 @@
     <string name="bsmla" translatable="false">بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم</string>
 
     <string name="app_name">Young Believer</string>
-    <string name="profile_background">Profile Background</string>
+
     <string name="believer_name">Believer Name</string>
     <string name="believer_mail">believer.mail.example.com</string>
+
     <string name="home_page">Home</string>
-
-    <string name="prophets_stories">Prophet\'s Stories</string>
+    <string name="prophets_stories">Prophets\' Stories</string>
     <string name="al_azkar">Al-Azkar</string>
-    <string name="islam_pillars" translatable="false">Islam\'s Pillars</string>
+    <string name="islam_pillars">Islam\'s Pillars</string>
     <string name="holy_quran">Holy Quran</string>
-
     <string name="duas">Duas</string>
-    <string name="quran_dua" translatable="false">القرانية</string>
+    <string name="asmaa_allah_hosna">The 99 Names of Allah</string>
+
+    <string name="rosl_dua">Prophets’</string>
+    <string name="rasol_dua">Muhammad ﷺ</string>
+    <string name="quran_dua">Quranic</string>
+
     <string name="quran_dua1" translatable="false">رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ</string>
     <string name="quran_dua_info1" translatable="false">[البقرة - 201]</string>
     <string name="quran_dua2" translatable="false">رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا وَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَِ</string>
@@ -67,7 +71,6 @@
     <string name="quran_dua26" translatable="false">رَّبِّ اغْفِرْ وَارْحَمْ وَأَنتَ خَيْرُ الرَّاحِمِينَِ</string>
     <string name="quran_dua_info26" translatable="false">[المؤمنون - 118]</string>
 
-    <string name="rasol_dua" translatable="false">النبي ﷺ</string>
     <string name="rasol_dua1" translatable="false">اللَّهُمَّ أنَْتَ رَبيِّ لَا إلِهََ إلَِّا أنَتَ، خَلَقْتنَيِ وَأنََا عَبدُْكَ، وَأنََا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ</string>
     <string name="rasol_dua_info1" translatable="false">رواه البخاري (6306) عن شداد بن أوس وقد وصف النبي هذا الدعاء بأنه سيد الاستغفار</string>
     <string name="rasol_dua2" translatable="false">اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْمًا كَثِيرًا، وَلَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ، فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ وَارْحَمْنِي إِنَّك أَنْتَ الْغَفُورُ الرَّحِيمُ</string>
@@ -127,7 +130,6 @@
     <string name="rasol_dua29" translatable="false">اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ، اللّٰهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ</string>
     <string name="rasol_dua_info29" translatable="false">رواه البخاري (3370) ومسلم (908) عن كعب بن عُجرة</string>
 
-    <string name="rosl_dua" translatable="false">الأنبياء</string>
     <string name="rosl_dua1" translatable="false">رَبَّنَا ظَلَمْنَا أَنفُسَنَا وَإِن لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ</string>
     <string name="rosl_dua_info1" translatable="false">[الأعراف - 23]</string>
     <string name="rosl_dua2" translatable="false">رَّبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِمَن دَخَلَ بَيْتِيَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ وَلَا تَزِدِ الظَّالِمِينَ إِلَّا تَبَارًا</string>
@@ -155,7 +157,6 @@
     <string name="rosl_dua13" translatable="false">إِنَّمَا أَشْكُو بَثِّي وَحُزْنِي إِلَى اللَّهِ</string>
     <string name="rosl_dua_info13" translatable="false">[يوسف - 86]</string>
 
-    <string name="asmaa_allah_hosna">The 99 Names of Allah</string>
     <string name="asm1" translatable="false">الرحمن</string>
     <string name="asm2" translatable="false">الرحيم</string>
     <string name="asm3" translatable="false">الملك</string>
@@ -358,5 +359,6 @@
 
     <string name="openNavigationDrawer" translatable="false">Open Navigation Drawer</string>
     <string name="closeNavigationDrawer" translatable="false">Close Navigation Drawer</string>
-    <string name="rasol_name_image">Rasol Name Image</string>
+    <string name="rasol_name_image" translatable="false">Rasol Name Image</string>
+    <string name="profile_background" translatable="false">Profile Background</string>
 </resources>

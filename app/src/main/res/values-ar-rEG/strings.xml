@@ -1,3 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="believer_name">اسم المؤمن</string>
+    <string name="believer_mail">believer.mail.example.com</string>
+    <string name="prophets_stories">قصص الأنبياء</string>
+    <string name="al_azkar">الأذكار</string>
+    <string name="islam_pillars">أركان الإسلام</string>
+    <string name="home_page">الرئيسية</string>
+    <string name="holy_quran">القرآن الكريم</string>
+    <string name="app_name">المؤمن الصغير</string>
+    <string name="duas">الأدعية</string>
+    <string name="quran_dua">القرانية</string>
+    <string name="rasol_dua">النبي ﷺ</string>
+    <string name="rosl_dua">الأنبياء</string>
+    <string name="asmaa_allah_hosna">أسماء الله الحسنى</string>
+    <string name="rasol_name_image">Prophets</string>
 </resources>

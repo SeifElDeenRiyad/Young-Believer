@@ -35,6 +35,7 @@ public class AsmaaAllahHosnaActivity extends AppCompatActivity implements Naviga
     RecyclerView asmaaAllahRecycler;
     MaterialCardView dynamicCardView;
     TextView asmAllahMeaning;
+    View overlay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -49,6 +50,7 @@ public class AsmaaAllahHosnaActivity extends AppCompatActivity implements Naviga
         dynamicCardView = findViewById(R.id.card_view);
         asmAllahMeaning = findViewById(R.id.asm_allah_meaning);
         asmaaAllahRecycler = findViewById(R.id.asmaa_allah_recycler);
+        overlay = findViewById(R.id.overlay_view);
         asmaaAllahViewModel = new ViewModelProvider(this).get(AsmaaAllahHosnaViewModel.class);
 
         setSupportActionBar(asmaaAllahToolbar);
@@ -84,6 +86,7 @@ public class AsmaaAllahHosnaActivity extends AppCompatActivity implements Naviga
                     {
                         dynamicCardView.setVisibility(View.VISIBLE);
                         asmAllahMeaning.setText(asmaaAllahModel.getAsmAllahMeaning());
+                        overlay.setVisibility(View.VISIBLE);
                     }
                 });
             }
@@ -105,6 +108,7 @@ public class AsmaaAllahHosnaActivity extends AppCompatActivity implements Naviga
         else if(dynamicCardView.isShown())
         {
             dynamicCardView.setVisibility(View.GONE);
+            overlay.setVisibility(View.GONE);
         }
         else {
             super.onBackPressed();

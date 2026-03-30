@@ -31,7 +31,6 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/duas_toolbar"
             android:id="@+id/duas_tabs"
-            android:layoutDirection="rtl"
             android:background="@color/primary_blue"
             app:tabSelectedTextColor="@color/white"
             app:tabTextColor="#A8A19E"
@@ -41,8 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/duas_tabs"
-            android:id="@+id/duas_view_pager"
-            android:layoutDirection="rtl"/>
+            android:id="@+id/duas_view_pager"/>
 
     </RelativeLayout>
 

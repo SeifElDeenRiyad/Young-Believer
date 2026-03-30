@@ -25,27 +25,27 @@
         </activity>
         <activity
             android:name=".ui.QuranActivity"
-            android:label="Holy Quran"
+            android:label="@string/holy_quran"
             android:parentActivityName=".ui.HomeActivity"/>
         <activity
             android:name=".ui.DuasActivity"
-            android:label="Duas"
+            android:label="@string/duas"
             android:parentActivityName=".ui.HomeActivity"/>
         <activity
             android:name=".ui.AzkarActivity"
-            android:label="Al-Azkar"
+            android:label="@string/al_azkar"
             android:parentActivityName=".ui.HomeActivity"/>
         <activity
             android:name=".ui.ArkanEslamActivity"
-            android:label="Eslam'sPillar"
+            android:label="@string/islam_pillars"
             android:parentActivityName=".ui.HomeActivity"/>
         <activity
             android:name=".ui.StoriesActivity"
-            android:label="Prophets Stories"
+            android:label="@string/prophets_stories"
             android:parentActivityName=".ui.HomeActivity"/>
         <activity
             android:name=".ui.AsmaaAllahHosnaActivity"
-            android:label="99 Names of Allah"
+            android:label="@string/asmaa_allah_hosna"
             android:parentActivityName=".ui.HomeActivity"/>
     </application>
 

@@ -94,11 +94,11 @@ public class StoriesActivity extends AppCompatActivity implements NavigationView
         }
         else if(id == R.id.stories)
         {
-            activityManager.openActivityRemovingDuplicate(StoriesActivity.class);
+            storiesDrawer.closeDrawers();
         }
         else if (id == R.id.asmaa_allah)
         {
-            storiesDrawer.closeDrawers();
+            activityManager.openActivityRemovingDuplicate(AsmaaAllahHosnaActivity.class);
         } else { return true;}
 
         new Handler().postDelayed(() -> storiesDrawer.closeDrawers(),200);
