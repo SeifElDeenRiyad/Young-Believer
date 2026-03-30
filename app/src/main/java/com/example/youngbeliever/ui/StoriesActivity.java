@@ -82,7 +82,7 @@ public class StoriesActivity extends AppCompatActivity implements NavigationView
         }
         else if(id == R.id.arkan_eslam)
         {
-            activityManager.openActivityRemovingDuplicate(ArkanActivity.class);
+            activityManager.openActivityRemovingDuplicate(ArkanEslamActivity.class);
         }
         else if(id == R.id.al_azkar)
         {

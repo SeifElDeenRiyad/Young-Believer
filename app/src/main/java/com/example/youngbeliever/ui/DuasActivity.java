@@ -10,11 +10,14 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.youngbeliever.R;
 import com.example.youngbeliever.utils.ActivityManager;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 
 public class DuasActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
 {
@@ -27,11 +30,13 @@ public class DuasActivity extends AppCompatActivity implements NavigationView.On
     {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_duas);
+        setContentView(R.layout.duas_activity);
 
         duasToolbar = findViewById(R.id.app_toolbar);
         duasDrawer = findViewById(R.id.duas_drawer_layout);
         duasNavigation = findViewById(R.id.duas_navigation_view);
+        ViewPager2 viewPager = findViewById(R.id.duas_view_pager);
+        TabLayout tabLayout = findViewById(R.id.duas_tabs);
         activityManager = (ActivityManager) getApplication();
 
         setSupportActionBar(duasToolbar);
@@ -49,6 +54,19 @@ public class DuasActivity extends AppCompatActivity implements NavigationView.On
         duasDrawer.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
         duasNavigation.setNavigationItemSelectedListener(this);
+
+        DuasFragmentsAdapter adapter = new DuasFragmentsAdapter(this);
+        viewPager.setAdapter(adapter);
+
+        new TabLayoutMediator(tabLayout, viewPager,
+                (tab, position) -> {
+                    switch (position) {
+                        case 0 -> tab.setText(getString(R.string.quran_dua)); // title for first tab
+                        case 1 -> tab.setText(getString(R.string.rasol_dua)); // second tab
+                        case 2 -> tab.setText(getString(R.string.rosl_dua));  // third tab
+                    }
+                }
+        ).attach();
     }
 
     @Override
@@ -83,7 +101,7 @@ public class DuasActivity extends AppCompatActivity implements NavigationView.On
         }
         else if(id == R.id.arkan_eslam)
         {
-            activityManager.openActivityRemovingDuplicate(ArkanActivity.class);
+            activityManager.openActivityRemovingDuplicate(ArkanEslamActivity.class);
         }
         else if(id == R.id.al_azkar)
         {

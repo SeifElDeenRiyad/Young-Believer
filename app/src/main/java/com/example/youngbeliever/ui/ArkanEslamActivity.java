@@ -16,7 +16,7 @@ import com.example.youngbeliever.utils.ActivityManager;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
 
-public class ArkanActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
+public class ArkanEslamActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
 {
     MaterialToolbar arkanToolbar;
     DrawerLayout arkanDrawer;

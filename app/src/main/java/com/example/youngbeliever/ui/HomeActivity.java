@@ -27,7 +27,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.home_activity);
 
         homeToolbar = findViewById(R.id.app_toolbar);
         homeDrawer = findViewById(R.id.home_drawer_layout);
@@ -83,7 +83,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         }
         else if(id == R.id.arkan_eslam)
         {
-            activityManager.openActivityRemovingDuplicate(ArkanActivity.class);
+            activityManager.openActivityRemovingDuplicate(ArkanEslamActivity.class);
         }
         else if(id == R.id.al_azkar)
         {

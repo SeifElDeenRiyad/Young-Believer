@@ -16,8 +16,7 @@
         tools:targetApi="31">
         <activity
             android:name=".ui.HomeActivity"
-            android:exported="true"
-            android:theme="@style/Theme.YoungBeliever">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,22 +25,28 @@
         </activity>
         <activity
             android:name=".ui.QuranActivity"
-            android:theme="@style/Theme.YoungBeliever"/>
+            android:label="Holy Quran"
+            android:parentActivityName=".ui.HomeActivity"/>
         <activity
             android:name=".ui.DuasActivity"
-            android:theme="@style/Theme.YoungBeliever"/>
+            android:label="Duas"
+            android:parentActivityName=".ui.HomeActivity"/>
         <activity
             android:name=".ui.AzkarActivity"
-            android:theme="@style/Theme.YoungBeliever"/>
+            android:label="Al-Azkar"
+            android:parentActivityName=".ui.HomeActivity"/>
         <activity
-            android:name=".ui.ArkanActivity"
-            android:theme="@style/Theme.YoungBeliever"/>
+            android:name=".ui.ArkanEslamActivity"
+            android:label="Eslam'sPillar"
+            android:parentActivityName=".ui.HomeActivity"/>
         <activity
             android:name=".ui.StoriesActivity"
-            android:theme="@style/Theme.YoungBeliever"/>
+            android:label="Prophets Stories"
+            android:parentActivityName=".ui.HomeActivity"/>
         <activity
             android:name=".ui.AsmaaAllahHosnaActivity"
-            android:theme="@style/Theme.YoungBeliever"/>
+            android:label="99 Names of Allah"
+            android:parentActivityName=".ui.HomeActivity"/>
     </application>
 
 </manifest>

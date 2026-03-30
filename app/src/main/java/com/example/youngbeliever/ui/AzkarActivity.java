@@ -83,7 +83,7 @@ public class AzkarActivity extends AppCompatActivity implements NavigationView.O
         }
         else if(id == R.id.arkan_eslam)
         {
-            activityManager.openActivityRemovingDuplicate(ArkanActivity.class);
+            activityManager.openActivityRemovingDuplicate(ArkanEslamActivity.class);
         }
         else if(id == R.id.al_azkar)
         {

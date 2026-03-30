@@ -5,15 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.DuasActivity"
+    tools:context=".ui.HomeActivity"
     android:orientation="vertical"
     android:fitsSystemWindows="true"
-    android:id="@+id/duas_drawer_layout">
+    android:id="@+id/home_drawer_layout">
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:id="@+id/duas_navigation_view"
+        android:id="@+id/home_navigation_view"
         app:menu="@menu/main_navigation_menu"
         app:headerLayout="@layout/main_navigation_header"
         android:layout_gravity="start"/>
@@ -24,7 +24,7 @@
 
         <include
             layout="@layout/main_toolbar"
-            android:id="@+id/duas_toolbar"/>
+            android:id="@+id/home_toolbar"/>
 
     </RelativeLayout>
 

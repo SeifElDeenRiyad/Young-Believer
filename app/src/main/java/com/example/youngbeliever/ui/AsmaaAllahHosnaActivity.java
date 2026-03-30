@@ -40,7 +40,7 @@ public class AsmaaAllahHosnaActivity extends AppCompatActivity implements Naviga
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_asmaa_allah_hosna);
+        setContentView(R.layout.asmaa_allah_hosna_activity);
 
         asmaaAllahToolbar = findViewById(R.id.app_toolbar);
         asmaaAllahDrawer = findViewById(R.id.asmaa_allah_drawer_layout);
@@ -131,7 +131,7 @@ public class AsmaaAllahHosnaActivity extends AppCompatActivity implements Naviga
         }
         else if(id == R.id.arkan_eslam)
         {
-            activityManager.openActivityRemovingDuplicate(ArkanActivity.class);
+            activityManager.openActivityRemovingDuplicate(ArkanEslamActivity.class);
         }
         else if(id == R.id.al_azkar)
         {
