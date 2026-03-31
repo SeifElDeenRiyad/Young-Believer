@@ -10,11 +10,14 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.youngbeliever.R;
 import com.example.youngbeliever.utils.ActivityManager;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 
 public class ArkanEslamActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
 {
@@ -27,11 +30,13 @@ public class ArkanEslamActivity extends AppCompatActivity implements NavigationV
     {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_arkan);
+        setContentView(R.layout.arkan_activity);
 
         arkanToolbar = findViewById(R.id.app_toolbar);
         arkanDrawer = findViewById(R.id.arkan_drawer_layout);
         arkanNavigation = findViewById(R.id.arkan_navigation_view);
+        ViewPager2 viewPager = findViewById(R.id.arkan_view_pager);
+        TabLayout tabLayout = findViewById(R.id.arkan_tabs);
         activityManager = (ActivityManager) getApplication();
 
         setSupportActionBar(arkanToolbar);
@@ -49,6 +54,21 @@ public class ArkanEslamActivity extends AppCompatActivity implements NavigationV
         arkanDrawer.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
         arkanNavigation.setNavigationItemSelectedListener(this);
+
+        ArkanFragmentsAdapter adapter = new ArkanFragmentsAdapter(this);
+        viewPager.setAdapter(adapter);
+
+        new TabLayoutMediator(tabLayout, viewPager,
+                (tab, position) -> {
+                    switch (position) {
+                        case 0 -> tab.setText(getString(R.string.islam_pillar1)); // title for first tab
+                        case 1 -> tab.setText(getString(R.string.islam_pillar2)); // second tab
+                        case 2 -> tab.setText(getString(R.string.islam_pillar3));  // third tab
+                        case 3 -> tab.setText(getString(R.string.islam_pillar4));  // fourth tab
+                        case 4 -> tab.setText(getString(R.string.islam_pillar5));  // fifth tab
+                    }
+                }
+        ).attach();
     }
 
     @Override

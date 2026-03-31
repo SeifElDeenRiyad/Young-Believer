@@ -32,9 +32,7 @@ public class AsmaaAllahHosnaAdapter extends RecyclerView.Adapter<AsmaaAllahHosna
     {
         holder.asmAllah.setText(AsmaaAllah.get(position).getAsmAllah());
 
-        holder.itemView.setOnClickListener(v ->{
-            itemClickListener.onItemClick(AsmaaAllah.get(position));
-        });
+        holder.itemView.setOnClickListener(v -> itemClickListener.onItemClick(AsmaaAllah.get(position)));
     }
 
     @Override

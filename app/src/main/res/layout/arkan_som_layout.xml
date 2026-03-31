@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/som"
+        android:padding="7dp"
+        android:gravity="start"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        android:id="@+id/som"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:src="@drawable/som"
+        android:id="@+id/som_image"
+        android:padding="10dp"
+        android:contentDescription="@string/image_resource" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".8"
+        android:fillViewport="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/som_info"
+            android:padding="7dp"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            android:id="@+id/som_info"/>
+
+    </ScrollView>
+
+</LinearLayout>

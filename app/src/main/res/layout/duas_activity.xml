@@ -34,12 +34,14 @@
             android:background="@color/primary_blue"
             app:tabSelectedTextColor="@color/white"
             app:tabTextColor="#A8A19E"
+            android:layoutDirection="rtl"
             android:elevation="@dimen/toolbar_elevation"/>
 
         <androidx.viewpager2.widget.ViewPager2
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/duas_tabs"
+            android:layoutDirection="rtl"
             android:id="@+id/duas_view_pager"/>
 
     </RelativeLayout>

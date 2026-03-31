@@ -95,7 +95,7 @@ public class AsmaaAllahHosnaActivity extends AppCompatActivity implements Naviga
         int noOfCol = 3;
         asmaaAllahRecycler.setLayoutManager(new GridLayoutManager(this, noOfCol));
         //direction to RTL
-        asmaaAllahRecycler.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+        //asmaaAllahRecycler.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
     }
 
     @Override

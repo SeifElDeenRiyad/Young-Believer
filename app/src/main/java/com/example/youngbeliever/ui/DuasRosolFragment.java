@@ -36,6 +36,7 @@ public class DuasRosolFragment extends Fragment
         DuasAdapter adapter = new DuasAdapter();
 
         DuasRosolRecycler.setAdapter(adapter);
+        DuasRosolRecycler.setLayoutManager(new LinearLayoutManager(getContext()));
 
         DuasRosolViewModel.getRosolDua();
 
@@ -54,8 +55,8 @@ public class DuasRosolFragment extends Fragment
             }
         });
 
-        DuasRosolRecycler.setLayoutManager(new LinearLayoutManager(getContext()));
-        DuasRosolRecycler.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+
+        //DuasRosolRecycler.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
         return rootView;
     }
 }

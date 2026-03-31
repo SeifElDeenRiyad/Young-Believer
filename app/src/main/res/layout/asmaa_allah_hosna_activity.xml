@@ -34,7 +34,8 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/asmaa_allah_recycler"/>
+                android:id="@+id/asmaa_allah_recycler"
+                android:layoutDirection="rtl"/>
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"

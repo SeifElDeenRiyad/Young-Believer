@@ -20,7 +20,7 @@ import java.util.ArrayList;
 
 public class DuasQuranFragment extends Fragment
 {
-    DuasQuranViewModel DuasQuranViewModel;
+    DuasQuranViewModel duasQuranViewModel;
     public DuasQuranFragment()
     {
     }
@@ -30,16 +30,17 @@ public class DuasQuranFragment extends Fragment
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
     {
         View rootView = inflater.inflate(R.layout.duas_list, container, false);
-        DuasQuranViewModel = new ViewModelProvider(this).get(DuasQuranViewModel.class);
+        duasQuranViewModel = new ViewModelProvider(this).get(DuasQuranViewModel.class);
 
         RecyclerView duasQuranRecycler = rootView.findViewById(R.id.duas_recycler);
         DuasAdapter adapter = new DuasAdapter();
 
         duasQuranRecycler.setAdapter(adapter);
+        duasQuranRecycler.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        DuasQuranViewModel.getQuranDua();
+        duasQuranViewModel.getQuranDua();
 
-        DuasQuranViewModel.duaData.observe(getViewLifecycleOwner(), new Observer<ArrayList<DuasModel>>()
+        duasQuranViewModel.duaData.observe(getViewLifecycleOwner(), new Observer<ArrayList<DuasModel>>()
         {
             @Override
             public void onChanged(ArrayList<DuasModel> duasModels)
@@ -54,8 +55,7 @@ public class DuasQuranFragment extends Fragment
             }
         });
 
-        duasQuranRecycler.setLayoutManager(new LinearLayoutManager(getContext()));
-        duasQuranRecycler.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+        //duasQuranRecycler.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
         return rootView;
     }
 }
