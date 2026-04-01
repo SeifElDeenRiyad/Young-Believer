@@ -5,6 +5,7 @@ import android.os.Handler;
 import android.view.MenuItem;
 
 import androidx.activity.EdgeToEdge;
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -67,19 +68,28 @@ public class DuasActivity extends AppCompatActivity implements NavigationView.On
                     }
                 }
         ).attach();
+
+        //Handles Back Behavior
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true)
+        {
+            @Override
+            public void handleOnBackPressed()
+            {
+                if (duasDrawer.isDrawerOpen(GravityCompat.START))
+                {
+                    duasDrawer.closeDrawer(GravityCompat.START);
+
+                }
+                else
+                {
+                    // default behavior (like old super.onBackPressed)
+                    setEnabled(false);
+                    getOnBackPressedDispatcher().onBackPressed();
+                }
+            }
+        });
     }
 
-    @Override
-    public void onBackPressed()
-    {
-        if(duasDrawer.isDrawerOpen(GravityCompat.START))
-        {
-            duasDrawer.closeDrawer(GravityCompat.START);
-        }
-        else {
-            super.onBackPressed();
-        }
-    }
     @Override
     public void onResume()
     {

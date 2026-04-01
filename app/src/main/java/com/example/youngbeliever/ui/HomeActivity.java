@@ -3,8 +3,10 @@ package com.example.youngbeliever.ui;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -49,19 +51,28 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         homeDrawer.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
         homeNavigation.setNavigationItemSelectedListener(this);
+
+        //Handles Back Behavior
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true)
+        {
+            @Override
+            public void handleOnBackPressed()
+            {
+                if (homeDrawer.isDrawerOpen(GravityCompat.START))
+                {
+                    homeDrawer.closeDrawer(GravityCompat.START);
+
+                }
+                else
+                {
+                    // default behavior (like old super.onBackPressed)
+                    setEnabled(false);
+                    getOnBackPressedDispatcher().onBackPressed();
+                }
+            }
+        });
     }
 
-    @Override
-    public void onBackPressed()
-    {
-        if(homeDrawer.isDrawerOpen(GravityCompat.START))
-        {
-            homeDrawer.closeDrawer(GravityCompat.START);
-        }
-        else {
-            super.onBackPressed();
-        }
-    }
     @Override
     public void onResume()
     {

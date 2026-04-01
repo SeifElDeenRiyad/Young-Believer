@@ -6,6 +6,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,6 +22,7 @@ import com.example.youngbeliever.models.AsmaaAllahHosnaModel;
 import com.example.youngbeliever.utils.ActivityManager;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.card.MaterialCardView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import java.util.ArrayList;
 
@@ -36,6 +38,7 @@ public class AsmaaAllahHosnaActivity extends AppCompatActivity implements Naviga
     MaterialCardView dynamicCardView;
     TextView asmAllahMeaning;
     View overlay;
+    FloatingActionButton fab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -50,6 +53,7 @@ public class AsmaaAllahHosnaActivity extends AppCompatActivity implements Naviga
         dynamicCardView = findViewById(R.id.card_view);
         asmAllahMeaning = findViewById(R.id.asm_allah_meaning);
         asmaaAllahRecycler = findViewById(R.id.asmaa_allah_recycler);
+        fab = findViewById(R.id.fab_asmaa_allah);
         overlay = findViewById(R.id.overlay_view);
         asmaaAllahViewModel = new ViewModelProvider(this).get(AsmaaAllahHosnaViewModel.class);
 
@@ -87,8 +91,22 @@ public class AsmaaAllahHosnaActivity extends AppCompatActivity implements Naviga
                         dynamicCardView.setVisibility(View.VISIBLE);
                         asmAllahMeaning.setText(asmaaAllahModel.getAsmAllahMeaning());
                         overlay.setVisibility(View.VISIBLE);
+                        fab.setVisibility(View.VISIBLE);
                     }
                 });
+            }
+        });
+
+        fab.setOnClickListener(view ->
+        {
+            if(fab.isShown())
+            {
+                fab.setVisibility(View.GONE);
+            }
+            if(dynamicCardView.isShown())
+            {
+                dynamicCardView.setVisibility(View.GONE);
+                overlay.setVisibility(View.GONE);
             }
         });
 
@@ -96,23 +114,32 @@ public class AsmaaAllahHosnaActivity extends AppCompatActivity implements Naviga
         asmaaAllahRecycler.setLayoutManager(new GridLayoutManager(this, noOfCol));
         //direction to RTL
         //asmaaAllahRecycler.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
-    }
 
-    @Override
-    public void onBackPressed()
-    {
-        if(asmaaAllahDrawer.isDrawerOpen(GravityCompat.START))
+        //Handles Back Behavior
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true)
         {
-            asmaaAllahDrawer.closeDrawer(GravityCompat.START);
-        }
-        else if(dynamicCardView.isShown())
-        {
-            dynamicCardView.setVisibility(View.GONE);
-            overlay.setVisibility(View.GONE);
-        }
-        else {
-            super.onBackPressed();
-        }
+            @Override
+            public void handleOnBackPressed()
+            {
+                if (asmaaAllahDrawer.isDrawerOpen(GravityCompat.START))
+                {
+                    asmaaAllahDrawer.closeDrawer(GravityCompat.START);
+
+                }
+                else if (fab.isShown() && dynamicCardView.isShown())
+                {
+                    fab.setVisibility(View.GONE);
+                    dynamicCardView.setVisibility(View.GONE);
+                    overlay.setVisibility(View.GONE);
+                }
+                else
+                {
+                    // default behavior (like old super.onBackPressed)
+                    setEnabled(false);
+                    getOnBackPressedDispatcher().onBackPressed();
+                }
+            }
+        });
     }
 
     public void onResume()

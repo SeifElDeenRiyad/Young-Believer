@@ -5,6 +5,7 @@ import android.os.Handler;
 import android.view.MenuItem;
 
 import androidx.activity.EdgeToEdge;
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -49,19 +50,28 @@ public class StoriesActivity extends AppCompatActivity implements NavigationView
         storiesDrawer.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
         storiesNavigation.setNavigationItemSelectedListener(this);
+
+        //Handles Back Behavior
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true)
+        {
+            @Override
+            public void handleOnBackPressed()
+            {
+                if (storiesDrawer.isDrawerOpen(GravityCompat.START))
+                {
+                    storiesDrawer.closeDrawer(GravityCompat.START);
+
+                }
+                else
+                {
+                    // default behavior (like old super.onBackPressed)
+                    setEnabled(false);
+                    getOnBackPressedDispatcher().onBackPressed();
+                }
+            }
+        });
     }
 
-    @Override
-    public void onBackPressed()
-    {
-        if(storiesDrawer.isDrawerOpen(GravityCompat.START))
-        {
-            storiesDrawer.closeDrawer(GravityCompat.START);
-        }
-        else {
-            super.onBackPressed();
-        }
-    }
     @Override
     public void onResume()
     {

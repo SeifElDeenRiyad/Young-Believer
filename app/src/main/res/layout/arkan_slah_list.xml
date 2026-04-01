@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,35 +7,64 @@
     android:orientation="vertical"
     android:id="@+id/page">
 
-    <com.google.android.material.card.MaterialCardView
-        android:layout_width="match_parent"
-        android:layout_height="181dp"
-        app:cardElevation="@dimen/card_elevation"
-        android:id="@+id/slah_video_container"
-        android:visibility="gone">
-
-        <VideoView
-            android:id="@+id/slah_video_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-    </com.google.android.material.card.MaterialCardView>
-
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_below="@id/slah_video_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/arkan_slah_recycler"/>
 
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:cardElevation="@dimen/card_elevation"
+        android:id="@+id/slah_video_container"
+        android:background="@color/dark_blue"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:background="@color/dark_blue"
+                android:padding="10dp"
+                android:id="@+id/slah_video_title"
+                android:textSize="20sp"
+                android:visibility="gone"/>
+
+            <VideoView
+                android:id="@+id/slah_video_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <View
+        android:id="@+id/overlay_view_slah"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true"/>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/fab_arkan_salah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:backgroundTint="@color/white"
+        android:layout_gravity="top|start"
+        android:backgroundTint="@color/dark_blue"
         android:src="@drawable/outline_close_white_48"
         android:layout_margin="16dp"
         android:visibility="gone"
         android:contentDescription="@string/x" />
 
-</RelativeLayout>
+</FrameLayout>

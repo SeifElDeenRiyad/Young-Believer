@@ -6,8 +6,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.MediaController;
+import android.widget.TextView;
 import android.widget.VideoView;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -26,21 +28,29 @@ import java.util.ArrayList;
 public class ArkanSlahFragment extends Fragment
 {
     VideoView slahVideoView;
-    ArkanSlahViewModel arkanSlahViewModel;
+    MaterialCardView slahVideoContainer;
+    FloatingActionButton fab;
+    View overlay;
+    TextView slahVideoTitle;
+
     public ArkanSlahFragment()
     {
     }
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
+    {
 
         View rootView = inflater.inflate(R.layout.arkan_slah_list, container, false);
-        arkanSlahViewModel = new ViewModelProvider(this).get(ArkanSlahViewModel.class);
+        ArkanSlahViewModel arkanSlahViewModel = new ViewModelProvider(this).get(ArkanSlahViewModel.class);
 
         slahVideoView = rootView.findViewById(R.id.slah_video_view);
-        MaterialCardView slahVideoContainer = rootView.findViewById(R.id.slah_video_container);
-        FloatingActionButton fab = rootView.findViewById(R.id.fab);
+        slahVideoContainer = rootView.findViewById(R.id.slah_video_container);
+        fab = rootView.findViewById(R.id.fab_arkan_salah);
+        overlay = rootView.findViewById(R.id.overlay_view_slah);
+        slahVideoTitle = rootView.findViewById(R.id.slah_video_title);
+
         MediaController mediaController = new MediaController(requireContext());
         slahVideoView.setMediaController(mediaController);
         mediaController.setAnchorView(slahVideoView);
@@ -63,8 +73,6 @@ public class ArkanSlahFragment extends Fragment
                     @Override
                     public void onItemClick(ArkanSlahModel arkanSlahModel)
                     {
-                        slahVideoContainer.setVisibility(View.VISIBLE);
-                        fab.setVisibility(View.VISIBLE);
                         int videoName = arkanSlahModel.getSlahWay();
                         playVideo(videoName);
                     }
@@ -72,17 +80,22 @@ public class ArkanSlahFragment extends Fragment
             }
         });
 
-        fab.setOnClickListener(new View.OnClickListener()
-        {
+        fab.setOnClickListener(view -> closeVideo());
+
+        //back button logic
+        requireActivity().getOnBackPressedDispatcher().addCallback(
+                getViewLifecycleOwner(), new OnBackPressedCallback(true) {
             @Override
-            public void onClick(View view)
+            public void handleOnBackPressed()
             {
-                slahVideoView.stopPlayback();
-                slahVideoContainer.setVisibility(View.GONE);
-                fab.setVisibility(View.GONE);
+                if(isVideoOpen()){closeVideo();}
+             else {
+                        // allow activity to handle back
+                        setEnabled(false);
+                        requireActivity().getOnBackPressedDispatcher().onBackPressed();
+                    }
             }
         });
-
         return rootView;
     }
 
@@ -93,76 +106,116 @@ public class ArkanSlahFragment extends Fragment
         {
             videoPath = "android.resource://" + requireActivity().getPackageName() + "/" + R.raw.one;
             slahVideoView.setVideoURI(Uri.parse(videoPath));
+            showContainer(videoName);
             slahVideoView.start();
         }
         else if (videoName == R.string.slah_way_2)
         {
             videoPath = "android.resource://" + requireActivity().getPackageName() + "/" + R.raw.two;
             slahVideoView.setVideoURI(Uri.parse(videoPath));
+            showContainer(videoName);
             slahVideoView.start();
         }
         else if (videoName == R.string.slah_way_3)
         {
             videoPath = "android.resource://" + requireActivity().getPackageName() + "/" + R.raw.three;
             slahVideoView.setVideoURI(Uri.parse(videoPath));
+            showContainer(videoName);
             slahVideoView.start();
         }
         else if (videoName == R.string.slah_way_4)
         {
             videoPath = "android.resource://" + requireActivity().getPackageName() + "/" + R.raw.four;
             slahVideoView.setVideoURI(Uri.parse(videoPath));
+            showContainer(videoName);
             slahVideoView.start();
         }
         else if (videoName == R.string.slah_way_5)
         {
             videoPath = "android.resource://" + requireActivity().getPackageName() + "/" + R.raw.five;
             slahVideoView.setVideoURI(Uri.parse(videoPath));
+            showContainer(videoName);
             slahVideoView.start();
         }
         else if (videoName == R.string.slah_way_6)
         {
             videoPath = "android.resource://" + requireActivity().getPackageName() + "/" + R.raw.six;
             slahVideoView.setVideoURI(Uri.parse(videoPath));
+            showContainer(videoName);
             slahVideoView.start();
         }
         else if (videoName == R.string.slah_way_7)
         {
             videoPath = "android.resource://" + requireActivity().getPackageName() + "/" + R.raw.seven;
             slahVideoView.setVideoURI(Uri.parse(videoPath));
+            showContainer(videoName);
             slahVideoView.start();
         }
         else if (videoName == R.string.slah_way_8)
         {
             videoPath = "android.resource://" + requireActivity().getPackageName() + "/" + R.raw.eight;
             slahVideoView.setVideoURI(Uri.parse(videoPath));
+            showContainer(videoName);
             slahVideoView.start();
         }
         else if (videoName == R.string.slah_way_9)
         {
             videoPath = "android.resource://" + requireActivity().getPackageName() + "/" + R.raw.nine;
             slahVideoView.setVideoURI(Uri.parse(videoPath));
+            showContainer(videoName);
             slahVideoView.start();
         }
         else if (videoName == R.string.slah_way_10)
         {
             videoPath = "android.resource://" + requireActivity().getPackageName() + "/" + R.raw.ten;
             slahVideoView.setVideoURI(Uri.parse(videoPath));
+            showContainer(videoName);
             slahVideoView.start();
         }
         else if (videoName == R.string.slah_way_11)
         {
             videoPath = "android.resource://" + requireActivity().getPackageName() + "/" + R.raw.eleven;
             slahVideoView.setVideoURI(Uri.parse(videoPath));
+            showContainer(videoName);
             slahVideoView.start();
         }
     }
 
+    private void showContainer(int videoName)
+    {
+        slahVideoContainer.setVisibility(View.VISIBLE);
+        slahVideoTitle.setVisibility(View.VISIBLE);
+        overlay.setVisibility(View.VISIBLE);
+        slahVideoView.setVisibility(View.VISIBLE);
+        fab.setVisibility(View.VISIBLE);
+        slahVideoTitle.setText(videoName);
+    }
+
     @Override
-    public void onPause() {
+    public void onPause()
+    {
         super.onPause();
-        if(slahVideoView.isPlaying())
+        if (slahVideoView.isPlaying())
         {
             slahVideoView.stopPlayback();
         }
+    }
+
+    public boolean isVideoOpen()
+    {
+        return slahVideoContainer.getVisibility() == View.VISIBLE;
+    }
+
+    public void closeVideo()
+    {
+        slahVideoView.setVisibility(View.GONE);
+        if (slahVideoView.isPlaying())
+        {
+            slahVideoView.stopPlayback();
+        }
+        slahVideoTitle.setVisibility(View.GONE);
+        overlay.setVisibility(View.GONE);
+        fab.setVisibility(View.GONE);
+        slahVideoContainer.setVisibility(View.GONE);
     }
 }
