@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
 
-import androidx.activity.EdgeToEdge;
 import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -69,7 +68,6 @@ public class ArkanEslamActivity extends AppCompatActivity implements NavigationV
                     }
                 }
         ).attach();
-
         //Handles Back Behavior
         getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
             @Override

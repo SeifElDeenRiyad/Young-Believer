@@ -33,7 +33,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight=".8"
-        android:fillViewport="true">
+        android:fillViewport="true"
+        android:id="@+id/arkan_zkah_scroll">
 
         <TextView
             android:layout_width="match_parent"

@@ -36,7 +36,6 @@ public class ArkanSlahFragment extends Fragment
     public ArkanSlahFragment()
     {
     }
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
@@ -79,16 +78,14 @@ public class ArkanSlahFragment extends Fragment
                 });
             }
         });
-
-        fab.setOnClickListener(view -> closeVideo());
-
+        fab.setOnClickListener(view -> hideContainer());
         //back button logic
         requireActivity().getOnBackPressedDispatcher().addCallback(
                 getViewLifecycleOwner(), new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed()
             {
-                if(isVideoOpen()){closeVideo();}
+                if(isVideoOpen()){hideContainer();}
              else {
                         // allow activity to handle back
                         setEnabled(false);
@@ -98,7 +95,8 @@ public class ArkanSlahFragment extends Fragment
         });
         return rootView;
     }
-
+    //helper to play the video by parsing the setting the destination
+    //and calling the show() function to show the necessary components
     private void playVideo(int videoName)
     {
         String videoPath;
@@ -180,7 +178,7 @@ public class ArkanSlahFragment extends Fragment
             slahVideoView.start();
         }
     }
-
+    //function to show the necessary components when needed
     private void showContainer(int videoName)
     {
         slahVideoContainer.setVisibility(View.VISIBLE);
@@ -190,23 +188,8 @@ public class ArkanSlahFragment extends Fragment
         fab.setVisibility(View.VISIBLE);
         slahVideoTitle.setText(videoName);
     }
-
-    @Override
-    public void onPause()
-    {
-        super.onPause();
-        if (slahVideoView.isPlaying())
-        {
-            slahVideoView.stopPlayback();
-        }
-    }
-
-    public boolean isVideoOpen()
-    {
-        return slahVideoContainer.getVisibility() == View.VISIBLE;
-    }
-
-    public void closeVideo()
+    //function to hide the necessary components when needed
+    public void hideContainer()
     {
         slahVideoView.setVisibility(View.GONE);
         if (slahVideoView.isPlaying())
@@ -217,5 +200,18 @@ public class ArkanSlahFragment extends Fragment
         overlay.setVisibility(View.GONE);
         fab.setVisibility(View.GONE);
         slahVideoContainer.setVisibility(View.GONE);
+    }
+    public boolean isVideoOpen()
+    {
+        return slahVideoContainer.getVisibility() == View.VISIBLE;
+    }
+    @Override
+    public void onPause()
+    {
+        super.onPause();
+        if (slahVideoView.isPlaying())
+        {
+            slahVideoView.stopPlayback();
+        }
     }
 }
