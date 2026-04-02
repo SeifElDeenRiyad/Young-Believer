@@ -30,7 +30,6 @@ public class ArkanEslamActivity extends AppCompatActivity implements NavigationV
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.arkan_activity);
 
         arkanToolbar = findViewById(R.id.app_toolbar);

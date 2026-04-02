@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.ArkanEslamActivity"
     android:orientation="vertical"
-    android:fitsSystemWindows="true"
     android:id="@+id/arkan_drawer_layout">
 
     <com.google.android.material.navigation.NavigationView

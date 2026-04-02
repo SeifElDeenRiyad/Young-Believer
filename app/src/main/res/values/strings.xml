@@ -185,7 +185,27 @@
     <string name="rosl_dua13" translatable="false">إِنَّمَا أَشْكُو بَثِّي وَحُزْنِي إِلَى اللَّهِ</string>
     <string name="rosl_dua_info13" translatable="false">[يوسف - 86]</string>
 
-    <string name="prophets_stories">Prophets\' Stories</string>
+    <string name="prophets_stories">Prophet\'s Stories</string>
+    <string name="prophets_stories1" translatable="false">قصة آدم -عليه السلام-</string>
+    <string name="prophets_stories2" translatable="false">قصة نوح -عليه السلام-</string>
+    <string name="prophets_stories3" translatable="false">قصة إدريس -عليه السلام-</string>
+    <string name="prophets_stories4" translatable="false">قصة هود -عليه السلام-</string>
+    <string name="prophets_stories5" translatable="false">قصة صالح -عليه السلام-</string>
+    <string name="prophets_stories6" translatable="false">قصة إبراهيم وإسماعيل -عليهما السلام-</string>
+    <string name="prophets_stories7" translatable="false">قصة لوط -عليه السلام-</string>
+    <string name="prophets_stories8" translatable="false">قصة إسحاق ويعقوب -عليهما السلام-</string>
+    <string name="prophets_stories9" translatable="false">قصة يوسف -عليه السلام-</string>
+    <string name="prophets_stories10" translatable="false">قصة شعيب -عليه السلام-</string>
+    <string name="prophets_stories11" translatable="false">قصة أيوب -عليه السلام-</string>
+    <string name="prophets_stories12" translatable="false">قصة يونس -عليه السلام-</string>
+    <string name="prophets_stories13" translatable="false">قصة موسي وهارون -عليهما السلام-</string>
+    <string name="prophets_stories14" translatable="false">قصة داود -عليه السلام-</string>
+    <string name="prophets_stories15" translatable="false">قصة سليمان -عليه السلام-</string>
+    <string name="prophets_stories16" translatable="false">قصة إلياس -عليه السلام-</string>
+    <string name="prophets_stories17" translatable="false">قصة اليسع -عليه السلام-</string>
+    <string name="prophets_stories18" translatable="false">قصة ذي الكفل -عليه السلام-</string>
+    <string name="prophets_stories19" translatable="false">قصة زكريا ويحيي -عليهما السلام-</string>
+    <string name="prophets_stories20" translatable="false">قصة سيدنا عيسي -عليه السلام-</string>
 
     <string name="asmaa_allah_hosna">The 99 Names of Allah</string>
 
@@ -395,4 +415,6 @@
     <string name="profile_background" translatable="false">Profile Background</string>
     <string name="image_resource" translatable="false">Image Resource</string>
     <string name="x">X</string>
+    <string name="content_description">Content Descriptoin</string>
+    <string name="pdf_load_error">Unable to open this PDF.</string>
 </resources>

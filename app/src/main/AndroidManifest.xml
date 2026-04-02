@@ -44,6 +44,9 @@
             android:label="@string/prophets_stories"
             android:parentActivityName=".ui.HomeActivity"/>
         <activity
+            android:name=".ui.StoriesPdfActivity"
+            android:parentActivityName=".ui.StoriesActivity"/>
+        <activity
             android:name=".ui.AsmaaAllahHosnaActivity"
             android:label="@string/asmaa_allah_hosna"
             android:parentActivityName=".ui.HomeActivity"/>
