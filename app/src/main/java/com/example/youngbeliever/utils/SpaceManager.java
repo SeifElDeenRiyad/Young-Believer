@@ -1,7 +1,6 @@
 package com.example.youngbeliever.utils;
 
 import android.view.View;
-import android.widget.ScrollView;
 
 import androidx.annotation.NonNull;
 import androidx.core.graphics.Insets;
@@ -9,18 +8,16 @@ import androidx.core.view.OnApplyWindowInsetsListener;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-//helper class to make sure the bottom content of the app does
-//overlap with the bottom system bars
+//helper class to  does not overlap with the bottom system bars
 public class SpaceManager
 {
-    //Sets padding at the bottom of the scroll view to avoid lost text in the systems bars.
-    public void setBottomPadding(ScrollView scrollView)
+    //Sets padding at the bottom of the view to avoid lost text in the systems bars.
+    public void setBottomPadding(View view)
     {
         //initial padding from the view itself
-        int initialBottomPadding = scrollView.getPaddingBottom();
+        int initialBottomPadding = view.getPaddingBottom();
 
-        //apply the listener on the scroll view
-        ViewCompat.setOnApplyWindowInsetsListener(scrollView, new OnApplyWindowInsetsListener()
+        ViewCompat.setOnApplyWindowInsetsListener(view, new OnApplyWindowInsetsListener()
         {
             @NonNull
             @Override

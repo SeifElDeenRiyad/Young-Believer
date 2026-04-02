@@ -1,16 +1,10 @@
 package com.example.youngbeliever.ui;
 
 import android.os.Bundle;
-import android.os.Handler;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import androidx.activity.OnBackPressedCallback;
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
@@ -19,65 +13,49 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.youngbeliever.R;
 import com.example.youngbeliever.models.AsmaaAllahHosnaModel;
-import com.example.youngbeliever.utils.ActivityManager;
+import com.example.youngbeliever.utils.BackButtonManager;
+import com.example.youngbeliever.utils.DrawerNavigationAppBarManager;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
+
 import java.util.ArrayList;
 
 
-public class AsmaaAllahHosnaActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
+public class AsmaaAllahHosnaActivity extends AppCompatActivity
 {
-    MaterialToolbar asmaaAllahToolbar;
-    DrawerLayout asmaaAllahDrawer;
-    NavigationView asmaaAllahNavigation;
-    ActivityManager activityManager;
-    AsmaaAllahHosnaViewModel asmaaAllahViewModel;
-    RecyclerView asmaaAllahRecycler;
-    MaterialCardView dynamicCardView;
-    TextView asmAllahMeaning;
-    View overlay;
-    FloatingActionButton fab;
-
+    DrawerNavigationAppBarManager drawerNavigationAppBarManager;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.asmaa_allah_hosna_activity);
 
-        asmaaAllahToolbar = findViewById(R.id.app_toolbar);
-        asmaaAllahDrawer = findViewById(R.id.asmaa_allah_drawer_layout);
-        asmaaAllahNavigation = findViewById(R.id.asmaa_allah_navigation_view);
-        activityManager = (ActivityManager) getApplication();
-        dynamicCardView = findViewById(R.id.card_view);
-        asmAllahMeaning = findViewById(R.id.asm_allah_meaning);
-        asmaaAllahRecycler = findViewById(R.id.asmaa_allah_recycler);
-        fab = findViewById(R.id.fab_asmaa_allah);
-        overlay = findViewById(R.id.overlay_view);
-        asmaaAllahViewModel = new ViewModelProvider(this).get(AsmaaAllahHosnaViewModel.class);
+        MaterialToolbar asmaaAllahToolbar = findViewById(R.id.app_toolbar);
+        DrawerLayout asmaaAllahDrawer = findViewById(R.id.asmaa_allah_drawer_layout);
+        NavigationView asmaaAllahNavigation = findViewById(R.id.asmaa_allah_navigation_view);
+        MaterialCardView dynamicCardView = findViewById(R.id.card_view);
+        TextView asmAllahMeaning = findViewById(R.id.asm_allah_meaning);
+        RecyclerView asmaaAllahRecycler = findViewById(R.id.asmaa_allah_recycler);
+        FloatingActionButton fab = findViewById(R.id.fab_asmaa_allah);
+        View overlay = findViewById(R.id.overlay_view);
 
-        setSupportActionBar(asmaaAllahToolbar);
+        BackButtonManager backButtonManager = new BackButtonManager();
 
-        asmaaAllahNavigation.bringToFront();
-
-        ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(
-                this,
-                asmaaAllahDrawer,
-                asmaaAllahToolbar,
-                R.string.openNavigationDrawer,
-                R.string.closeNavigationDrawer
-        );
-        asmaaAllahDrawer.addDrawerListener(actionBarDrawerToggle);
-        actionBarDrawerToggle.syncState();
-
-        asmaaAllahNavigation.setNavigationItemSelectedListener(this);
+        drawerNavigationAppBarManager = new DrawerNavigationAppBarManager();
+        drawerNavigationAppBarManager.setup(this, asmaaAllahDrawer, asmaaAllahNavigation, asmaaAllahToolbar, R.id.asmaa_allah);
 
         AsmaaAllahHosnaAdapter adapter = new AsmaaAllahHosnaAdapter();
+        int noOfCol = 3;
+        asmaaAllahRecycler.setLayoutManager(new GridLayoutManager(this, noOfCol));
+        //direction to RTL
+        //asmaaAllahRecycler.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
         asmaaAllahRecycler.setAdapter(adapter);
 
-        asmaaAllahViewModel.getAsmaaAllah();
+        AsmaaAllahHosnaViewModel asmaaAllahViewModel = new ViewModelProvider(this).get(AsmaaAllahHosnaViewModel.class);
 
+        asmaaAllahViewModel.getAsmaaAllah();
         asmaaAllahViewModel.asmAllahData.observe(this, new Observer<ArrayList<AsmaaAllahHosnaModel>>()
         {
             @Override
@@ -97,91 +75,17 @@ public class AsmaaAllahHosnaActivity extends AppCompatActivity implements Naviga
             }
         });
 
-        fab.setOnClickListener(view ->
-        {
-            if(fab.isShown())
-            {
-                fab.setVisibility(View.GONE);
-            }
-            if(dynamicCardView.isShown())
-            {
-                dynamicCardView.setVisibility(View.GONE);
-                overlay.setVisibility(View.GONE);
-            }
-        });
-
-        int noOfCol = 3;
-        asmaaAllahRecycler.setLayoutManager(new GridLayoutManager(this, noOfCol));
-        //direction to RTL
-        //asmaaAllahRecycler.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
-
+        fab.setOnClickListener(view -> {
+            fab.setVisibility(View.GONE);
+            dynamicCardView.setVisibility(View.GONE);
+            overlay.setVisibility(View.GONE);
+            });
         //Handles Back Behavior
-        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true)
-        {
-            @Override
-            public void handleOnBackPressed()
-            {
-                if (asmaaAllahDrawer.isDrawerOpen(GravityCompat.START))
-                {
-                    asmaaAllahDrawer.closeDrawer(GravityCompat.START);
-
-                }
-                else if (fab.isShown() && dynamicCardView.isShown())
-                {
-                    fab.setVisibility(View.GONE);
-                    dynamicCardView.setVisibility(View.GONE);
-                    overlay.setVisibility(View.GONE);
-                }
-                else
-                {
-                    // default behavior (like old super.onBackPressed)
-                    setEnabled(false);
-                    getOnBackPressedDispatcher().onBackPressed();
-                }
-            }
-        });
+        backButtonManager.backFromAsmaaAllah(this, asmaaAllahDrawer, dynamicCardView, fab, overlay);
     }
-
     public void onResume()
     {
         super.onResume();
-        asmaaAllahNavigation.setCheckedItem(R.id.asmaa_allah);
-    }
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem)
-    {
-        int id = menuItem.getItemId();
-
-        if(id == R.id.home_page)
-        {
-            activityManager.openActivityRemovingDuplicate(HomeActivity.class);
-        }
-        else if(id == R.id.holy_quran)
-        {
-            activityManager.openActivityRemovingDuplicate(QuranActivity.class);
-        }
-        else if(id == R.id.arkan_eslam)
-        {
-            activityManager.openActivityRemovingDuplicate(ArkanEslamActivity.class);
-        }
-        else if(id == R.id.al_azkar)
-        {
-            activityManager.openActivityRemovingDuplicate(AzkarActivity.class);
-        }
-        else if(id == R.id.al_duas)
-        {
-            activityManager.openActivityRemovingDuplicate(DuasActivity.class);
-        }
-        else if(id == R.id.stories)
-        {
-            activityManager.openActivityRemovingDuplicate(StoriesActivity.class);
-        }
-        else if (id == R.id.asmaa_allah)
-        {
-            asmaaAllahDrawer.closeDrawers();
-        } else { return true;}
-
-        new Handler().postDelayed(() -> asmaaAllahDrawer.closeDrawers(),200);
-        return true;
+        drawerNavigationAppBarManager.syncCheckedItem();
     }
 }
