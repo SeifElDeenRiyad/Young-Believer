@@ -15,12 +15,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.youngbeliever.R;
 import com.example.youngbeliever.models.DuasModel;
+import com.example.youngbeliever.utils.SpaceManager;
 
 import java.util.ArrayList;
 
 public class DuasRasolFragment extends Fragment
 {
-    DuasRasolViewModel DuasRasolViewModel;
     public DuasRasolFragment()
     {
     }
@@ -30,17 +30,20 @@ public class DuasRasolFragment extends Fragment
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
     {
         View rootView = inflater.inflate(R.layout.duas_list, container, false);
-        DuasRasolViewModel = new ViewModelProvider(this).get(DuasRasolViewModel.class);
+        DuasRasolViewModel duasRasolViewModel = new ViewModelProvider(this).get(DuasRasolViewModel.class);
 
-        RecyclerView DuasRasolRecycler = rootView.findViewById(R.id.duas_recycler);
+        RecyclerView duasRasolRecycler = rootView.findViewById(R.id.duas_recycler);
+
         DuasAdapter adapter = new DuasAdapter();
+        duasRasolRecycler.setAdapter(adapter);
+        duasRasolRecycler.setLayoutManager(new LinearLayoutManager(getContext()));
+        //duasRasolRecycler.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
 
-        DuasRasolRecycler.setAdapter(adapter);
-        DuasRasolRecycler.setLayoutManager(new LinearLayoutManager(getContext()));
+        SpaceManager spaceManager = new SpaceManager();
+        spaceManager.setBottomPadding(duasRasolRecycler);
 
-        DuasRasolViewModel.getRasolDua();
-
-        DuasRasolViewModel.duaData.observe(getViewLifecycleOwner(), new Observer<ArrayList<DuasModel>>()
+        duasRasolViewModel.getRasolDua();
+        duasRasolViewModel.duaData.observe(getViewLifecycleOwner(), new Observer<ArrayList<DuasModel>>()
         {
             @Override
             public void onChanged(ArrayList<DuasModel> duasModels)
@@ -54,8 +57,6 @@ public class DuasRasolFragment extends Fragment
                 });
             }
         });
-
-        //DuasRasolRecycler.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
         return rootView;
     }
 }

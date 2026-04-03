@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.VideoView;
@@ -20,6 +21,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.youngbeliever.R;
 import com.example.youngbeliever.models.ArkanSlahModel;
+import com.example.youngbeliever.utils.SpaceManager;
 import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -32,6 +34,8 @@ public class ArkanSlahFragment extends Fragment
     FloatingActionButton fab;
     View overlay;
     TextView slahVideoTitle;
+    MediaController mediaController;
+    private OnBackPressedCallback videoBackCallback;
 
     public ArkanSlahFragment()
     {
@@ -49,19 +53,21 @@ public class ArkanSlahFragment extends Fragment
         fab = rootView.findViewById(R.id.fab_arkan_salah);
         overlay = rootView.findViewById(R.id.overlay_view_slah);
         slahVideoTitle = rootView.findViewById(R.id.slah_video_title);
+        RecyclerView arkanSlahRecycler = rootView.findViewById(R.id.arkan_slah_recycler);
 
-        MediaController mediaController = new MediaController(requireContext());
+        mediaController = new MediaController(requireContext());
         slahVideoView.setMediaController(mediaController);
         mediaController.setAnchorView(slahVideoView);
 
-        RecyclerView arkanSlahRecycler = rootView.findViewById(R.id.arkan_slah_recycler);
         ArkanSlahAdapter adapter = new ArkanSlahAdapter();
-
         arkanSlahRecycler.setAdapter(adapter);
         arkanSlahRecycler.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        arkanSlahViewModel.getSlahWay();
+        SpaceManager spaceManager = new SpaceManager();
+        FrameLayout view = rootView.findViewById(R.id.slah_page);
+        spaceManager.setBottomPadding(view);
 
+        arkanSlahViewModel.getSlahWay();
         arkanSlahViewModel.slahWay.observe(getViewLifecycleOwner(), new Observer<ArrayList<ArkanSlahModel>>()
         {
             @Override
@@ -78,21 +84,18 @@ public class ArkanSlahFragment extends Fragment
                 });
             }
         });
-        fab.setOnClickListener(view -> hideContainer());
+        fab.setOnClickListener(v -> hideContainer());
         //back button logic
-        requireActivity().getOnBackPressedDispatcher().addCallback(
-                getViewLifecycleOwner(), new OnBackPressedCallback(true) {
+        videoBackCallback = new OnBackPressedCallback(false)
+        {
             @Override
             public void handleOnBackPressed()
             {
-                if(isVideoOpen()){hideContainer();}
-             else {
-                        // allow activity to handle back
-                        setEnabled(false);
-                        requireActivity().getOnBackPressedDispatcher().onBackPressed();
-                    }
+                hideContainer();
             }
-        });
+        };
+        requireActivity().getOnBackPressedDispatcher().addCallback
+                (getViewLifecycleOwner(), videoBackCallback);
         return rootView;
     }
     //helper to play the video by parsing the setting the destination
@@ -106,6 +109,8 @@ public class ArkanSlahFragment extends Fragment
             slahVideoView.setVideoURI(Uri.parse(videoPath));
             showContainer(videoName);
             slahVideoView.start();
+            mediaController.hide();
+            slahVideoView.postDelayed(() -> mediaController.hide(), 200);
         }
         else if (videoName == R.string.slah_way_2)
         {
@@ -113,6 +118,8 @@ public class ArkanSlahFragment extends Fragment
             slahVideoView.setVideoURI(Uri.parse(videoPath));
             showContainer(videoName);
             slahVideoView.start();
+            mediaController.hide();
+            slahVideoView.postDelayed(() -> mediaController.hide(), 200);
         }
         else if (videoName == R.string.slah_way_3)
         {
@@ -120,6 +127,8 @@ public class ArkanSlahFragment extends Fragment
             slahVideoView.setVideoURI(Uri.parse(videoPath));
             showContainer(videoName);
             slahVideoView.start();
+            mediaController.hide();
+            slahVideoView.postDelayed(() -> mediaController.hide(), 200);
         }
         else if (videoName == R.string.slah_way_4)
         {
@@ -127,6 +136,8 @@ public class ArkanSlahFragment extends Fragment
             slahVideoView.setVideoURI(Uri.parse(videoPath));
             showContainer(videoName);
             slahVideoView.start();
+            mediaController.hide();
+            slahVideoView.postDelayed(() -> mediaController.hide(), 200);
         }
         else if (videoName == R.string.slah_way_5)
         {
@@ -134,6 +145,8 @@ public class ArkanSlahFragment extends Fragment
             slahVideoView.setVideoURI(Uri.parse(videoPath));
             showContainer(videoName);
             slahVideoView.start();
+            mediaController.hide();
+            slahVideoView.postDelayed(() -> mediaController.hide(), 200);
         }
         else if (videoName == R.string.slah_way_6)
         {
@@ -141,6 +154,8 @@ public class ArkanSlahFragment extends Fragment
             slahVideoView.setVideoURI(Uri.parse(videoPath));
             showContainer(videoName);
             slahVideoView.start();
+            mediaController.hide();
+            slahVideoView.postDelayed(() -> mediaController.hide(), 200);
         }
         else if (videoName == R.string.slah_way_7)
         {
@@ -148,6 +163,8 @@ public class ArkanSlahFragment extends Fragment
             slahVideoView.setVideoURI(Uri.parse(videoPath));
             showContainer(videoName);
             slahVideoView.start();
+            mediaController.hide();
+            slahVideoView.postDelayed(() -> mediaController.hide(), 200);
         }
         else if (videoName == R.string.slah_way_8)
         {
@@ -155,6 +172,8 @@ public class ArkanSlahFragment extends Fragment
             slahVideoView.setVideoURI(Uri.parse(videoPath));
             showContainer(videoName);
             slahVideoView.start();
+            mediaController.hide();
+            slahVideoView.postDelayed(() -> mediaController.hide(), 200);
         }
         else if (videoName == R.string.slah_way_9)
         {
@@ -162,6 +181,8 @@ public class ArkanSlahFragment extends Fragment
             slahVideoView.setVideoURI(Uri.parse(videoPath));
             showContainer(videoName);
             slahVideoView.start();
+            mediaController.hide();
+            slahVideoView.postDelayed(() -> mediaController.hide(), 200);
         }
         else if (videoName == R.string.slah_way_10)
         {
@@ -169,6 +190,8 @@ public class ArkanSlahFragment extends Fragment
             slahVideoView.setVideoURI(Uri.parse(videoPath));
             showContainer(videoName);
             slahVideoView.start();
+            mediaController.hide();
+            slahVideoView.postDelayed(() -> mediaController.hide(), 200);
         }
         else if (videoName == R.string.slah_way_11)
         {
@@ -176,11 +199,14 @@ public class ArkanSlahFragment extends Fragment
             slahVideoView.setVideoURI(Uri.parse(videoPath));
             showContainer(videoName);
             slahVideoView.start();
+            mediaController.hide();
+            slahVideoView.postDelayed(() -> mediaController.hide(), 200);
         }
     }
     //function to show the necessary components when needed
     private void showContainer(int videoName)
     {
+        videoBackCallback.setEnabled(true);
         slahVideoContainer.setVisibility(View.VISIBLE);
         slahVideoTitle.setVisibility(View.VISIBLE);
         overlay.setVisibility(View.VISIBLE);
@@ -191,19 +217,16 @@ public class ArkanSlahFragment extends Fragment
     //function to hide the necessary components when needed
     public void hideContainer()
     {
-        slahVideoView.setVisibility(View.GONE);
+        videoBackCallback.setEnabled(false);
         if (slahVideoView.isPlaying())
         {
             slahVideoView.stopPlayback();
         }
+        slahVideoView.setVisibility(View.GONE);
         slahVideoTitle.setVisibility(View.GONE);
         overlay.setVisibility(View.GONE);
         fab.setVisibility(View.GONE);
         slahVideoContainer.setVisibility(View.GONE);
-    }
-    public boolean isVideoOpen()
-    {
-        return slahVideoContainer.getVisibility() == View.VISIBLE;
     }
     @Override
     public void onPause()

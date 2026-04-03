@@ -2,6 +2,7 @@ package com.example.youngbeliever.ui;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +16,7 @@ import com.example.youngbeliever.R;
 import com.example.youngbeliever.models.AsmaaAllahHosnaModel;
 import com.example.youngbeliever.utils.BackButtonManager;
 import com.example.youngbeliever.utils.DrawerNavigationAppBarManager;
+import com.example.youngbeliever.utils.SpaceManager;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -31,6 +33,7 @@ public class AsmaaAllahHosnaActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.asmaa_allah_hosna_activity);
+        AsmaaAllahHosnaViewModel asmaaAllahViewModel = new ViewModelProvider(this).get(AsmaaAllahHosnaViewModel.class);
 
         MaterialToolbar asmaaAllahToolbar = findViewById(R.id.app_toolbar);
         DrawerLayout asmaaAllahDrawer = findViewById(R.id.asmaa_allah_drawer_layout);
@@ -40,6 +43,7 @@ public class AsmaaAllahHosnaActivity extends AppCompatActivity
         RecyclerView asmaaAllahRecycler = findViewById(R.id.asmaa_allah_recycler);
         FloatingActionButton fab = findViewById(R.id.fab_asmaa_allah);
         View overlay = findViewById(R.id.overlay_view);
+        FrameLayout view = findViewById(R.id.asmaa_allah_page);
 
         BackButtonManager backButtonManager = new BackButtonManager();
 
@@ -49,11 +53,11 @@ public class AsmaaAllahHosnaActivity extends AppCompatActivity
         AsmaaAllahHosnaAdapter adapter = new AsmaaAllahHosnaAdapter();
         int noOfCol = 3;
         asmaaAllahRecycler.setLayoutManager(new GridLayoutManager(this, noOfCol));
-        //direction to RTL
         //asmaaAllahRecycler.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
         asmaaAllahRecycler.setAdapter(adapter);
 
-        AsmaaAllahHosnaViewModel asmaaAllahViewModel = new ViewModelProvider(this).get(AsmaaAllahHosnaViewModel.class);
+        SpaceManager spaceManager = new SpaceManager();
+        spaceManager.setBottomPadding(view);
 
         asmaaAllahViewModel.getAsmaaAllah();
         asmaaAllahViewModel.asmAllahData.observe(this, new Observer<ArrayList<AsmaaAllahHosnaModel>>()
@@ -75,7 +79,7 @@ public class AsmaaAllahHosnaActivity extends AppCompatActivity
             }
         });
 
-        fab.setOnClickListener(view -> {
+        fab.setOnClickListener(v -> {
             fab.setVisibility(View.GONE);
             dynamicCardView.setVisibility(View.GONE);
             overlay.setVisibility(View.GONE);

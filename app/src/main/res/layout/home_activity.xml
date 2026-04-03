@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.HomeActivity"
     android:orientation="vertical"
-    android:fitsSystemWindows="true"
     android:id="@+id/home_drawer_layout">
 
     <com.google.android.material.navigation.NavigationView

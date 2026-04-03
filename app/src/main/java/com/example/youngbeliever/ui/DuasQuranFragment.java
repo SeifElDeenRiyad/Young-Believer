@@ -15,12 +15,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.youngbeliever.R;
 import com.example.youngbeliever.models.DuasModel;
+import com.example.youngbeliever.utils.SpaceManager;
 
 import java.util.ArrayList;
 
 public class DuasQuranFragment extends Fragment
 {
-    DuasQuranViewModel duasQuranViewModel;
     public DuasQuranFragment()
     {
     }
@@ -30,16 +30,19 @@ public class DuasQuranFragment extends Fragment
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
     {
         View rootView = inflater.inflate(R.layout.duas_list, container, false);
-        duasQuranViewModel = new ViewModelProvider(this).get(DuasQuranViewModel.class);
+        DuasQuranViewModel duasQuranViewModel = new ViewModelProvider(this).get(DuasQuranViewModel.class);
 
         RecyclerView duasQuranRecycler = rootView.findViewById(R.id.duas_recycler);
-        DuasAdapter adapter = new DuasAdapter();
 
+        DuasAdapter adapter = new DuasAdapter();
         duasQuranRecycler.setAdapter(adapter);
         duasQuranRecycler.setLayoutManager(new LinearLayoutManager(getContext()));
+        //duasQuranRecycler.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+
+        SpaceManager spaceManager = new SpaceManager();
+        spaceManager.setBottomPadding(duasQuranRecycler);
 
         duasQuranViewModel.getQuranDua();
-
         duasQuranViewModel.duaData.observe(getViewLifecycleOwner(), new Observer<ArrayList<DuasModel>>()
         {
             @Override
@@ -54,8 +57,6 @@ public class DuasQuranFragment extends Fragment
                 });
             }
         });
-
-        //duasQuranRecycler.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
         return rootView;
     }
 }

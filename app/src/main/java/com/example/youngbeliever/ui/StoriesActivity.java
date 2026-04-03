@@ -14,6 +14,7 @@ import com.example.youngbeliever.R;
 import com.example.youngbeliever.models.StoriesModel;
 import com.example.youngbeliever.utils.BackButtonManager;
 import com.example.youngbeliever.utils.DrawerNavigationAppBarManager;
+import com.example.youngbeliever.utils.SpaceManager;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -26,8 +27,8 @@ public class StoriesActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.stories_activity);
+        StoriesViewModel storiesViewModel = new ViewModelProvider(this).get(StoriesViewModel.class);
 
         MaterialToolbar storiesToolbar = findViewById(R.id.app_toolbar);
         DrawerLayout storiesDrawer = findViewById(R.id.stories_drawer_layout);
@@ -42,8 +43,10 @@ public class StoriesActivity extends AppCompatActivity
         StoriesAdapter adapter = new StoriesAdapter();
         storiesRecycler.setLayoutManager(new LinearLayoutManager(this));
         storiesRecycler.setAdapter(adapter);
+        //duasQuranRecycler.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
 
-        StoriesViewModel storiesViewModel = new ViewModelProvider(this).get(StoriesViewModel.class);
+        SpaceManager spaceManager = new SpaceManager();
+        spaceManager.setBottomPadding(storiesRecycler);
 
         storiesViewModel.getStoryData();
         storiesViewModel.storiesData.observe(this, new Observer<ArrayList<StoriesModel>>()
