@@ -58,6 +58,7 @@ public class ArkanSlahFragment extends Fragment
         mediaController = new MediaController(requireContext());
         slahVideoView.setMediaController(mediaController);
         mediaController.setAnchorView(slahVideoView);
+        mediaController.hide();
 
         ArkanSlahAdapter adapter = new ArkanSlahAdapter();
         arkanSlahRecycler.setAdapter(adapter);

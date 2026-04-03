@@ -16,7 +16,9 @@
     <string name="islam_pillar4">الصوم</string>
     <string name="islam_pillar5">الحج</string>
 
-    <string name="al_azkar">الأذكار</string>
+    <string name="al_azkar">اذكار</string>
+    <string name="sbah_zekr">الصباح</string>
+    <string name="msaa_zekr">المساء</string>
 
     <string name="duas">الأدعية</string>
     <string name="quran_dua">القرانية</string>
