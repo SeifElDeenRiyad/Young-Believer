@@ -8,7 +8,7 @@
     tools:context=".ui.DuasActivity"
     android:orientation="vertical"
     android:id="@+id/duas_drawer_layout"
-    android:background="@color/twilightGradient">
+    android:background="@color/dark_twilightGradient">
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
@@ -17,7 +17,7 @@
         app:menu="@menu/main_navigation_menu"
         app:headerLayout="@layout/main_navigation_header"
         android:layout_gravity="start"
-        android:background="@color/twilightGradient"/>
+        android:background="@color/dark_twilightGradient"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/duas_toolbar"
             android:id="@+id/duas_tabs"
-            android:background="@color/primary_blue"
+            android:background="@color/twilightGradient"
             app:tabSelectedTextColor="@color/white"
             app:tabTextColor="#A8A19E"
             android:layoutDirection="rtl"

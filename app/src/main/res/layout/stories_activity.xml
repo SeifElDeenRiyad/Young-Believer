@@ -8,7 +8,7 @@
     tools:context=".ui.StoriesActivity"
     android:orientation="vertical"
     android:id="@+id/stories_drawer_layout"
-    android:background="@color/twilightGradient">
+    android:background="@color/dark_twilightGradient">
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
@@ -17,7 +17,7 @@
         app:menu="@menu/main_navigation_menu"
         app:headerLayout="@layout/main_navigation_header"
         android:layout_gravity="start"
-        android:background="@color/twilightGradient"/>
+        android:background="@color/dark_twilightGradient"/>
 
     <RelativeLayout
         android:layout_width="match_parent"

@@ -8,7 +8,7 @@
     tools:context=".ui.ArkanEslamActivity"
     android:orientation="vertical"
     android:id="@+id/arkan_drawer_layout"
-    android:background="@color/twilightGradient">
+    android:background="@color/dark_twilightGradient">
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
@@ -17,7 +17,7 @@
         app:menu="@menu/main_navigation_menu"
         app:headerLayout="@layout/main_navigation_header"
         android:layout_gravity="start"
-        android:background="@color/twilightGradient"/>
+        android:background="@color/dark_twilightGradient"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -33,7 +33,7 @@
             android:layout_below="@+id/arkan_toolbar"
             android:id="@+id/arkan_tabs"
             android:layoutDirection="rtl"
-            android:background="@color/primary_blue"
+            android:background="@color/twilightGradient"
             app:tabSelectedTextColor="@color/white"
             android:elevation="@dimen/toolbar_elevation"
             app:tabTextColor="#A8A19E"/>

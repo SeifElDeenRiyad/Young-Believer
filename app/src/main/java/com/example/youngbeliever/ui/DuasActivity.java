@@ -48,7 +48,7 @@ public class DuasActivity extends AppCompatActivity
                     }
                 }
         ).attach();
-        backButtonManager.backFromActivity(this, duasDrawer);
+        backButtonManager.simpleBackFromActivity(this, duasDrawer);
     }
     @Override
     public void onResume()

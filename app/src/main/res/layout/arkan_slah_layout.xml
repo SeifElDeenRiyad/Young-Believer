@@ -4,46 +4,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    android:layoutDirection="rtl"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
-        android:text="@string/som"
+        android:text="@string/slah"
         android:padding="7dp"
         android:gravity="start"
         android:textSize="33sp"
         android:textStyle="bold"
-        android:id="@+id/som"/>
+        android:id="@+id/slah"/>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/salah_breakdown"
+        android:backgroundTint="@color/twilightGradient"
+        android:textColor="@color/white"
+        android:layout_gravity="end"
+        android:id="@+id/salah_breakdown_btn"
+        android:layout_marginBottom="6dp"/>
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:scaleType="centerCrop"
-        android:src="@drawable/som"
-        android:id="@+id/som_image"
-
-        android:contentDescription="@string/image_resource" />
+        android:src="@drawable/slah"
+        android:id="@+id/slah_image"
+        android:contentDescription="@string/image_resource"/>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight=".8"
         android:fillViewport="true"
-        android:id="@+id/arkan_som_scroll">
+        android:id="@+id/arkan_slah_scroll">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:text="@string/som_info"
+            android:text="@string/slah_info"
             android:padding="7dp"
             android:textAlignment="viewStart"
             android:textSize="20sp"
-            android:id="@+id/som_info"/>
+            android:id="@+id/slah_info"/>
 
     </ScrollView>
+
 </LinearLayout>

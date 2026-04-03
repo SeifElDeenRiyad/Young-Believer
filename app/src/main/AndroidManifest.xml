@@ -42,6 +42,10 @@
             android:label="@string/islam_pillars"
             android:parentActivityName=".ui.HomeActivity"/>
         <activity
+            android:name=".ui.ArkanSlahActivity"
+            android:label="@string/salah_breakdown"
+            android:parentActivityName=".ui.ArkanEslamActivity"/>
+        <activity
             android:name=".ui.StoriesActivity"
             android:label="@string/prophets_stories"
             android:parentActivityName=".ui.HomeActivity"/>

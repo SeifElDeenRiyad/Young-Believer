@@ -47,7 +47,7 @@ public class AzkarActivity extends AppCompatActivity
                     }
                 }
         ).attach();
-        backButtonManager.backFromActivity(this, azkarDrawer);
+        backButtonManager.simpleBackFromActivity(this, azkarDrawer);
     }
     @Override
     public void onResume()

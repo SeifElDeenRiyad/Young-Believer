@@ -29,7 +29,7 @@ public class QuranActivity extends AppCompatActivity
         drawerNavigationAppBarManager = new DrawerNavigationAppBarManager();
         drawerNavigationAppBarManager.setup(this, quranDrawer, quranNavigation, quranToolbar, R.id.holy_quran);
 
-        backButtonManager.backFromActivity(this, quranDrawer);
+        backButtonManager.simpleBackFromActivity(this, quranDrawer);
     }
     @Override
     public void onResume()

@@ -8,7 +8,7 @@
     tools:context=".ui.AsmaaAllahHosnaActivity"
     android:orientation="vertical"
     android:id="@+id/asmaa_allah_drawer_layout"
-    android:background="@color/twilightGradient">
+    android:background="@color/dark_twilightGradient">
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
@@ -17,7 +17,7 @@
         app:menu="@menu/main_navigation_menu"
         app:headerLayout="@layout/main_navigation_header"
         android:layout_gravity="start"
-        android:background="@color/twilightGradient"/>
+        android:background="@color/dark_twilightGradient"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -72,7 +72,7 @@
                 android:id="@+id/fab_asmaa_allah"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/dark_blue"
+                android:backgroundTint="@color/twilightGradient"
                 android:layout_gravity="top|start"
                 android:elevation="@dimen/card_elevation"
                 android:src="@drawable/outline_close_white_48"

@@ -13,4 +13,5 @@
     <color name="secondary_text">#A8A19E</color>
     <color name="app_icon_background">#0070BC</color>
     <color name="twilightGradient">#0D1B2A</color>
+    <color name="dark_twilightGradient">#09131E</color>
 </resources>

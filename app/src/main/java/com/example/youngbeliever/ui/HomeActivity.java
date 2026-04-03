@@ -7,7 +7,6 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.youngbeliever.R;
@@ -64,7 +63,7 @@ public class HomeActivity extends AppCompatActivity
                 });
             }
         });
-        backButtonManager.backFromActivity(this, homeDrawer);
+        backButtonManager.simpleBackFromActivity(this, homeDrawer);
     }
     @Override
     public void onResume()

@@ -5,14 +5,13 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fitsSystemWindows="true"
-    android:background="@color/dark_blue">
+    android:background="@color/dark_twilightGradient">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/app_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/primary_blue"
-        android:elevation="@dimen/toolbar_elevation"
+        android:background="@color/twilightGradient"
         android:theme="@style/ThemeOverlay.Material3.ActionBar"
         app:navigationIcon="@drawable/outline_menu_white_48"/>
 

@@ -17,6 +17,10 @@
     <string name="shhada_info" translatable="false">الركن الأول من أركان الإسلام هو الشهادة وهو أن تشهد أن لا إله إلا الله وأن محمداً عبده ورسوله ، ولا تعني قول الشهادة بالنطق فقط ولكن يجب إيمان القلب أنه لا يوجد إله غير الله والايمان أن سيدنا محمداً صلى الله عليه وسلم هو رسول الله، وأنه الله الواحد الاحد وأن نعبده دون أن نشرك به أحد.</string>
 
     <string name="islam_pillar2">Prayer</string>
+
+    <string name="slah" translatable="false">الركن الثاني الصلاة</string>
+    <string name="salah_breakdown">Salah BreakDown</string>
+    <string name="slah_info" translatable="false">الركن الثاني من أركان الإسلام هو الصلاة، حيث قال الله تعالى ( وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ )، والصلاة هي عبادة يقوم بها المسلمون خمس مرات يومياً في أوقات محددة، وتشمل قياماً وركوعاً وسجوداً وقراءة القرآن، وتهدف الصلاة إلى تذكير المسلم بربه وتعزيز التقوى والطاعة في حياته اليومية.</string>
     <string name="slah_way_1" translatable="false">الصلوات الخمس</string>
     <string name="slah_way_2" translatable="false">القيام</string>
     <string name="slah_way_3" translatable="false">تكبيرة الإحرام</string>

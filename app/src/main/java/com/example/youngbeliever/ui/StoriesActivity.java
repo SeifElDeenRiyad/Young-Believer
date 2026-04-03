@@ -66,7 +66,7 @@ public class StoriesActivity extends AppCompatActivity
                 });
             }
         });
-        backButtonManager.backFromActivity(this, storiesDrawer);
+        backButtonManager.simpleBackFromActivity(this, storiesDrawer);
     }
     @Override
     public void onResume()
