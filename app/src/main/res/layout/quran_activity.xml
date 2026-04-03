@@ -28,5 +28,4 @@
             android:id="@+id/quran_toolbar"/>
 
     </RelativeLayout>
-
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -45,5 +45,4 @@
             android:textSize="20sp"
             android:id="@+id/hag_info"/>
     </ScrollView>
-
 </LinearLayout>

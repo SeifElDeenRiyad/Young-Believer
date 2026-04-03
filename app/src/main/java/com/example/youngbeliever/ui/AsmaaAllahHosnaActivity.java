@@ -84,7 +84,6 @@ public class AsmaaAllahHosnaActivity extends AppCompatActivity
             dynamicCardView.setVisibility(View.GONE);
             overlay.setVisibility(View.GONE);
             });
-        //Handles Back Behavior
         backButtonManager.backFromAsmaaAllah(this, asmaaAllahDrawer, dynamicCardView, fab, overlay);
     }
     public void onResume()

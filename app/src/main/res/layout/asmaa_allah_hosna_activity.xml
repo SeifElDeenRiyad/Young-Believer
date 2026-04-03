@@ -81,7 +81,5 @@
                 android:contentDescription="@string/x" />
 
         </FrameLayout>
-
     </RelativeLayout>
-
 </androidx.drawerlayout.widget.DrawerLayout>

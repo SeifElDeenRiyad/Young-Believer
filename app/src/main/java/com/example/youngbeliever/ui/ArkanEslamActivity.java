@@ -50,7 +50,6 @@ public class ArkanEslamActivity extends AppCompatActivity
                     }
                 }
         ).attach();
-        //Handles Back Behavior
         backButtonManager.backFromActivity(this, arkanDrawer);
     }
     @Override

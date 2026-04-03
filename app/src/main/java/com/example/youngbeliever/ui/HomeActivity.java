@@ -64,7 +64,6 @@ public class HomeActivity extends AppCompatActivity
                 });
             }
         });
-        //Handles Back Behavior
         backButtonManager.backFromActivity(this, homeDrawer);
     }
     @Override

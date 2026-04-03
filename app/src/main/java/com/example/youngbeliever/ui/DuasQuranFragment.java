@@ -24,7 +24,6 @@ public class DuasQuranFragment extends Fragment
     public DuasQuranFragment()
     {
     }
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)

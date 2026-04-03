@@ -44,7 +44,6 @@
                 android:visibility="gone"/>
 
         </LinearLayout>
-
     </com.google.android.material.card.MaterialCardView>
 
     <View
@@ -65,6 +64,5 @@
         android:src="@drawable/outline_close_white_48"
         android:layout_margin="16dp"
         android:visibility="gone"
-        android:contentDescription="@string/x" />
-
+        android:contentDescription="@string/x"/>
 </FrameLayout>

@@ -46,5 +46,4 @@
             android:layoutDirection="rtl"/>
 
     </RelativeLayout>
-
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -47,7 +47,6 @@ public class AzkarActivity extends AppCompatActivity
                     }
                 }
         ).attach();
-        //Handles Back Behavior
         backButtonManager.backFromActivity(this, azkarDrawer);
     }
     @Override

@@ -17,14 +17,12 @@ public class ArkanSlahAdapter extends RecyclerView.Adapter<ArkanSlahAdapter.Arka
 {
     ArrayList<ArkanSlahModel> slahsList = new ArrayList<>();
     itemClickListener itemClickListener;
-
     @NonNull
     @Override
     public ArkanSlahAdapter.ArkanSlahViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
     {
         return new ArkanSlahViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.arkan_slah_item, parent, false));
     }
-
     @Override
     public void onBindViewHolder(@NonNull ArkanSlahAdapter.ArkanSlahViewHolder holder, int position)
     {
@@ -32,25 +30,21 @@ public class ArkanSlahAdapter extends RecyclerView.Adapter<ArkanSlahAdapter.Arka
 
         holder.itemView.setOnClickListener(v -> itemClickListener.onItemClick(slahsList.get(position)));
     }
-
     @Override
     public int getItemCount()
     {
         return slahsList.size();
     }
-
     public void setList(ArrayList<ArkanSlahModel> arkanSlahModels, itemClickListener itemClickListener)
     {
         this.slahsList = arkanSlahModels;
         this.itemClickListener = itemClickListener;
         notifyDataSetChanged();
     }
-
     public interface itemClickListener
     {
         void onItemClick(ArkanSlahModel arkanSlahModel);
     }
-
     public static class ArkanSlahViewHolder extends RecyclerView.ViewHolder
     {
         TextView slahWay;

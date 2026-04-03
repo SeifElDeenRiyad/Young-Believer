@@ -43,7 +43,7 @@ public class StoriesActivity extends AppCompatActivity
         StoriesAdapter adapter = new StoriesAdapter();
         storiesRecycler.setLayoutManager(new LinearLayoutManager(this));
         storiesRecycler.setAdapter(adapter);
-        //duasQuranRecycler.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+        //storiesRecycler.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
 
         SpaceManager spaceManager = new SpaceManager();
         spaceManager.setBottomPadding(storiesRecycler);
@@ -66,7 +66,6 @@ public class StoriesActivity extends AppCompatActivity
                 });
             }
         });
-        //Handles Back Behavior
         backButtonManager.backFromActivity(this, storiesDrawer);
     }
     @Override

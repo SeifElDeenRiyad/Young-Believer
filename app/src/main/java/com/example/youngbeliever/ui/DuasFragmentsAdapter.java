@@ -11,11 +11,12 @@ public class DuasFragmentsAdapter extends FragmentStateAdapter
     {
         super(fragmentActivity);
     }
-
     @NonNull
     @Override
-    public Fragment createFragment(int position) {
-        return switch (position) {
+    public Fragment createFragment(int position)
+    {
+        return switch (position)
+        {
             case 0 -> new DuasQuranFragment();
             case 1 -> new DuasRasolFragment();
             case 2 -> new DuasRosolFragment();

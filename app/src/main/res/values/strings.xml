@@ -7,6 +7,7 @@
     <string name="believer_mail">believer.mail.example.com</string>
 
     <string name="home_page">Home</string>
+
     <string name="holy_quran">Holy Quran</string>
 
     <string name="islam_pillars">Islam\'s Pillars</string>
@@ -340,7 +341,7 @@
     <string name="rosl_dua13" translatable="false">إِنَّمَا أَشْكُو بَثِّي وَحُزْنِي إِلَى اللَّهِ</string>
     <string name="rosl_dua_info13" translatable="false">[يوسف - 86]</string>
 
-    <string name="prophets_stories">Prophet\'s Stories</string>
+    <string name="prophets_stories">Prophets\' Stories</string>
 
     <string name="prophets_stories1" translatable="false">قصة آدم -عليه السلام-</string>
     <string name="prophets_stories2" translatable="false">قصة نوح -عليه السلام-</string>

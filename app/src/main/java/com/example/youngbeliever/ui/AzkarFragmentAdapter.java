@@ -11,11 +11,12 @@ public class AzkarFragmentAdapter extends FragmentStateAdapter
     {
         super(fragmentActivity);
     }
-
     @NonNull
     @Override
-    public Fragment createFragment(int position) {
-        return switch (position) {
+    public Fragment createFragment(int position)
+    {
+        return switch (position)
+        {
             case 0 -> new AzkarSbahFragment();
             case 1 -> new AzkarMsaaFragment();
             default ->throw new IllegalArgumentException("Invalid position");

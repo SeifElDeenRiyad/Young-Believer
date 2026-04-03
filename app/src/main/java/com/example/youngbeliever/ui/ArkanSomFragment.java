@@ -18,10 +18,10 @@ public class ArkanSomFragment extends Fragment
     public ArkanSomFragment()
     {
     }
-
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
+    {
         View root = inflater.inflate(R.layout.arkan_som_layout, container, false);
         ScrollView scrollView = root.findViewById(R.id.arkan_som_scroll);
 

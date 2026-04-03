@@ -17,7 +17,6 @@ public class AzkarAdapter extends RecyclerView.Adapter<AzkarAdapter.AzkarViewHol
 {
     private ArrayList<AzkarModel> azkarList = new ArrayList<>();
     private AzkarAdapter.itemClickListener itemClickListener;
-
     @NonNull
     @Override
     public AzkarAdapter.AzkarViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)

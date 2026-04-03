@@ -34,5 +34,4 @@
             android:id="@+id/stories_recycler"/>
 
     </RelativeLayout>
-
 </androidx.drawerlayout.widget.DrawerLayout>

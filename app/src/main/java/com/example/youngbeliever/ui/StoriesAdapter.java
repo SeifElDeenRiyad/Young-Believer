@@ -17,14 +17,12 @@ public class StoriesAdapter extends RecyclerView.Adapter<StoriesAdapter.StoriesV
 {
     ArrayList<StoriesModel> storyList = new ArrayList<>();
     itemClickListener itemClickListener;
-
     @NonNull
     @Override
     public StoriesAdapter.StoriesViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
     {
         return new StoriesViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.stories_item, parent, false));
     }
-
     @Override
     public void onBindViewHolder(@NonNull StoriesAdapter.StoriesViewHolder holder, int position)
     {
@@ -32,25 +30,21 @@ public class StoriesAdapter extends RecyclerView.Adapter<StoriesAdapter.StoriesV
 
         holder.itemView.setOnClickListener(v -> itemClickListener.onItemClick(storyList.get(position)));
     }
-
     @Override
     public int getItemCount()
     {
         return storyList.size();
     }
-
     public interface itemClickListener
     {
         void onItemClick(StoriesModel storiesModel);
     }
-
     public void setList(ArrayList<StoriesModel> storyList, itemClickListener itemClickListener)
     {
         this.storyList = storyList;
         this.itemClickListener = itemClickListener;
         notifyDataSetChanged();
     }
-
     public static class StoriesViewHolder extends RecyclerView.ViewHolder
     {
         TextView storyName;

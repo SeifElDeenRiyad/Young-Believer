@@ -11,10 +11,10 @@ public class ArkanFragmentsAdapter  extends FragmentStateAdapter
     {
         super(fragmentActivity);
     }
-
     @NonNull
     @Override
-    public Fragment createFragment(int position) {
+    public Fragment createFragment(int position)
+    {
         return switch (position) {
             case 0 -> new ArkanShhadeFragment();
             case 1 -> new ArkanSlahFragment();
@@ -24,7 +24,6 @@ public class ArkanFragmentsAdapter  extends FragmentStateAdapter
             default ->throw new IllegalArgumentException("Invalid position");
         };
     }
-
     @Override
     public int getItemCount()
     {
