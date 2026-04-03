@@ -15,12 +15,12 @@
         android:background="@color/dark_blue">
 
         <TextView
-            android:layout_width="88dp"
+            android:layout_width="44dp"
             android:layout_height="match_parent"
             android:scaleType="centerInside"
             android:gravity="center"
             android:id="@+id/zekr_times"
-            android:background="@color/light_blue"
+            android:background="@color/primary_blue"
             android:textSize="20sp"
             android:textColor="@color/white"/>
 

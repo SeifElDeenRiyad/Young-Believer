@@ -72,7 +72,7 @@
                 android:id="@+id/fab_asmaa_allah"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/twilightGradient"
+                android:backgroundTint="@color/primary_blue"
                 android:layout_gravity="top|start"
                 android:elevation="@dimen/card_elevation"
                 android:src="@drawable/outline_close_white_48"

@@ -30,6 +30,9 @@
             android:label="@string/holy_quran"
             android:parentActivityName=".ui.HomeActivity"/>
         <activity
+            android:name=".ui.QuranPdfActivity"
+            android:parentActivityName=".ui.QuranActivity"/>
+        <activity
             android:name=".ui.DuasActivity"
             android:label="@string/duas"
             android:parentActivityName=".ui.HomeActivity"/>

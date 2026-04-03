@@ -13,7 +13,7 @@ import com.example.youngbeliever.R;
 @SuppressLint("CustomSplashScreen")
 public class SplashScreenActivity extends AppCompatActivity
 {
-    private static final int SPLASH_DURATION = 3000; // 3 seconds
+    private static final int SPLASH_DURATION = 7000; // 3 seconds
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
