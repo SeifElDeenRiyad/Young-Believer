@@ -17,16 +17,9 @@ public class AzkarModel
     {
         return zekrTimes;
     }
-    public void setZekrTimes(int zekrTimes) {
-        this.zekrTimes = zekrTimes;
-    }
     public int getZekr()
     {
         return zekr;
-    }
-    public void setZekr(int zekr)
-    {
-        this.zekr = zekr;
     }
     public int getBsmla()
     {
@@ -39,9 +32,5 @@ public class AzkarModel
     public int getZekrReward()
     {
         return zekrReward;
-    }
-    public void setZekrReward(int zekrReward)
-    {
-        this.zekrReward = zekrReward;
     }
 }

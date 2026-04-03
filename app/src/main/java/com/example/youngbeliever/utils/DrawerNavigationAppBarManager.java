@@ -1,5 +1,6 @@
 package com.example.youngbeliever.utils;
 
+import android.content.Intent;
 import android.os.Handler;
 import android.view.MenuItem;
 
@@ -9,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.example.youngbeliever.R;
+import com.example.youngbeliever.models.HomeModel;
 import com.example.youngbeliever.ui.ArkanEslamActivity;
 import com.example.youngbeliever.ui.AsmaaAllahHosnaActivity;
 import com.example.youngbeliever.ui.AzkarActivity;
@@ -60,6 +62,34 @@ public class DrawerNavigationAppBarManager implements NavigationView.OnNavigatio
         navigation.setCheckedItem(currentItemId);
     }
 
+    //function handles home sections navigation
+    public void homeNavigation(HomeModel homeModel)
+    {
+        if(homeModel.getSectionName() == R.string.holy_quran)
+        {
+            activityManager.openActivityRemovingDuplicate(QuranActivity.class);
+        }
+        else if(homeModel.getSectionName() == R.string.islam_pillars)
+        {
+            activityManager.openActivityRemovingDuplicate(ArkanEslamActivity.class);
+        }
+        else if(homeModel.getSectionName() == R.string.al_azkar)
+        {
+            activityManager.openActivityRemovingDuplicate(AzkarActivity.class);
+        }
+        else if(homeModel.getSectionName() == R.string.duas)
+        {
+            activityManager.openActivityRemovingDuplicate(DuasActivity.class);
+        }
+        else if(homeModel.getSectionName() == R.string.prophets_stories)
+        {
+            activityManager.openActivityRemovingDuplicate(StoriesActivity.class);
+        }
+        else if(homeModel.getSectionName() == R.string.asmaa_allah_hosna)
+        {
+            activityManager.openActivityRemovingDuplicate(AsmaaAllahHosnaActivity.class);
+        }
+    }
     //function handles the navigation logic between activities
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem)
