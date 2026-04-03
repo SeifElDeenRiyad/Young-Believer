@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     tools:context=".ui.AsmaaAllahHosnaActivity"
     android:orientation="vertical"
-    android:id="@+id/asmaa_allah_drawer_layout">
+    android:id="@+id/asmaa_allah_drawer_layout"
+    android:background="@color/twilightGradient">
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
@@ -15,7 +16,8 @@
         android:id="@+id/asmaa_allah_navigation_view"
         app:menu="@menu/main_navigation_menu"
         app:headerLayout="@layout/main_navigation_header"
-        android:layout_gravity="start"/>
+        android:layout_gravity="start"
+        android:background="@color/twilightGradient"/>
 
     <RelativeLayout
         android:layout_width="match_parent"

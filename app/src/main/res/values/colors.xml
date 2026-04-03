@@ -11,4 +11,5 @@
     <color name="light_blue">#589FF0</color>
     <color name="dark_blue">#00468C</color>
     <color name="secondary_text">#A8A19E</color>
+    <color name="twilightGradient">#0D1B2A</color>
 </resources>

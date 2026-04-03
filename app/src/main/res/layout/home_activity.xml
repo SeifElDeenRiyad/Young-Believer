@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     tools:context=".ui.HomeActivity"
     android:orientation="vertical"
-    android:id="@+id/home_drawer_layout">
+    android:id="@+id/home_drawer_layout"
+    android:background="@color/twilightGradient">
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
@@ -15,7 +16,8 @@
         android:id="@+id/home_navigation_view"
         app:menu="@menu/main_navigation_menu"
         app:headerLayout="@layout/main_navigation_header"
-        android:layout_gravity="start"/>
+        android:layout_gravity="start"
+        android:background="@color/twilightGradient"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -64,13 +66,14 @@
             android:layout_height="match_parent"
             android:layout_below="@+id/anchor"
             android:id="@+id/home_scroll_view"
-            android:fillViewport="true">
+            android:fillViewport="true"
+            android:layoutDirection="rtl">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/home_recycler"
-                android:layoutDirection="rtl"/>
+                android:id="@+id/home_recycler"/>
+
         </ScrollView>
 
     </RelativeLayout>
