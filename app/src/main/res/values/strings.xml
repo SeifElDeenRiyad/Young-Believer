@@ -9,462 +9,576 @@
     <string name="home_page">Home</string>
 
     <string name="holy_quran">Holy Quran</string>
-    <string name="sura_num1" translatable="false">1</string>
-    <string name="sura_name1" translatable="false">سورة الفاتحة</string>
-    <string name="sura_revelation1" translatable="false">مكية</string>
-    <string name="sura_ayah_num1" translatable="false">7 آيــات</string>
-    <string name="sura_num2" translatable="false">2</string>
-    <string name="sura_name2" translatable="false">سورة البقرة</string>
-    <string name="sura_revelation2" translatable="false">مدنية</string>
-    <string name="sura_ayah_num2" translatable="false">286 آيــات</string>
-    <string name="sura_num3" translatable="false">3</string>
-    <string name="sura_name3" translatable="false">سورة آل عمران</string>
-    <string name="sura_revelation3" translatable="false">مدنية</string>
-    <string name="sura_ayah_num3" translatable="false">200 آيــات</string>
-    <string name="sura_num4" translatable="false">4</string>
-    <string name="sura_name4" translatable="false">سورة النساء</string>
-    <string name="sura_revelation4" translatable="false">مدنية</string>
-    <string name="sura_ayah_num4" translatable="false">176 آيــات</string>
-    <string name="sura_num5" translatable="false">5</string>
-    <string name="sura_name5" translatable="false">سورة المائدة</string>
-    <string name="sura_revelation5" translatable="false">مدنية</string>
-    <string name="sura_ayah_num5" translatable="false">120 آيــات</string>
-    <string name="sura_num6" translatable="false">6</string>
-    <string name="sura_name6" translatable="false">سورة الأنعام</string>
-    <string name="sura_revelation6" translatable="false">مكية</string>
-    <string name="sura_ayah_num6" translatable="false">165 آيــات</string>
-    <string name="sura_num7" translatable="false">7</string>
-    <string name="sura_name7" translatable="false">سورة الأعراف</string>
-    <string name="sura_revelation7" translatable="false">مكية</string>
-    <string name="sura_ayah_num7" translatable="false">206 آيــات</string>
-    <string name="sura_num8" translatable="false">8</string>
-    <string name="sura_name8" translatable="false">سورة الأنفال</string>
-    <string name="sura_revelation8" translatable="false">مدنية</string>
-    <string name="sura_ayah_num8" translatable="false">75 آيــات</string>
-    <string name="sura_num9" translatable="false">9</string>
-    <string name="sura_name9" translatable="false">سورة التوبة</string>
-    <string name="sura_revelation9" translatable="false">مدنية</string>
-    <string name="sura_ayah_num9" translatable="false">129 آيــات</string>
-    <string name="sura_num10" translatable="false">10</string>
-    <string name="sura_name10" translatable="false">سورة يونس</string>
-    <string name="sura_revelation10" translatable="false">مكية</string>
-    <string name="sura_ayah_num10" translatable="false">109 آيــات</string>
-    <string name="sura_num11" translatable="false">11</string>
-    <string name="sura_name11" translatable="false">سورة هود</string>
-    <string name="sura_revelation11" translatable="false">مكية</string>
-    <string name="sura_ayah_num11" translatable="false">123 آيــات</string>
-    <string name="sura_num12" translatable="false">12</string>
-    <string name="sura_name12" translatable="false">سورة يوسف</string>
-    <string name="sura_revelation12" translatable="false">مكية</string>
-    <string name="sura_ayah_num12" translatable="false">111 آيــات</string>
-    <string name="sura_num13" translatable="false">13</string>
-    <string name="sura_name13" translatable="false">سورة الرعد</string>
-    <string name="sura_revelation13" translatable="false">مدنية</string>
-    <string name="sura_ayah_num13" translatable="false">43 آيــات</string>
-    <string name="sura_num14" translatable="false">14</string>
-    <string name="sura_name14" translatable="false">سورة إبراهيم</string>
-    <string name="sura_revelation14" translatable="false">مكية</string>
-    <string name="sura_ayah_num14" translatable="false">52 آيــات</string>
-    <string name="sura_num15" translatable="false">15</string>
-    <string name="sura_name15" translatable="false">سورة الحجر</string>
-    <string name="sura_revelation15" translatable="false">مكية</string>
-    <string name="sura_ayah_num15" translatable="false">99 آيــات</string>
-    <string name="sura_num16" translatable="false">16</string>
-    <string name="sura_name16" translatable="false">سورة النحل</string>
-    <string name="sura_revelation16" translatable="false">مكية</string>
-    <string name="sura_ayah_num16" translatable="false">128 آيــات</string>
-    <string name="sura_num17" translatable="false">17</string>
-    <string name="sura_name17" translatable="false">سورة الإسراء</string>
-    <string name="sura_revelation17" translatable="false">مكية</string>
-    <string name="sura_ayah_num17" translatable="false">111 آيــات</string>
-    <string name="sura_num18" translatable="false">18</string>
-    <string name="sura_name18" translatable="false">سورة الكهف</string>
-    <string name="sura_revelation18" translatable="false">مكية</string>
-    <string name="sura_ayah_num18" translatable="false"> 110 آيــات</string>
-    <string name="sura_num19" translatable="false">19</string>
-    <string name="sura_name19" translatable="false">سورة مريم</string>
-    <string name="sura_revelation19" translatable="false">مكية</string>
-    <string name="sura_ayah_num19" translatable="false">98 آيــات</string>
-    <string name="sura_num20" translatable="false">20</string>
-    <string name="sura_name20" translatable="false">سورة طه</string>
-    <string name="sura_revelation20" translatable="false">مكية</string>
-    <string name="sura_ayah_num20" translatable="false">135 آيــات</string>
-    <string name="sura_num21" translatable="false">21</string>
-    <string name="sura_name21" translatable="false">سورة الأنبياء</string>
-    <string name="sura_revelation21" translatable="false">مكية</string>
-    <string name="sura_ayah_num21" translatable="false">112 آيــات</string>
-    <string name="sura_num22" translatable="false">22</string>
-    <string name="sura_name22" translatable="false">سورة الحج</string>
-    <string name="sura_revelation22" translatable="false">مدنية</string>
-    <string name="sura_ayah_num22" translatable="false">78 آيــات</string>
-    <string name="sura_num23" translatable="false">23</string>
-    <string name="sura_name23" translatable="false">سورة المؤمنون</string>
-    <string name="sura_revelation23" translatable="false">مكية</string>
-    <string name="sura_ayah_num23" translatable="false">118 آيــات</string>
-    <string name="sura_num24" translatable="false">24</string>
-    <string name="sura_name24" translatable="false">سورة النور</string>
-    <string name="sura_revelation24" translatable="false">مدنية</string>
-    <string name="sura_ayah_num24" translatable="false">64 آيــات</string>
-    <string name="sura_num25" translatable="false">25</string>
-    <string name="sura_name25" translatable="false">سورة الفرقان</string>
-    <string name="sura_revelation25" translatable="false">مكية</string>
-    <string name="sura_ayah_num25" translatable="false">77 آيــات</string>
-    <string name="sura_num26" translatable="false">26</string>
-    <string name="sura_name26" translatable="false">سورة الشعراء</string>
-    <string name="sura_revelation26" translatable="false">مكية</string>
-    <string name="sura_ayah_num26" translatable="false">227 آيــات</string>
-    <string name="sura_num27" translatable="false">27</string>
-    <string name="sura_name27" translatable="false">سورة النمل</string>
-    <string name="sura_revelation27" translatable="false">مكية</string>
-    <string name="sura_ayah_num27" translatable="false">93 آيــات</string>
-    <string name="sura_num28" translatable="false">28</string>
-    <string name="sura_name28" translatable="false">سورة القصص</string>
-    <string name="sura_revelation28" translatable="false">مكية</string>
-    <string name="sura_ayah_num28" translatable="false">88 آيــات</string>
-    <string name="sura_num29" translatable="false">29</string>
-    <string name="sura_name29" translatable="false">سورة العنكبوت</string>
-    <string name="sura_revelation29" translatable="false">مكية</string>
-    <string name="sura_ayah_num29" translatable="false">69 آيــات</string>
-    <string name="sura_num30" translatable="false">30</string>
-    <string name="sura_name30" translatable="false">سورة الروم</string>
-    <string name="sura_revelation30" translatable="false">مكية</string>
-    <string name="sura_ayah_num30" translatable="false">60 آيــات</string>
-    <string name="sura_num31" translatable="false">31</string>
-    <string name="sura_name31" translatable="false">سورة لقمان</string>
-    <string name="sura_revelation31" translatable="false">مكية</string>
-    <string name="sura_ayah_num31" translatable="false">34 آيــات</string>
-    <string name="sura_num32" translatable="false">32</string>
-    <string name="sura_name32" translatable="false">سورة السجدة</string>
-    <string name="sura_revelation32" translatable="false">مكية</string>
-    <string name="sura_ayah_num32" translatable="false">30 آيــات</string>
-    <string name="sura_num33" translatable="false">33</string>
-    <string name="sura_name33" translatable="false">سورة الأحزاب</string>
-    <string name="sura_revelation33" translatable="false">مدنية</string>
-    <string name="sura_ayah_num33" translatable="false">73 آيــات</string>
-    <string name="sura_num34" translatable="false">34</string>
-    <string name="sura_name34" translatable="false">سورة سبأ</string>
-    <string name="sura_revelation34" translatable="false">مكية</string>
-    <string name="sura_ayah_num34" translatable="false">54 آيــات</string>
-    <string name="sura_num35" translatable="false">35</string>
-    <string name="sura_name35" translatable="false">سورة فاطر</string>
-    <string name="sura_revelation35" translatable="false">مكية</string>
-    <string name="sura_ayah_num35" translatable="false">45 آيــات</string>
-    <string name="sura_num36" translatable="false">36</string>
-    <string name="sura_name36" translatable="false">سورة يس</string>
-    <string name="sura_revelation36" translatable="false">مكية</string>
-    <string name="sura_ayah_num36" translatable="false">83 آيــات</string>
-    <string name="sura_num37" translatable="false">37</string>
-    <string name="sura_name37" translatable="false">سورة الصافات</string>
-    <string name="sura_revelation37" translatable="false">مكية</string>
-    <string name="sura_ayah_num37" translatable="false">182 آيــات</string>
-    <string name="sura_num38" translatable="false">38</string>
-    <string name="sura_name38" translatable="false">سورة ص</string>
-    <string name="sura_revelation38" translatable="false">نمية</string>
-    <string name="sura_ayah_num38" translatable="false">88 آيــات</string>
-    <string name="sura_num39" translatable="false">39</string>
-    <string name="sura_name39" translatable="false">سورة الزمر</string>
-    <string name="sura_revelation39" translatable="false">مكية</string>
-    <string name="sura_ayah_num39" translatable="false">75 آيــات</string>
-    <string name="sura_num40" translatable="false">40</string>
-    <string name="sura_name40" translatable="false">سورة غافر</string>
-    <string name="sura_revelation40" translatable="false">مكية</string>
-    <string name="sura_ayah_num40" translatable="false">85 آيــات</string>
-    <string name="sura_num41" translatable="false">41</string>
-    <string name="sura_name41" translatable="false">سورة فصلت</string>
-    <string name="sura_revelation41" translatable="false">مكية</string>
-    <string name="sura_ayah_num41" translatable="false">54 آيــات</string>
-    <string name="sura_num42" translatable="false">42</string>
-    <string name="sura_name42" translatable="false">سورة الشورى</string>
-    <string name="sura_revelation42" translatable="false">مكية</string>
-    <string name="sura_ayah_num42" translatable="false">53 آيــات</string>
-    <string name="sura_num43" translatable="false">43</string>
-    <string name="sura_name43" translatable="false">سورة الزخرف</string>
-    <string name="sura_revelation43" translatable="false">مكية</string>
-    <string name="sura_ayah_num43" translatable="false">89 آيــات</string>
-    <string name="sura_num44" translatable="false">44</string>
-    <string name="sura_name44" translatable="false">سورة الدخان</string>
-    <string name="sura_revelation44" translatable="false">مكية</string>
-    <string name="sura_ayah_num44" translatable="false">59 آيــات</string>
-    <string name="sura_num45" translatable="false">45</string>
-    <string name="sura_name45" translatable="false">سورة الجاثية</string>
-    <string name="sura_revelation45" translatable="false">مكية</string>
-    <string name="sura_ayah_num45" translatable="false">37 آيــات</string>
-    <string name="sura_num46" translatable="false">46</string>
-    <string name="sura_name46" translatable="false">سورة الأحقاق</string>
-    <string name="sura_revelation46" translatable="false">مكية</string>
-    <string name="sura_ayah_num46" translatable="false">35 آيــات</string>
-    <string name="sura_num47" translatable="false">47</string>
-    <string name="sura_name47" translatable="false">سورة محمد</string>
-    <string name="sura_revelation47" translatable="false">مكية</string>
-    <string name="sura_ayah_num47" translatable="false">38 آيــات</string>
-    <string name="sura_num48" translatable="false">48</string>
-    <string name="sura_name48" translatable="false">سورة الفتح</string>
-    <string name="sura_revelation48" translatable="false">مدنية</string>
-    <string name="sura_ayah_num48" translatable="false">29 آيــات</string>
-    <string name="sura_num49" translatable="false">49</string>
-    <string name="sura_name49" translatable="false">سورة الحجرات</string>
-    <string name="sura_revelation49" translatable="false">مدنية</string>
-    <string name="sura_ayah_num49" translatable="false">18 آيــات</string>
-    <string name="sura_num50" translatable="false">50</string>
-    <string name="sura_name50" translatable="false">سورة ق</string>
-    <string name="sura_revelation50" translatable="false">مكية</string>
-    <string name="sura_ayah_num50" translatable="false">45 آيــات</string>
-    <string name="sura_num51" translatable="false">51</string>
-    <string name="sura_name51" translatable="false">سورة الذاريات</string>
-    <string name="sura_revelation51" translatable="false">مكية</string>
-    <string name="sura_ayah_num51" translatable="false">60 آيــات</string>
-    <string name="sura_num52" translatable="false">52</string>
-    <string name="sura_name52" translatable="false">سورة الطور</string>
-    <string name="sura_revelation52" translatable="false">مكية</string>
-    <string name="sura_ayah_num52" translatable="false">49 آيــات</string>
-    <string name="sura_num53" translatable="false">53</string>
-    <string name="sura_name53" translatable="false">سورة النجم</string>
-    <string name="sura_revelation53" translatable="false">مكية</string>
-    <string name="sura_ayah_num53" translatable="false">62 آيــات</string>
-    <string name="sura_num54" translatable="false">54</string>
-    <string name="sura_name54" translatable="false">سورة القمر</string>
-    <string name="sura_revelation54" translatable="false">مكية</string>
-    <string name="sura_ayah_num54" translatable="false">55 آيــات</string>
-    <string name="sura_num55" translatable="false">55</string>
-    <string name="sura_name55" translatable="false">سورة الرحمن</string>
-    <string name="sura_revelation55" translatable="false">مدنية</string>
-    <string name="sura_ayah_num55" translatable="false">78 آيــات</string>
-    <string name="sura_num56" translatable="false">56</string>
-    <string name="sura_name56" translatable="false">سورة الواقعة</string>
-    <string name="sura_revelation56" translatable="false">مكية</string>
-    <string name="sura_ayah_num56" translatable="false">96 آيــات</string>
-    <string name="sura_num57" translatable="false">57</string>
-    <string name="sura_name57" translatable="false">سورة الحديد</string>
-    <string name="sura_revelation57" translatable="false">مدنية</string>
-    <string name="sura_ayah_num57" translatable="false">29 آيــات</string>
-    <string name="sura_num58" translatable="false">58</string>
-    <string name="sura_name58" translatable="false">سورة المجادلة</string>
-    <string name="sura_revelation58" translatable="false">مدنية</string>
-    <string name="sura_ayah_num58" translatable="false">22 آيــات</string>
-    <string name="sura_num59" translatable="false">59</string>
-    <string name="sura_name59" translatable="false">سورة الحشر</string>
-    <string name="sura_revelation59" translatable="false">مدنية</string>
-    <string name="sura_ayah_num59" translatable="false">24 آيــات</string>
-    <string name="sura_num60" translatable="false">60</string>
-    <string name="sura_name60" translatable="false">سورة الممتحنة</string>
-    <string name="sura_revelation60" translatable="false">مدنية</string>
-    <string name="sura_ayah_num60" translatable="false">13 آيــات</string>
-    <string name="sura_num61" translatable="false">61</string>
-    <string name="sura_name61" translatable="false">سورة الصف</string>
-    <string name="sura_revelation61" translatable="false">مدنية</string>
-    <string name="sura_ayah_num61" translatable="false">14 آيــات</string>
-    <string name="sura_num62" translatable="false">62</string>
-    <string name="sura_name62" translatable="false">سورة الجمعة</string>
-    <string name="sura_revelation62" translatable="false">مدنية</string>
-    <string name="sura_ayah_num62" translatable="false">11 آيــات</string>
-    <string name="sura_num63" translatable="false">63</string>
-    <string name="sura_name63" translatable="false">سورة المنافقون</string>
-    <string name="sura_revelation63" translatable="false">مدنية</string>
-    <string name="sura_ayah_num63" translatable="false">11 آيــات</string>
-    <string name="sura_num64" translatable="false">64</string>
-    <string name="sura_name64" translatable="false">سورة التغابن</string>
-    <string name="sura_revelation64" translatable="false">مدنية</string>
-    <string name="sura_ayah_num64" translatable="false">18 آيــات</string>
-    <string name="sura_num65" translatable="false">65</string>
-    <string name="sura_name65" translatable="false">سورة الطلاق</string>
-    <string name="sura_revelation65" translatable="false">مدنية</string>
-    <string name="sura_ayah_num65" translatable="false">12 آيــات</string>
-    <string name="sura_num66" translatable="false">66</string>
-    <string name="sura_name66" translatable="false">سورة التحريم</string>
-    <string name="sura_revelation66" translatable="false">مدنية</string>
-    <string name="sura_ayah_num66" translatable="false">12 آيــات</string>
-    <string name="sura_num67" translatable="false">67</string>
-    <string name="sura_name67" translatable="false">سورة الملك</string>
-    <string name="sura_revelation67" translatable="false">مكية</string>
-    <string name="sura_ayah_num67" translatable="false">30 آيــات</string>
-    <string name="sura_num68" translatable="false">68</string>
-    <string name="sura_name68" translatable="false">سورة القلم</string>
-    <string name="sura_revelation68" translatable="false">مكية</string>
-    <string name="sura_ayah_num68" translatable="false">52 آيــات</string>
-    <string name="sura_num69" translatable="false">69</string>
-    <string name="sura_name69" translatable="false">سورة الحاقة</string>
-    <string name="sura_revelation69" translatable="false">مكية</string>
-    <string name="sura_ayah_num69" translatable="false">52 آيــات</string>
-    <string name="sura_num70" translatable="false">70</string>
-    <string name="sura_name70" translatable="false">سورة المعارج</string>
-    <string name="sura_revelation70" translatable="false">مكية</string>
-    <string name="sura_ayah_num70" translatable="false">44 آيــات</string>
-    <string name="sura_num71" translatable="false">71</string>
-    <string name="sura_name71" translatable="false">سورة نوح</string>
-    <string name="sura_revelation71" translatable="false">مكية</string>
-    <string name="sura_ayah_num71" translatable="false">28 آيــات</string>
-    <string name="sura_num72" translatable="false">72</string>
-    <string name="sura_name72" translatable="false">سورة الجن</string>
-    <string name="sura_revelation72" translatable="false">مكية</string>
-    <string name="sura_ayah_num72" translatable="false">28 آيــات</string>
-    <string name="sura_num73" translatable="false">73</string>
-    <string name="sura_name73" translatable="false">سورة المزمل</string>
-    <string name="sura_revelation73" translatable="false">مكية</string>
-    <string name="sura_ayah_num73" translatable="false">20 آيــات</string>
-    <string name="sura_num74" translatable="false">74</string>
-    <string name="sura_name74" translatable="false">سورة المدثر</string>
-    <string name="sura_revelation74" translatable="false">مكية</string>
-    <string name="sura_ayah_num74" translatable="false">56 آيــات</string>
-    <string name="sura_num75" translatable="false">75</string>
-    <string name="sura_name75" translatable="false">سورة القيامة</string>
-    <string name="sura_revelation75" translatable="false">مكية</string>
-    <string name="sura_ayah_num75" translatable="false">40 آيــات</string>
-    <string name="sura_num76" translatable="false">76</string>
-    <string name="sura_name76" translatable="false">سورة الإنسان</string>
-    <string name="sura_revelation76" translatable="false">مدنية</string>
-    <string name="sura_ayah_num76" translatable="false">31 آيــات</string>
-    <string name="sura_num77" translatable="false">77</string>
-    <string name="sura_name77" translatable="false">سورة المرسلات</string>
-    <string name="sura_revelation77" translatable="false">مكية</string>
-    <string name="sura_ayah_num77" translatable="false">50 آيــات</string>
-    <string name="sura_num78" translatable="false">78</string>
-    <string name="sura_name78" translatable="false">سورة النبأ</string>
-    <string name="sura_revelation78" translatable="false">مكية</string>
-    <string name="sura_ayah_num78" translatable="false">40 آيــات</string>
-    <string name="sura_num79" translatable="false">79</string>
-    <string name="sura_name79" translatable="false">سورة النازعات</string>
-    <string name="sura_revelation79" translatable="false">مكية</string>
-    <string name="sura_ayah_num79" translatable="false">46 آيــات</string>
-    <string name="sura_num80" translatable="false">80</string>
-    <string name="sura_name80" translatable="false">سورة عبس</string>
-    <string name="sura_revelation80" translatable="false">مكية</string>
-    <string name="sura_ayah_num80" translatable="false">42 آيــات</string>
-    <string name="sura_num81" translatable="false">81</string>
-    <string name="sura_name81" translatable="false">سورة التكوير</string>
-    <string name="sura_revelation81" translatable="false">مكية</string>
-    <string name="sura_ayah_num81" translatable="false">29 آيــات</string>
-    <string name="sura_num82" translatable="false">82</string>
-    <string name="sura_name82" translatable="false">سورة الانفطار</string>
-    <string name="sura_revelation82" translatable="false">مكية</string>
-    <string name="sura_ayah_num82" translatable="false">19 آيــات</string>
-    <string name="sura_num83" translatable="false">83</string>
-    <string name="sura_name83" translatable="false">سورة المطففين</string>
-    <string name="sura_revelation83" translatable="false">مكية</string>
-    <string name="sura_ayah_num83" translatable="false">36 آيــات</string>
-    <string name="sura_num84" translatable="false">84</string>
-    <string name="sura_name84" translatable="false">سورة الانشقاق</string>
-    <string name="sura_revelation84" translatable="false">مكية</string>
-    <string name="sura_ayah_num84" translatable="false">25 آيــات</string>
-    <string name="sura_num85" translatable="false">85</string>
-    <string name="sura_name85" translatable="false">سورة البروج</string>
-    <string name="sura_revelation85" translatable="false">مكية</string>
-    <string name="sura_ayah_num85" translatable="false">22 آيــات</string>
-    <string name="sura_num86" translatable="false">86</string>
-    <string name="sura_name86" translatable="false">سورة الطارق</string>
-    <string name="sura_revelation86" translatable="false">مكية</string>
-    <string name="sura_ayah_num86" translatable="false">17 آيــات</string>
-    <string name="sura_num87" translatable="false">87</string>
-    <string name="sura_name87" translatable="false">سورة الأعلي</string>
-    <string name="sura_revelation87" translatable="false">مكية</string>
-    <string name="sura_ayah_num87" translatable="false">19 آيــات</string>
-    <string name="sura_num88" translatable="false">88</string>
-    <string name="sura_name88" translatable="false">سورة الغاشية</string>
-    <string name="sura_revelation88" translatable="false">مكية</string>
-    <string name="sura_ayah_num88" translatable="false">26 آيــات</string>
-    <string name="sura_num89" translatable="false">89</string>
-    <string name="sura_name89" translatable="false">سورة الفجر</string>
-    <string name="sura_revelation89" translatable="false">مكية</string>
-    <string name="sura_ayah_num89" translatable="false">30 آيــات</string>
-    <string name="sura_num90" translatable="false">90</string>
-    <string name="sura_name90" translatable="false">سورة البلد</string>
-    <string name="sura_revelation90" translatable="false">مكية</string>
-    <string name="sura_ayah_num90" translatable="false">20 آيــات</string>
-    <string name="sura_num91" translatable="false">91</string>
-    <string name="sura_name91" translatable="false">سورة الشمس</string>
-    <string name="sura_revelation91" translatable="false">مكية</string>
-    <string name="sura_ayah_num91" translatable="false">15 آيــات</string>
-    <string name="sura_num92" translatable="false">92</string>
-    <string name="sura_name92" translatable="false">سورة الليل</string>
-    <string name="sura_revelation92" translatable="false">مكية</string>
-    <string name="sura_ayah_num92" translatable="false">21 آيــات</string>
-    <string name="sura_num93" translatable="false">93</string>
-    <string name="sura_name93" translatable="false">سورة الضحي</string>
-    <string name="sura_revelation93" translatable="false">مكية</string>
-    <string name="sura_ayah_num93" translatable="false">11 آيــات</string>
-    <string name="sura_num94" translatable="false">94</string>
-    <string name="sura_name94" translatable="false">سورة الشرح</string>
-    <string name="sura_revelation94" translatable="false">مكية</string>
-    <string name="sura_ayah_num94" translatable="false">8 آيــات</string>
-    <string name="sura_num95" translatable="false">95</string>
-    <string name="sura_name95" translatable="false">سورة التين</string>
-    <string name="sura_revelation95" translatable="false">مكية</string>
-    <string name="sura_ayah_num95" translatable="false">8 آيــات</string>
-    <string name="sura_num96" translatable="false">96</string>
-    <string name="sura_name96" translatable="false">سورة العلق</string>
-    <string name="sura_revelation96" translatable="false">مكية</string>
-    <string name="sura_ayah_num96" translatable="false">19 آيــات</string>
-    <string name="sura_num97" translatable="false">97</string>
-    <string name="sura_name97" translatable="false">سورة القدر</string>
-    <string name="sura_revelation97" translatable="false">مكية</string>
-    <string name="sura_ayah_num97" translatable="false">5 آيــات</string>
-    <string name="sura_num98" translatable="false">98</string>
-    <string name="sura_name98" translatable="false">سورة البينة</string>
-    <string name="sura_revelation98" translatable="false">مدنية</string>
-    <string name="sura_ayah_num98" translatable="false">8 آيــات</string>
-    <string name="sura_num99" translatable="false">99</string>
-    <string name="sura_name99" translatable="false">سورة الزلزلة</string>
-    <string name="sura_revelation99" translatable="false">مدنية</string>
-    <string name="sura_ayah_num99" translatable="false">8 آيــات</string>
-    <string name="sura_num100" translatable="false">100</string>
-    <string name="sura_name100" translatable="false">سورة العاديات</string>
-    <string name="sura_revelation100" translatable="false">مكية</string>
-    <string name="sura_ayah_num100" translatable="false">11 آيــات</string>
-    <string name="sura_num101" translatable="false">101</string>
-    <string name="sura_name101" translatable="false">سورة القارعة</string>
-    <string name="sura_revelation101" translatable="false">مكية</string>
-    <string name="sura_ayah_num101" translatable="false">11 آيــات</string>
-    <string name="sura_num102" translatable="false">102</string>
-    <string name="sura_name102" translatable="false">سورة التكاثر</string>
-    <string name="sura_revelation102" translatable="false">مكية</string>
-    <string name="sura_ayah_num102" translatable="false">8 آيــات</string>
-    <string name="sura_num103" translatable="false">103</string>
-    <string name="sura_name103" translatable="false">سورة العصر</string>
-    <string name="sura_revelation103" translatable="false">مكية</string>
-    <string name="sura_ayah_num103" translatable="false">3 آيــات</string>
-    <string name="sura_num104" translatable="false">104</string>
-    <string name="sura_name104" translatable="false">سورة الهمزة</string>
-    <string name="sura_revelation104" translatable="false">مكية</string>
-    <string name="sura_ayah_num104" translatable="false">9 آيــات</string>
-    <string name="sura_num105" translatable="false">105</string>
-    <string name="sura_name105" translatable="false">سورة الفيل</string>
-    <string name="sura_revelation105" translatable="false">مكية</string>
-    <string name="sura_ayah_num105" translatable="false">5 آيــات</string>
-    <string name="sura_num106" translatable="false">106</string>
-    <string name="sura_name106" translatable="false">سورة قريش</string>
-    <string name="sura_revelation106" translatable="false">مكية</string>
-    <string name="sura_ayah_num106" translatable="false">4 آيــات</string>
-    <string name="sura_num107" translatable="false">107</string>
-    <string name="sura_name107" translatable="false">سورة الماعون</string>
-    <string name="sura_revelation107" translatable="false">مكية</string>
-    <string name="sura_ayah_num107" translatable="false">7 آيــات</string>
-    <string name="sura_num108" translatable="false">108</string>
-    <string name="sura_name108" translatable="false">سورة الكوثر</string>
-    <string name="sura_revelation108" translatable="false">مكية</string>
-    <string name="sura_ayah_num108" translatable="false">3 آيــات</string>
-    <string name="sura_num109" translatable="false">109</string>
-    <string name="sura_name109" translatable="false">سورة الكافرون</string>
-    <string name="sura_revelation109" translatable="false">مكية</string>
-    <string name="sura_ayah_num109" translatable="false">6 آيــات</string>
-    <string name="sura_num110" translatable="false">110</string>
-    <string name="sura_name110" translatable="false">سورة النصر</string>
-    <string name="sura_revelation110" translatable="false">مدنية</string>
-    <string name="sura_ayah_num110" translatable="false">3 آيــات</string>
-    <string name="sura_num111" translatable="false">111</string>
-    <string name="sura_name111" translatable="false">سورة المسد</string>
-    <string name="sura_revelation111" translatable="false">مكية</string>
-    <string name="sura_ayah_num111" translatable="false">5 آيــات</string>
-    <string name="sura_num112" translatable="false">112</string>
-    <string name="sura_name112" translatable="false">سورة الإخلاص</string>
-    <string name="sura_revelation112" translatable="false">مكية</string>
-    <string name="sura_ayah_num112" translatable="false">4 آيــات</string>
-    <string name="sura_num113" translatable="false">113</string>
-    <string name="sura_name113" translatable="false">سورة الفلق</string>
-    <string name="sura_revelation113" translatable="false">مكية</string>
-    <string name="sura_ayah_num113" translatable="false">5 آيــات</string>
-    <string name="sura_num114" translatable="false">114</string>
-    <string name="sura_name114" translatable="false">سورة الناس</string>
-    <string name="sura_revelation114" translatable="false">مكية</string>
-    <string name="sura_ayah_num114" translatable="false">6 آيــات</string>
+
+    <string name="sura_num1">1</string>
+    <string name="sura_name1">Surah Al-Fatiha</string>
+    <string name="sura_revelation1">Meccan</string>
+    <string name="sura_ayah_num1">7 Ayahs</string>
+
+    <string name="sura_num2">2</string>
+    <string name="sura_name2">Surah Al-Baqarah</string>
+    <string name="sura_revelation2">Medinan</string>
+    <string name="sura_ayah_num2">286 Ayahs</string>
+
+    <string name="sura_num3">3</string>
+    <string name="sura_name3">Surah Aal-E-Imran</string>
+    <string name="sura_revelation3">Medinan</string>
+    <string name="sura_ayah_num3">200 Ayahs</string>
+
+    <string name="sura_num4">4</string>
+    <string name="sura_name4">Surah An-Nisa</string>
+    <string name="sura_revelation4">Medinan</string>
+    <string name="sura_ayah_num4">176 Ayahs</string>
+
+    <string name="sura_num5">5</string>
+    <string name="sura_name5">Surah Al-Ma\'idah</string>
+    <string name="sura_revelation5">Medinan</string>
+    <string name="sura_ayah_num5">120 Ayahs</string>
+
+    <string name="sura_num6">6</string>
+    <string name="sura_name6">Surah Al-An\'am</string>
+    <string name="sura_revelation6">Meccan</string>
+    <string name="sura_ayah_num6">165 Ayahs</string>
+
+    <string name="sura_num7">7</string>
+    <string name="sura_name7">Surah Al-A\'raf</string>
+    <string name="sura_revelation7">Meccan</string>
+    <string name="sura_ayah_num7">206 Ayahs</string>
+
+    <string name="sura_num8">8</string>
+    <string name="sura_name8">Surah Al-Anfal</string>
+    <string name="sura_revelation8">Medinan</string>
+    <string name="sura_ayah_num8">75 Ayahs</string>
+
+    <string name="sura_num9">9</string>
+    <string name="sura_name9">Surah At-Tawbah</string>
+    <string name="sura_revelation9">Medinan</string>
+    <string name="sura_ayah_num9">129 Ayahs</string>
+
+    <string name="sura_num10">10</string>
+    <string name="sura_name10">Surah Yunus</string>
+    <string name="sura_revelation10">Meccan</string>
+    <string name="sura_ayah_num10">109 Ayahs</string>
+
+    <string name="sura_num11">11</string>
+    <string name="sura_name11">Surah Hud</string>
+    <string name="sura_revelation11">Meccan</string>
+    <string name="sura_ayah_num11">123 Ayahs</string>
+
+    <string name="sura_num12">12</string>
+    <string name="sura_name12">Surah Yusuf</string>
+    <string name="sura_revelation12">Meccan</string>
+    <string name="sura_ayah_num12">111 Ayahs</string>
+
+    <string name="sura_num13">13</string>
+    <string name="sura_name13">Surah Ar-Ra\'d</string>
+    <string name="sura_revelation13">Medinan</string>
+    <string name="sura_ayah_num13">43 Ayahs</string>
+
+    <string name="sura_num14">14</string>
+    <string name="sura_name14">Surah Ibrahim</string>
+    <string name="sura_revelation14">Meccan</string>
+    <string name="sura_ayah_num14">52 Ayahs</string>
+
+    <string name="sura_num15">15</string>
+    <string name="sura_name15">Surah Al-Hijr</string>
+    <string name="sura_revelation15">Meccan</string>
+    <string name="sura_ayah_num15">99 Ayahs</string>
+
+    <string name="sura_num16">16</string>
+    <string name="sura_name16">Surah An-Nahl</string>
+    <string name="sura_revelation16">Meccan</string>
+    <string name="sura_ayah_num16">128 Ayahs</string>
+
+    <string name="sura_num17">17</string>
+    <string name="sura_name17">Surah Al-Isra</string>
+    <string name="sura_revelation17">Meccan</string>
+    <string name="sura_ayah_num17">111 Ayahs</string>
+
+    <string name="sura_num18">18</string>
+    <string name="sura_name18">Surah Al-Kahf</string>
+    <string name="sura_revelation18">Meccan</string>
+    <string name="sura_ayah_num18">110 Ayahs</string>
+
+    <string name="sura_num19">19</string>
+    <string name="sura_name19">Surah Maryam</string>
+    <string name="sura_revelation19">Meccan</string>
+    <string name="sura_ayah_num19">98 Ayahs</string>
+
+    <string name="sura_num20">20</string>
+    <string name="sura_name20">Surah Ta-Ha</string>
+    <string name="sura_revelation20">Meccan</string>
+    <string name="sura_ayah_num20">135 Ayahs</string>
+
+    <string name="sura_num21">21</string>
+    <string name="sura_name21">Surah Al-Anbiya</string>
+    <string name="sura_revelation21">Meccan</string>
+    <string name="sura_ayah_num21">112 Ayahs</string>
+
+    <string name="sura_num22">22</string>
+    <string name="sura_name22">Surah Al-Hajj</string>
+    <string name="sura_revelation22">Medinan</string>
+    <string name="sura_ayah_num22">78 Ayahs</string>
+
+    <string name="sura_num23">23</string>
+    <string name="sura_name23">Surah Al-Mu\'minun</string>
+    <string name="sura_revelation23">Meccan</string>
+    <string name="sura_ayah_num23">118 Ayahs</string>
+
+    <string name="sura_num24">24</string>
+    <string name="sura_name24">Surah An-Nur</string>
+    <string name="sura_revelation24">Medinan</string>
+    <string name="sura_ayah_num24">64 Ayahs</string>
+
+    <string name="sura_num25">25</string>
+    <string name="sura_name25">Surah Al-Furqan</string>
+    <string name="sura_revelation25">Meccan</string>
+    <string name="sura_ayah_num25">77 Ayahs</string>
+
+    <string name="sura_num26">26</string>
+    <string name="sura_name26">Surah Ash-Shu\'ara</string>
+    <string name="sura_revelation26">Meccan</string>
+    <string name="sura_ayah_num26">227 Ayahs</string>
+
+    <string name="sura_num27">27</string>
+    <string name="sura_name27">Surah An-Naml</string>
+    <string name="sura_revelation27">Meccan</string>
+    <string name="sura_ayah_num27">93 Ayahs</string>
+
+    <string name="sura_num28">28</string>
+    <string name="sura_name28">Surah Al-Qasas</string>
+    <string name="sura_revelation28">Meccan</string>
+    <string name="sura_ayah_num28">88 Ayahs</string>
+
+    <string name="sura_num29">29</string>
+    <string name="sura_name29">Surah Al-Ankabut</string>
+    <string name="sura_revelation29">Meccan</string>
+    <string name="sura_ayah_num29">69 Ayahs</string>
+
+    <string name="sura_num30">30</string>
+    <string name="sura_name30">Surah Ar-Rum</string>
+    <string name="sura_revelation30">Meccan</string>
+    <string name="sura_ayah_num30">60 Ayahs</string>
+
+    <string name="sura_num31">31</string>
+    <string name="sura_name31">Surah Luqman</string>
+    <string name="sura_revelation31">Meccan</string>
+    <string name="sura_ayah_num31">34 Ayahs</string>
+
+    <string name="sura_num32">32</string>
+    <string name="sura_name32">Surah As-Sajdah</string>
+    <string name="sura_revelation32">Meccan</string>
+    <string name="sura_ayah_num32">30 Ayahs</string>
+
+    <string name="sura_num33">33</string>
+    <string name="sura_name33">Surah Al-Ahzab</string>
+    <string name="sura_revelation33">Medinan</string>
+    <string name="sura_ayah_num33">73 Ayahs</string>
+
+    <string name="sura_num34">34</string>
+    <string name="sura_name34">Surah Saba</string>
+    <string name="sura_revelation34">Meccan</string>
+    <string name="sura_ayah_num34">54 Ayahs</string>
+
+    <string name="sura_num35">35</string>
+    <string name="sura_name35">Surah Fatir</string>
+    <string name="sura_revelation35">Meccan</string>
+    <string name="sura_ayah_num35">45 Ayahs</string>
+
+    <string name="sura_num36">36</string>
+    <string name="sura_name36">Surah Ya-Sin</string>
+    <string name="sura_revelation36">Meccan</string>
+    <string name="sura_ayah_num36">83 Ayahs</string>
+
+    <string name="sura_num37">37</string>
+    <string name="sura_name37">Surah As-Saffat</string>
+    <string name="sura_revelation37">Meccan</string>
+    <string name="sura_ayah_num37">182 Ayahs</string>
+
+    <string name="sura_num38">38</string>
+    <string name="sura_name38">Surah Sad</string>
+    <string name="sura_revelation38">Meccan</string>
+    <string name="sura_ayah_num38">88 Ayahs</string>
+
+    <string name="sura_num39">39</string>
+    <string name="sura_name39">Surah Az-Zumar</string>
+    <string name="sura_revelation39">Meccan</string>
+    <string name="sura_ayah_num39">75 Ayahs</string>
+
+    <string name="sura_num40">40</string>
+    <string name="sura_name40">Surah Ghafir</string>
+    <string name="sura_revelation40">Meccan</string>
+    <string name="sura_ayah_num40">85 Ayahs</string>
+
+    <string name="sura_num41">41</string>
+    <string name="sura_name41">Surah Fussilat</string>
+    <string name="sura_revelation41">Meccan</string>
+    <string name="sura_ayah_num41">54 Ayahs</string>
+
+    <string name="sura_num42">42</string>
+    <string name="sura_name42">Surah Ash-Shura</string>
+    <string name="sura_revelation42">Meccan</string>
+    <string name="sura_ayah_num42">53 Ayahs</string>
+
+    <string name="sura_num43">43</string>
+    <string name="sura_name43">Surah Az-Zukhruf</string>
+    <string name="sura_revelation43">Meccan</string>
+    <string name="sura_ayah_num43">89 Ayahs</string>
+
+    <string name="sura_num44">44</string>
+    <string name="sura_name44">Surah Ad-Dukhan</string>
+    <string name="sura_revelation44">Meccan</string>
+    <string name="sura_ayah_num44">59 Ayahs</string>
+
+    <string name="sura_num45">45</string>
+    <string name="sura_name45">Surah Al-Jathiyah</string>
+    <string name="sura_revelation45">Meccan</string>
+    <string name="sura_ayah_num45">37 Ayahs</string>
+
+    <string name="sura_num46">46</string>
+    <string name="sura_name46">Surah Al-Ahqaf</string>
+    <string name="sura_revelation46">Meccan</string>
+    <string name="sura_ayah_num46">35 Ayahs</string>
+
+    <string name="sura_num47">47</string>
+    <string name="sura_name47">Surah Muhammad</string>
+    <string name="sura_revelation47">Medinan</string>
+    <string name="sura_ayah_num47">38 Ayahs</string>
+
+    <string name="sura_num48">48</string>
+    <string name="sura_name48">Surah Al-Fath</string>
+    <string name="sura_revelation48">Medinan</string>
+    <string name="sura_ayah_num48">29 Ayahs</string>
+
+    <string name="sura_num49">49</string>
+    <string name="sura_name49">Surah Al-Hujurat</string>
+    <string name="sura_revelation49">Medinan</string>
+    <string name="sura_ayah_num49">18 Ayahs</string>
+
+    <string name="sura_num50">50</string>
+    <string name="sura_name50">Surah Qaf</string>
+    <string name="sura_revelation50">Meccan</string>
+    <string name="sura_ayah_num50">45 Ayahs</string>
+
+    <string name="sura_num51">51</string>
+    <string name="sura_name51">Surah Adh-Dhariyat</string>
+    <string name="sura_revelation51">Meccan</string>
+    <string name="sura_ayah_num51">60 Ayahs</string>
+
+    <string name="sura_num52">52</string>
+    <string name="sura_name52">Surah At-Tur</string>
+    <string name="sura_revelation52">Meccan</string>
+    <string name="sura_ayah_num52">49 Ayahs</string>
+
+    <string name="sura_num53">53</string>
+    <string name="sura_name53">Surah An-Najm</string>
+    <string name="sura_revelation53">Meccan</string>
+    <string name="sura_ayah_num53">62 Ayahs</string>
+
+    <string name="sura_num54">54</string>
+    <string name="sura_name54">Surah Al-Qamar</string>
+    <string name="sura_revelation54">Meccan</string>
+    <string name="sura_ayah_num54">55 Ayahs</string>
+
+    <string name="sura_num55">55</string>
+    <string name="sura_name55">Surah Ar-Rahman</string>
+    <string name="sura_revelation55">Medinan</string>
+    <string name="sura_ayah_num55">78 Ayahs</string>
+
+    <string name="sura_num56">56</string>
+    <string name="sura_name56">Surah Al-Waqi\'ah</string>
+    <string name="sura_revelation56">Meccan</string>
+    <string name="sura_ayah_num56">96 Ayahs</string>
+
+    <string name="sura_num57">57</string>
+    <string name="sura_name57">Surah Al-Hadid</string>
+    <string name="sura_revelation57">Medinan</string>
+    <string name="sura_ayah_num57">29 Ayahs</string>
+
+    <string name="sura_num58">58</string>
+    <string name="sura_name58">Surah Al-Mujadila</string>
+    <string name="sura_revelation58">Medinan</string>
+    <string name="sura_ayah_num58">22 Ayahs</string>
+
+    <string name="sura_num59">59</string>
+    <string name="sura_name59">Surah Al-Hashr</string>
+    <string name="sura_revelation59">Medinan</string>
+    <string name="sura_ayah_num59">24 Ayahs</string>
+
+    <string name="sura_num60">60</string>
+    <string name="sura_name60">Surah Al-Mumtahanah</string>
+    <string name="sura_revelation60">Medinan</string>
+    <string name="sura_ayah_num60">13 Ayahs</string>
+
+    <string name="sura_num61">61</string>
+    <string name="sura_name61">Surah As-Saff</string>
+    <string name="sura_revelation61">Medinan</string>
+    <string name="sura_ayah_num61">14 Ayahs</string>
+
+    <string name="sura_num62">62</string>
+    <string name="sura_name62">Surah Al-Jumu\'ah</string>
+    <string name="sura_revelation62">Medinan</string>
+    <string name="sura_ayah_num62">11 Ayahs</string>
+
+    <string name="sura_num63">63</string>
+    <string name="sura_name63">Surah Al-Munafiqun</string>
+    <string name="sura_revelation63">Medinan</string>
+    <string name="sura_ayah_num63">11 Ayahs</string>
+
+    <string name="sura_num64">64</string>
+    <string name="sura_name64">Surah At-Taghabun</string>
+    <string name="sura_revelation64">Medinan</string>
+    <string name="sura_ayah_num64">18 Ayahs</string>
+
+    <string name="sura_num65">65</string>
+    <string name="sura_name65">Surah At-Talaq</string>
+    <string name="sura_revelation65">Medinan</string>
+    <string name="sura_ayah_num65">12 Ayahs</string>
+
+    <string name="sura_num66">66</string>
+    <string name="sura_name66">Surah At-Tahrim</string>
+    <string name="sura_revelation66">Medinan</string>
+    <string name="sura_ayah_num66">12 Ayahs</string>
+
+    <string name="sura_num67">67</string>
+    <string name="sura_name67">Surah Al-Mulk</string>
+    <string name="sura_revelation67">Meccan</string>
+    <string name="sura_ayah_num67">30 Ayahs</string>
+
+    <string name="sura_num68">68</string>
+    <string name="sura_name68">Surah Al-Qalam</string>
+    <string name="sura_revelation68">Meccan</string>
+    <string name="sura_ayah_num68">52 Ayahs</string>
+
+    <string name="sura_num69">69</string>
+    <string name="sura_name69">Surah Al-Haqqah</string>
+    <string name="sura_revelation69">Meccan</string>
+    <string name="sura_ayah_num69">52 Ayahs</string>
+
+    <string name="sura_num70">70</string>
+    <string name="sura_name70">Surah Al-Ma\'arij</string>
+    <string name="sura_revelation70">Meccan</string>
+    <string name="sura_ayah_num70">44 Ayahs</string>
+
+    <string name="sura_num71">71</string>
+    <string name="sura_name71">Surah Nuh</string>
+    <string name="sura_revelation71">Meccan</string>
+    <string name="sura_ayah_num71">28 Ayahs</string>
+
+    <string name="sura_num72">72</string>
+    <string name="sura_name72">Surah Al-Jinn</string>
+    <string name="sura_revelation72">Meccan</string>
+    <string name="sura_ayah_num72">28 Ayahs</string>
+
+    <string name="sura_num73">73</string>
+    <string name="sura_name73">Surah Al-Muzzammil</string>
+    <string name="sura_revelation73">Meccan</string>
+    <string name="sura_ayah_num73">20 Ayahs</string>
+
+    <string name="sura_num74">74</string>
+    <string name="sura_name74">Surah Al-Muddathir</string>
+    <string name="sura_revelation74">Meccan</string>
+    <string name="sura_ayah_num74">56 Ayahs</string>
+
+    <string name="sura_num75">75</string>
+    <string name="sura_name75">Surah Al-Qiyamah</string>
+    <string name="sura_revelation75">Meccan</string>
+    <string name="sura_ayah_num75">40 Ayahs</string>
+
+    <string name="sura_num76">76</string>
+    <string name="sura_name76">Surah Al-Insan</string>
+    <string name="sura_revelation76">Medinan</string>
+    <string name="sura_ayah_num76">31 Ayahs</string>
+
+    <string name="sura_num77">77</string>
+    <string name="sura_name77">Surah Al-Mursalat</string>
+    <string name="sura_revelation77">Meccan</string>
+    <string name="sura_ayah_num77">50 Ayahs</string>
+
+    <string name="sura_num78">78</string>
+    <string name="sura_name78">Surah An-Naba</string>
+    <string name="sura_revelation78">Meccan</string>
+    <string name="sura_ayah_num78">40 Ayahs</string>
+
+    <string name="sura_num79">79</string>
+    <string name="sura_name79">Surah An-Nazi\'at</string>
+    <string name="sura_revelation79">Meccan</string>
+    <string name="sura_ayah_num79">46 Ayahs</string>
+
+    <string name="sura_num80">80</string>
+    <string name="sura_name80">Surah Abasa</string>
+    <string name="sura_revelation80">Meccan</string>
+    <string name="sura_ayah_num80">42 Ayahs</string>
+
+    <string name="sura_num81">81</string>
+    <string name="sura_name81">Surah At-Takwir</string>
+    <string name="sura_revelation81">Meccan</string>
+    <string name="sura_ayah_num81">29 Ayahs</string>
+
+    <string name="sura_num82">82</string>
+    <string name="sura_name82">Surah Al-Infitar</string>
+    <string name="sura_revelation82">Meccan</string>
+    <string name="sura_ayah_num82">19 Ayahs</string>
+
+    <string name="sura_num83">83</string>
+    <string name="sura_name83">Surah Al-Mutaffifin</string>
+    <string name="sura_revelation83">Meccan</string>
+    <string name="sura_ayah_num83">36 Ayahs</string>
+
+    <string name="sura_num84">84</string>
+    <string name="sura_name84">Surah Al-Inshiqaq</string>
+    <string name="sura_revelation84">Meccan</string>
+    <string name="sura_ayah_num84">25 Ayahs</string>
+
+    <string name="sura_num85">85</string>
+    <string name="sura_name85">Surah Al-Buruj</string>
+    <string name="sura_revelation85">Meccan</string>
+    <string name="sura_ayah_num85">22 Ayahs</string>
+
+    <string name="sura_num86">86</string>
+    <string name="sura_name86">Surah At-Tariq</string>
+    <string name="sura_revelation86">Meccan</string>
+    <string name="sura_ayah_num86">17 Ayahs</string>
+
+    <string name="sura_num87">87</string>
+    <string name="sura_name87">Surah Al-A\'la</string>
+    <string name="sura_revelation87">Meccan</string>
+    <string name="sura_ayah_num87">19 Ayahs</string>
+
+    <string name="sura_num88">88</string>
+    <string name="sura_name88">Surah Al-Ghashiyah</string>
+    <string name="sura_revelation88">Meccan</string>
+    <string name="sura_ayah_num88">26 Ayahs</string>
+
+    <string name="sura_num89">89</string>
+    <string name="sura_name89">Surah Al-Fajr</string>
+    <string name="sura_revelation89">Meccan</string>
+    <string name="sura_ayah_num89">30 Ayahs</string>
+
+    <string name="sura_num90">90</string>
+    <string name="sura_name90">Surah Al-Balad</string>
+    <string name="sura_revelation90">Meccan</string>
+    <string name="sura_ayah_num90">20 Ayahs</string>
+
+    <string name="sura_num91">91</string>
+    <string name="sura_name91">Surah Ash-Shams</string>
+    <string name="sura_revelation91">Meccan</string>
+    <string name="sura_ayah_num91">15 Ayahs</string>
+
+    <string name="sura_num92">92</string>
+    <string name="sura_name92">Surah Al-Layl</string>
+    <string name="sura_revelation92">Meccan</string>
+    <string name="sura_ayah_num92">21 Ayahs</string>
+
+    <string name="sura_num93">93</string>
+    <string name="sura_name93">Surah Ad-Duha</string>
+    <string name="sura_revelation93">Meccan</string>
+    <string name="sura_ayah_num93">11 Ayahs</string>
+
+    <string name="sura_num94">94</string>
+    <string name="sura_name94">Surah Ash-Sharh</string>
+    <string name="sura_revelation94">Meccan</string>
+    <string name="sura_ayah_num94">8 Ayahs</string>
+
+    <string name="sura_num95">95</string>
+    <string name="sura_name95">Surah At-Tin</string>
+    <string name="sura_revelation95">Meccan</string>
+    <string name="sura_ayah_num95">8 Ayahs</string>
+
+    <string name="sura_num96">96</string>
+    <string name="sura_name96">Surah Al-Alaq</string>
+    <string name="sura_revelation96">Meccan</string>
+    <string name="sura_ayah_num96">19 Ayahs</string>
+
+    <string name="sura_num97">97</string>
+    <string name="sura_name97">Surah Al-Qadr</string>
+    <string name="sura_revelation97">Meccan</string>
+    <string name="sura_ayah_num97">5 Ayahs</string>
+
+    <string name="sura_num98">98</string>
+    <string name="sura_name98">Surah Al-Bayyinah</string>
+    <string name="sura_revelation98">Medinan</string>
+    <string name="sura_ayah_num98">8 Ayahs</string>
+
+    <string name="sura_num99">99</string>
+    <string name="sura_name99">Surah Az-Zalzalah</string>
+    <string name="sura_revelation99">Medinan</string>
+    <string name="sura_ayah_num99">8 Ayahs</string>
+
+    <string name="sura_num100">100</string>
+    <string name="sura_name100">Surah Al-Adiyat</string>
+    <string name="sura_revelation100">Meccan</string>
+    <string name="sura_ayah_num100">11 Ayahs</string>
+
+    <string name="sura_num101">101</string>
+    <string name="sura_name101">Surah Al-Qari\'ah</string>
+    <string name="sura_revelation101">Meccan</string>
+    <string name="sura_ayah_num101">11 Ayahs</string>
+
+    <string name="sura_num102">102</string>
+    <string name="sura_name102">Surah At-Takathur</string>
+    <string name="sura_revelation102">Meccan</string>
+    <string name="sura_ayah_num102">8 Ayahs</string>
+
+    <string name="sura_num103">103</string>
+    <string name="sura_name103">Surah Al-Asr</string>
+    <string name="sura_revelation103">Meccan</string>
+    <string name="sura_ayah_num103">3 Ayahs</string>
+
+    <string name="sura_num104">104</string>
+    <string name="sura_name104">Surah Al-Humazah</string>
+    <string name="sura_revelation104">Meccan</string>
+    <string name="sura_ayah_num104">9 Ayahs</string>
+
+    <string name="sura_num105">105</string>
+    <string name="sura_name105">Surah Al-Fil</string>
+    <string name="sura_revelation105">Meccan</string>
+    <string name="sura_ayah_num105">5 Ayahs</string>
+
+    <string name="sura_num106">106</string>
+    <string name="sura_name106">Surah Quraysh</string>
+    <string name="sura_revelation106">Meccan</string>
+    <string name="sura_ayah_num106">4 Ayahs</string>
+
+    <string name="sura_num107">107</string>
+    <string name="sura_name107">Surah Al-Ma\'un</string>
+    <string name="sura_revelation107">Meccan</string>
+    <string name="sura_ayah_num107">7 Ayahs</string>
+
+    <string name="sura_num108">108</string>
+    <string name="sura_name108">Surah Al-Kawthar</string>
+    <string name="sura_revelation108">Meccan</string>
+    <string name="sura_ayah_num108">3 Ayahs</string>
+
+    <string name="sura_num109">109</string>
+    <string name="sura_name109">Surah Al-Kafirun</string>
+    <string name="sura_revelation109">Meccan</string>
+    <string name="sura_ayah_num109">6 Ayahs</string>
+
+    <string name="sura_num110">110</string>
+    <string name="sura_name110">Surah An-Nasr</string>
+    <string name="sura_revelation110">Medinan</string>
+    <string name="sura_ayah_num110">3 Ayahs</string>
+
+    <string name="sura_num111">111</string>
+    <string name="sura_name111">Surah Al-Masad</string>
+    <string name="sura_revelation111">Meccan</string>
+    <string name="sura_ayah_num111">5 Ayahs</string>
+
+    <string name="sura_num112">112</string>
+    <string name="sura_name112">Surah Al-Ikhlas</string>
+    <string name="sura_revelation112">Meccan</string>
+    <string name="sura_ayah_num112">4 Ayahs</string>
+
+    <string name="sura_num113">113</string>
+    <string name="sura_name113">Surah Al-Falaq</string>
+    <string name="sura_revelation113">Meccan</string>
+    <string name="sura_ayah_num113">5 Ayahs</string>
+
+    <string name="sura_num114">114</string>
+    <string name="sura_name114">Surah An-Nas</string>
+    <string name="sura_revelation114">Meccan</string>
+    <string name="sura_ayah_num114">6 Ayahs</string>
 
     <string name="islam_pillars">Islam\'s Pillars</string>
 
@@ -803,26 +917,26 @@
 
     <string name="prophets_stories">Prophets\' Stories</string>
 
-    <string name="prophets_stories1" translatable="false">قصة آدم -عليه السلام-</string>
-    <string name="prophets_stories2" translatable="false">قصة نوح -عليه السلام-</string>
-    <string name="prophets_stories3" translatable="false">قصة إدريس -عليه السلام-</string>
-    <string name="prophets_stories4" translatable="false">قصة هود -عليه السلام-</string>
-    <string name="prophets_stories5" translatable="false">قصة صالح -عليه السلام-</string>
-    <string name="prophets_stories6" translatable="false">قصة إبراهيم وإسماعيل -عليهما السلام-</string>
-    <string name="prophets_stories7" translatable="false">قصة لوط -عليه السلام-</string>
-    <string name="prophets_stories8" translatable="false">قصة إسحاق ويعقوب -عليهما السلام-</string>
-    <string name="prophets_stories9" translatable="false">قصة يوسف -عليه السلام-</string>
-    <string name="prophets_stories10" translatable="false">قصة شعيب -عليه السلام-</string>
-    <string name="prophets_stories11" translatable="false">قصة أيوب -عليه السلام-</string>
-    <string name="prophets_stories12" translatable="false">قصة يونس -عليه السلام-</string>
-    <string name="prophets_stories13" translatable="false">قصة موسي وهارون -عليهما السلام-</string>
-    <string name="prophets_stories14" translatable="false">قصة داود -عليه السلام-</string>
-    <string name="prophets_stories15" translatable="false">قصة سليمان -عليه السلام-</string>
-    <string name="prophets_stories16" translatable="false">قصة إلياس -عليه السلام-</string>
-    <string name="prophets_stories17" translatable="false">قصة اليسع -عليه السلام-</string>
-    <string name="prophets_stories18" translatable="false">قصة ذي الكفل -عليه السلام-</string>
-    <string name="prophets_stories19" translatable="false">قصة زكريا ويحيي -عليهما السلام-</string>
-    <string name="prophets_stories20" translatable="false">قصة سيدنا عيسي -عليه السلام-</string>
+    <string name="prophets_stories1">Story of Adam (peace be upon him)</string>
+    <string name="prophets_stories2">Story of Noah (peace be upon him)</string>
+    <string name="prophets_stories3">Story of Idris (peace be upon him)</string>
+    <string name="prophets_stories4">Story of Hud (peace be upon him)</string>
+    <string name="prophets_stories5">Story of Salih (peace be upon him)</string>
+    <string name="prophets_stories6">Story of Ibrahim and Ismail (peace be upon them)</string>
+    <string name="prophets_stories7">Story of Lut (peace be upon him)</string>
+    <string name="prophets_stories8">Story of Ishaq and Yaqub (peace be upon them)</string>
+    <string name="prophets_stories9">Story of Yusuf (peace be upon him)</string>
+    <string name="prophets_stories10">Story of Shuayb (peace be upon him)</string>
+    <string name="prophets_stories11">Story of Ayyub (peace be upon him)</string>
+    <string name="prophets_stories12">Story of Yunus (peace be upon him)</string>
+    <string name="prophets_stories13">Story of Musa and Harun (peace be upon them)</string>
+    <string name="prophets_stories14">Story of Dawud (peace be upon him)</string>
+    <string name="prophets_stories15">Story of Sulayman (peace be upon him)</string>
+    <string name="prophets_stories16">Story of Ilyas (peace be upon him)</string>
+    <string name="prophets_stories17">Story of Al-Yasa (peace be upon him)</string>
+    <string name="prophets_stories18">Story of Dhul-Kifl (peace be upon him)</string>
+    <string name="prophets_stories19">Story of Zakariya and Yahya (peace be upon them)</string>
+    <string name="prophets_stories20">Story of Isa (peace be upon him)</string>
 
     <string name="asmaa_allah_hosna">99 Names of Allah</string>
 
