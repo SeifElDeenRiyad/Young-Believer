@@ -23,16 +23,14 @@ public class AzkarActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.azkar_activity);
 
-        MaterialToolbar azkarToolbar = findViewById(R.id.app_toolbar);
-        DrawerLayout azkarDrawer = findViewById(R.id.azkar_drawer_layout);
-        NavigationView azkarNavigation = findViewById(R.id.azkar_navigation_view);
         ViewPager2 viewPager = findViewById(R.id.azkar_view_pager);
         TabLayout tabLayout = findViewById(R.id.azkar_tabs);
 
         BackButtonManager backButtonManager = new BackButtonManager();
-
         drawerNavigationAppBarManager = new DrawerNavigationAppBarManager();
-        drawerNavigationAppBarManager.setup(this, azkarDrawer, azkarNavigation, azkarToolbar, R.id.al_azkar);
+
+        drawerNavigationAppBarManager.initialize(this, R.id.azkar_drawer_layout,
+                R.id.azkar_navigation_view, R.id.app_toolbar, R.id.al_azkar);
 
         AzkarFragmentAdapter adapter = new AzkarFragmentAdapter(this);
         viewPager.setAdapter(adapter);
@@ -45,9 +43,9 @@ public class AzkarActivity extends AppCompatActivity
                         case 0 -> tab.setText(getString(R.string.sbah_zekr)); // title for first tab
                         case 1 -> tab.setText(getString(R.string.msaa_zekr)); // second tab
                     }
-                }
-        ).attach();
-        backButtonManager.simpleBackFromActivity(this, azkarDrawer);
+                }).attach();
+
+        backButtonManager.simpleBackFromActivity(this, drawerNavigationAppBarManager.getDrawer());
     }
     @Override
     public void onResume()

@@ -23,16 +23,14 @@ public class DuasActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.duas_activity);
 
-        MaterialToolbar duasToolbar = findViewById(R.id.app_toolbar);
-        DrawerLayout duasDrawer = findViewById(R.id.duas_drawer_layout);
-        NavigationView duasNavigation = findViewById(R.id.duas_navigation_view);
         ViewPager2 viewPager = findViewById(R.id.duas_view_pager);
         TabLayout tabLayout = findViewById(R.id.duas_tabs);
 
         BackButtonManager backButtonManager = new BackButtonManager();
-
         drawerNavigationAppBarManager = new DrawerNavigationAppBarManager();
-        drawerNavigationAppBarManager.setup(this, duasDrawer, duasNavigation, duasToolbar, R.id.al_duas);
+
+        drawerNavigationAppBarManager.initialize(this, R.id.duas_drawer_layout,
+                R.id.duas_navigation_view, R.id.app_toolbar, R.id.al_duas);
 
         DuasFragmentsAdapter adapter = new DuasFragmentsAdapter(this);
         viewPager.setAdapter(adapter);
@@ -46,9 +44,9 @@ public class DuasActivity extends AppCompatActivity
                         case 1 -> tab.setText(getString(R.string.rasol_dua)); // second tab
                         case 2 -> tab.setText(getString(R.string.rosl_dua));  // third tab
                     }
-                }
-        ).attach();
-        backButtonManager.simpleBackFromActivity(this, duasDrawer);
+                }).attach();
+
+        backButtonManager.simpleBackFromActivity(this, drawerNavigationAppBarManager.getDrawer());
     }
     @Override
     public void onResume()

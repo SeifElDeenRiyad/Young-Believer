@@ -16,7 +16,6 @@ public class SpaceManager
     {
         //initial padding from the view itself
         int initialBottomPadding = view.getPaddingBottom();
-
         ViewCompat.setOnApplyWindowInsetsListener(view, new OnApplyWindowInsetsListener()
         {
             @NonNull

@@ -64,7 +64,6 @@ public class BackButtonManager
             }
         });
     }
-
     public void specialBackFromActivityVideo(AppCompatActivity activity, DrawerLayout drawer, MaterialCardView cardView,
                                              FloatingActionButton fab, View overlay, VideoView view)
     {

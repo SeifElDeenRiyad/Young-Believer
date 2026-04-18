@@ -95,6 +95,5 @@ android:background="@color/dark_twilightGradient">
                 android:contentDescription="@string/content_description"/>
 
         </FrameLayout>
-    
     </RelativeLayout>
 </androidx.drawerlayout.widget.DrawerLayout>

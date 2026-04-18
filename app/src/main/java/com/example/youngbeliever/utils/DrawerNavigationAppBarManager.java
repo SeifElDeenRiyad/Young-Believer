@@ -1,6 +1,5 @@
 package com.example.youngbeliever.utils;
 
-import android.content.Intent;
 import android.os.Handler;
 import android.view.MenuItem;
 
@@ -30,6 +29,16 @@ public class DrawerNavigationAppBarManager implements NavigationView.OnNavigatio
     private NavigationView navigation;
     private int currentItemId;
 
+    public void initialize(AppCompatActivity activity, int drawerId,
+                           int navigationId, int toolbarId,
+                           int currentItemId)
+    {
+        DrawerLayout drawer = activity.findViewById(drawerId);
+        NavigationView navigation = activity.findViewById(navigationId);
+        MaterialToolbar toolbar = activity.findViewById(toolbarId);
+
+        setup(activity, drawer, navigation, toolbar, currentItemId);
+    }
     public void setup(AppCompatActivity activity,DrawerLayout drawer,
                       NavigationView navigation, MaterialToolbar toolbar,
                       int currentItemId)
@@ -55,13 +64,15 @@ public class DrawerNavigationAppBarManager implements NavigationView.OnNavigatio
         actionBarDrawerToggle.syncState();
         navigation.setNavigationItemSelectedListener(this);
     }
-
+    public DrawerLayout getDrawer()
+    {
+        return drawer;
+    }
     //function to maintain the checked state when the activity is resumed
     public void syncCheckedItem()
     {
         navigation.setCheckedItem(currentItemId);
     }
-
     //function handles home sections navigation
     public void homeNavigation(HomeModel homeModel)
     {

@@ -25,7 +25,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/shhada"
         android:id="@+id/shhada_image"
-        android:contentDescription="@string/image_resource" />
+        android:contentDescription="@string/shhada_pillar_image" />
 
     <ScrollView
         android:layout_width="match_parent"

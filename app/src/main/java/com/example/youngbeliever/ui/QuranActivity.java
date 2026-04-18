@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -15,8 +14,6 @@ import com.example.youngbeliever.models.QuranModel;
 import com.example.youngbeliever.utils.BackButtonManager;
 import com.example.youngbeliever.utils.DrawerNavigationAppBarManager;
 import com.example.youngbeliever.utils.SpaceManager;
-import com.google.android.material.appbar.MaterialToolbar;
-import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 
@@ -30,15 +27,13 @@ public class QuranActivity extends AppCompatActivity
         setContentView(R.layout.quran_activity);
         QuranViewModel quranViewModel = new ViewModelProvider(this).get(QuranViewModel.class);
 
-        MaterialToolbar quranToolbar = findViewById(R.id.app_toolbar);
-        DrawerLayout quranDrawer = findViewById(R.id.quran_drawer_layout);
-        NavigationView quranNavigation = findViewById(R.id.quran_navigation_view);
         RecyclerView quranRecycler = findViewById(R.id.quran_recycler_view);
 
         BackButtonManager backButtonManager = new BackButtonManager();
-
         drawerNavigationAppBarManager = new DrawerNavigationAppBarManager();
-        drawerNavigationAppBarManager.setup(this, quranDrawer, quranNavigation, quranToolbar, R.id.holy_quran);
+
+        drawerNavigationAppBarManager.initialize(this, R.id.quran_drawer_layout,
+                R.id.quran_navigation_view, R.id.app_toolbar, R.id.holy_quran);
 
         QuranAdapter adapter = new QuranAdapter();
         quranRecycler.setLayoutManager(new LinearLayoutManager(this));
@@ -64,7 +59,7 @@ public class QuranActivity extends AppCompatActivity
             }
         });
 
-        backButtonManager.simpleBackFromActivity(this, quranDrawer);
+        backButtonManager.simpleBackFromActivity(this, drawerNavigationAppBarManager.getDrawer());
     }
     public void QuranPDF(int pageNum)
     {

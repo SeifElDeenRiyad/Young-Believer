@@ -103,15 +103,16 @@ Young Believer is being developed with the goal of creating a more personalized 
 - Content expansion
 - More child-focused interactive features
 
+
 ## Screenshots
 
-![Holy Quran](screenshots/holy_quran.jpg)
-![The Five Pillars of Islam](screenshots/arkaneslam.jpg)
-![Prophets' Stories](screenshots/qess_rosl.jpg)
+| Holy Quran | The Five Pillars of Islam | Prophets' Stories |
+|---|---|---|
+| <img src="screenshots/holy_quran.jpg" alt="Holy Quran" width="220"> | <img src="screenshots/arkaneslam.jpg" alt="The Five Pillars of Islam" width="220"> | <img src="screenshots/qess_rosl.jpg" alt="Prophets' Stories" width="220"> |
 
 ## Author
 
-**Seif ElDeen Riad**
+**Seif ElDeen Riyad**
 
 ## License
 

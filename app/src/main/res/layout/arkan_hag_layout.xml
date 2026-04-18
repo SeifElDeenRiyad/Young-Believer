@@ -25,7 +25,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/hag"
         android:id="@+id/hag_image"
-        android:contentDescription="@string/image_resource" />
+        android:contentDescription="@string/hag_pillar_image" />
 
     <ScrollView
         android:layout_width="match_parent"

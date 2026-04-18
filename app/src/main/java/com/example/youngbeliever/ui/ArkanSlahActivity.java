@@ -9,7 +9,6 @@ import android.widget.TextView;
 import android.widget.VideoView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -20,10 +19,8 @@ import com.example.youngbeliever.models.ArkanSlahModel;
 import com.example.youngbeliever.utils.BackButtonManager;
 import com.example.youngbeliever.utils.DrawerNavigationAppBarManager;
 import com.example.youngbeliever.utils.SpaceManager;
-import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 
@@ -48,16 +45,13 @@ public class ArkanSlahActivity extends AppCompatActivity
         fab = findViewById(R.id.fab_arkan_salah);
         overlay = findViewById(R.id.overlay_view_slah);
         slahVideoTitle = findViewById(R.id.slah_video_title);
-        DrawerLayout arkanSlahDrawer = findViewById(R.id.arkan_slah_drawer_layout);
-        NavigationView arkanSlahNavigation = findViewById(R.id.arkan_slah_navigation_view);
-        MaterialToolbar arkanSlahToolbar = findViewById(R.id.app_toolbar);
         RecyclerView arkanSlahRecycler = findViewById(R.id.arkan_slah_recycler);
 
         BackButtonManager backButtonManager = new BackButtonManager();
-
         drawerNavigationAppBarManager = new DrawerNavigationAppBarManager();
-        drawerNavigationAppBarManager.setup(this, arkanSlahDrawer, arkanSlahNavigation, arkanSlahToolbar, R.id.arkan_eslam);
-        drawerNavigationAppBarManager.syncCheckedItem();
+
+        drawerNavigationAppBarManager.initialize(this, R.id.arkan_slah_drawer_layout, R.id.arkan_slah_navigation_view,
+                R.id.app_toolbar, R.id.arkan_eslam);
 
         mediaController = new MediaController(this);
         slahVideoView.setMediaController(mediaController);
@@ -89,9 +83,11 @@ public class ArkanSlahActivity extends AppCompatActivity
                 });
             }
         });
+
         fab.setOnClickListener(v -> hideContainer());
+
         backButtonManager.specialBackFromActivityVideo(
-                this, arkanSlahDrawer, slahVideoContainer,
+                this, drawerNavigationAppBarManager.getDrawer(), slahVideoContainer,
                 fab, overlay, slahVideoView);
     }
     //helper to play the video by parsing the setting the destination
@@ -230,5 +226,11 @@ public class ArkanSlahActivity extends AppCompatActivity
         {
             slahVideoView.stopPlayback();
         }
+    }
+    @Override
+    public void onResume()
+    {
+        super.onResume();
+        drawerNavigationAppBarManager.syncCheckedItem();
     }
 }

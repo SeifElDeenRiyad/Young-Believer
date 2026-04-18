@@ -19,7 +19,7 @@
             android:layout_height="150dp"
             android:id="@+id/section_image"
             android:scaleType="centerCrop"
-            android:contentDescription="@string/content_description"/>
+            android:contentDescription="@string/section_image"/>
 
         <TextView
             android:layout_width="match_parent"

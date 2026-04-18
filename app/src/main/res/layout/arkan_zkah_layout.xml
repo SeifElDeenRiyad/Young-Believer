@@ -25,7 +25,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/zkah"
         android:id="@+id/zkah_image"
-        android:contentDescription="@string/image_resource" />
+        android:contentDescription="@string/zkah_pillar_image" />
 
     <ScrollView
         android:layout_width="match_parent"

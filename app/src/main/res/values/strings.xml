@@ -1148,4 +1148,13 @@
     <string name="x" translatable="false">X</string>
     <string name="content_description" translatable="false">Content Descriptoin</string>
     <string name="pdf_load_error" translatable="false">Unable to open this PDF.</string>
+    <string name="play_button" translatable="false">play_button</string>
+    <string name="splash_screen_image" translatable="false">Splash Screen Image</string>
+    <string name="section_image" translatable="false">Section Image</string>
+    <string name="believer_image" translatable="false">Believer Image</string>
+    <string name="zkah_pillar_image" translatable="false">Zkah Pillar Image</string>
+    <string name="sawm_pillar_image" translatable="false">Sawm Pillar Image</string>
+    <string name="slah_pillar_image" translatable="false">Slah Pillar Image</string>
+    <string name="shhada_pillar_image" translatable="false">Shhada Pillar Image</string>
+    <string name="hag_pillar_image" translatable="false">Hag Pillar Image</string>
 </resources>

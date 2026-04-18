@@ -24,7 +24,7 @@
         android:backgroundTint="@color/twilightGradient"
         android:textColor="@color/white"
         android:layout_gravity="end"
-        android:id="@+id/salah_breakdown_btn"
+        android:id="@+id/slah_breakdown_btn"
         android:layout_marginBottom="6dp"/>
 
     <ImageView
@@ -34,7 +34,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/slah"
         android:id="@+id/slah_image"
-        android:contentDescription="@string/image_resource"/>
+        android:contentDescription="@string/slah_pillar_image"/>
 
     <ScrollView
         android:layout_width="match_parent"

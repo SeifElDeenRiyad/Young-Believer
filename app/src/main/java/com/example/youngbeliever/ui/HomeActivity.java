@@ -3,7 +3,6 @@ package com.example.youngbeliever.ui;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -14,8 +13,6 @@ import com.example.youngbeliever.models.HomeModel;
 import com.example.youngbeliever.utils.BackButtonManager;
 import com.example.youngbeliever.utils.DrawerNavigationAppBarManager;
 import com.example.youngbeliever.utils.SpaceManager;
-import com.google.android.material.appbar.MaterialToolbar;
-import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 
@@ -29,15 +26,13 @@ public class HomeActivity extends AppCompatActivity
         setContentView(R.layout.home_activity);
         HomeViewModel homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
 
-        MaterialToolbar homeToolbar = findViewById(R.id.app_toolbar);
-        DrawerLayout homeDrawer = findViewById(R.id.home_drawer_layout);
-        NavigationView homeNavigation = findViewById(R.id.home_navigation_view);
         RecyclerView homeRecycler = findViewById(R.id.home_recycler);
 
         BackButtonManager backButtonManager = new BackButtonManager();
-
         drawerNavigationAppBarManager = new DrawerNavigationAppBarManager();
-        drawerNavigationAppBarManager.setup(this, homeDrawer, homeNavigation, homeToolbar, R.id.home_page);
+
+        drawerNavigationAppBarManager.initialize(this, R.id.home_drawer_layout,
+                R.id.home_navigation_view, R.id.app_toolbar, R.id.home_page);
 
         HomeAdapter adapter = new HomeAdapter();
         int noOfCol = 2;
@@ -63,7 +58,8 @@ public class HomeActivity extends AppCompatActivity
                 });
             }
         });
-        backButtonManager.simpleBackFromActivity(this, homeDrawer);
+
+        backButtonManager.simpleBackFromActivity(this, drawerNavigationAppBarManager.getDrawer());
     }
     @Override
     public void onResume()

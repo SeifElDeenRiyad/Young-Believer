@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -15,8 +14,6 @@ import com.example.youngbeliever.models.StoriesModel;
 import com.example.youngbeliever.utils.BackButtonManager;
 import com.example.youngbeliever.utils.DrawerNavigationAppBarManager;
 import com.example.youngbeliever.utils.SpaceManager;
-import com.google.android.material.appbar.MaterialToolbar;
-import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 
@@ -30,15 +27,13 @@ public class StoriesActivity extends AppCompatActivity
         setContentView(R.layout.stories_activity);
         StoriesViewModel storiesViewModel = new ViewModelProvider(this).get(StoriesViewModel.class);
 
-        MaterialToolbar storiesToolbar = findViewById(R.id.app_toolbar);
-        DrawerLayout storiesDrawer = findViewById(R.id.stories_drawer_layout);
-        NavigationView storiesNavigation = findViewById(R.id.stories_navigation_view);
         RecyclerView storiesRecycler = findViewById(R.id.stories_recycler);
 
         BackButtonManager backButtonManager = new BackButtonManager();
-
         drawerNavigationAppBarManager = new DrawerNavigationAppBarManager();
-        drawerNavigationAppBarManager.setup(this, storiesDrawer, storiesNavigation, storiesToolbar, R.id.stories);
+
+        drawerNavigationAppBarManager.initialize(this, R.id.stories_drawer_layout,
+                R.id.stories_navigation_view, R.id.app_toolbar, R.id.stories);
 
         StoriesAdapter adapter = new StoriesAdapter();
         storiesRecycler.setLayoutManager(new LinearLayoutManager(this));
@@ -59,14 +54,19 @@ public class StoriesActivity extends AppCompatActivity
                     @Override
                     public void onItemClick(StoriesModel storiesModel)
                     {
-                        Intent intent = new Intent(StoriesActivity.this, StoriesPdfActivity.class);
-                        intent.putExtra("pdf", storiesModel.getPdfPath()); // string path
-                        startActivity(intent);
+                        StoriesPDF(storiesModel.getPdfPath());
                     }
                 });
             }
         });
-        backButtonManager.simpleBackFromActivity(this, storiesDrawer);
+
+        backButtonManager.simpleBackFromActivity(this, drawerNavigationAppBarManager.getDrawer());
+    }
+    public void StoriesPDF(String storyPath)
+    {
+        Intent intent = new Intent(this, StoriesPdfActivity.class);
+        intent.putExtra("story_path", storyPath);
+        startActivity(intent);
     }
     @Override
     public void onResume()

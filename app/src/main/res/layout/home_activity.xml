@@ -56,23 +56,15 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:src="@drawable/png"
-                android:contentDescription="@string/content_description"/>
+                android:contentDescription="@string/believer_image"/>
 
         </LinearLayout>
 
-        <ScrollView
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@id/anchor"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/anchor"
-            android:id="@+id/home_scroll_view"
-            android:fillViewport="true">
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/home_recycler"/>
-
-        </ScrollView>
+            android:id="@+id/home_recycler"/>
 
     </RelativeLayout>
 </androidx.drawerlayout.widget.DrawerLayout>

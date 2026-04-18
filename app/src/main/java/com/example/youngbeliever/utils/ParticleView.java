@@ -14,7 +14,6 @@ import java.util.Random;
 
 public class ParticleView extends View
 {
-
     private static class Particle
     {
         float x, y, radius, speedY, alpha;
@@ -23,11 +22,9 @@ public class ParticleView extends View
             this.x = x; this.y = y; this.radius = radius; this.speedY = speedY; this.alpha = alpha;
         }
     }
-
     private final ArrayList<Particle> particles = new ArrayList<>();
     private final Paint paint = new Paint();
     private final Random random = new Random();
-
     public ParticleView(Context context, AttributeSet attrs)
     {
         super(context, attrs);
@@ -35,7 +32,6 @@ public class ParticleView extends View
         paint.setStyle(Paint.Style.FILL);
         initParticles();
     }
-
     private void initParticles()
     {
         for (int i = 0; i < 50; i++)

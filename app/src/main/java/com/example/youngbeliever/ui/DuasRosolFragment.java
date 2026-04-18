@@ -10,12 +10,11 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.youngbeliever.R;
 import com.example.youngbeliever.models.DuasModel;
-import com.example.youngbeliever.utils.SpaceManager;
+import com.example.youngbeliever.utils.FragmentSetter;
 
 import java.util.ArrayList;
 
@@ -28,18 +27,15 @@ public class DuasRosolFragment extends Fragment
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
     {
-        View rootView = inflater.inflate(R.layout.duas_list, container, false);
+        FragmentSetter fragmentSetter = new FragmentSetter();
         DuasRosolViewModel duasRosolViewModel = new ViewModelProvider(this).get(DuasRosolViewModel.class);
 
-        RecyclerView duasRosolRecycler = rootView.findViewById(R.id.duas_recycler);
+        View rootView = fragmentSetter.setupRecyclerFragment(inflater, container, R.layout.duas_list, R.id.duas_recycler);
 
+        RecyclerView duasRosolRecycler = rootView.findViewById(R.id.duas_recycler);
         DuasAdapter adapter = new DuasAdapter();
         duasRosolRecycler.setAdapter(adapter);
-        duasRosolRecycler.setLayoutManager(new LinearLayoutManager(getContext()));
-        //duasRosolRecycler.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
-
-        SpaceManager spaceManager = new SpaceManager();
-        spaceManager.setBottomPadding(duasRosolRecycler);
+        //azkarRosolRecycler.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
 
         duasRosolViewModel.getRosolDua();
         duasRosolViewModel.duaData.observe(getViewLifecycleOwner(), new Observer<ArrayList<DuasModel>>()

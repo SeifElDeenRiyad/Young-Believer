@@ -17,10 +17,12 @@ public class StoriesPdfActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.stories_pdf_activity);
 
-        String pdfPath = getIntent().getStringExtra("pdf");
-        PDFView pdfView = findViewById(R.id.stories_pdf_view);
+        PDFView storiesPdfView = findViewById(R.id.stories_pdf_view);
         FrameLayout scroll = findViewById(R.id.stories_scroll);
-        pdfView.fromAsset(pdfPath)
+
+        String pdfPath = getIntent().getStringExtra("story_path");
+
+        storiesPdfView.fromAsset(pdfPath)
                 .enableSwipe(true)
                 .swipeHorizontal(false)
                 .enableDoubletap(true)
